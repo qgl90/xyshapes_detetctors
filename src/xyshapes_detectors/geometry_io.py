@@ -43,12 +43,13 @@ def box_with_hole(width, height, *, hole_width=None, hole_height=None,
     return shape
 
 
-def polygon_from_points(border, *, holes=None):
+def polygon_from_points(border, *, hole=None, holes=None):
     """Create an XY acceptance from ordered border points.
 
     ``border`` is an iterable of at least three ``(x, y)`` points. Shapely
-    closes the final edge automatically. ``holes`` may contain additional
-    point sequences describing excluded regions.
+    closes the final edge automatically. ``hole`` may be any Shapely geometry
+    to subtract. ``holes`` may contain point sequences describing excluded
+    polygonal regions.
     """
     border = list(border)
     holes = [list(hole) for hole in holes] if holes is not None else None
@@ -60,6 +61,10 @@ def polygon_from_points(border, *, holes=None):
     shape = Polygon(border, holes=holes)
     if shape.is_empty or not shape.is_valid or shape.area <= 0:
         raise ValueError("the points do not define a valid polygon")
+    if hole is not None:
+        if hole.is_empty or not hole.is_valid or not shape.contains(hole):
+            raise ValueError("the hole must be a valid geometry inside the border")
+        shape = shape.difference(hole)
     return shape
 
 

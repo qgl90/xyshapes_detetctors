@@ -50,7 +50,7 @@ A complete runnable version is in
 
 ## Sketch: circular hole versus point-defined border
 
-![Box with a circular hole and an arbitrary point-defined border](docs/geometry_examples.png)
+![A box with a circular hole and a point-defined border with a subtracted hole](docs/geometry_examples.png)
 
 For a box with a circular hole:
 
@@ -69,6 +69,7 @@ For an arbitrary border, list the `(x, y)` corners in order while walking
 around its perimeter. The closing point does not need to be repeated:
 
 ```python
+from shapely.geometry import Point
 from xyshapes_detectors import dump_geometries, polygon_from_points
 
 border_points = [
@@ -82,11 +83,14 @@ border_points = [
     (-1100, 150),
 ]
 
-shape = polygon_from_points(border_points)
+# The hole can be any valid Shapely geometry inside the border.
+hole_shape = Point(0, 0).buffer(175)
+shape = polygon_from_points(border_points, hole=hole_shape)
 dump_geometries({"PointDefinedBorder": shape}, "shapes")
 ```
 
-Point-defined holes are also supported. Each hole is another ordered border:
+Point-defined holes are also supported. Each hole is another ordered border,
+and can be used instead of `hole=`:
 
 ```python
 outer = [(-100, -100), (100, -100), (100, 100), (-100, 100)]

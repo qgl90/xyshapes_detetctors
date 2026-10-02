@@ -50,6 +50,19 @@ class GeometryTests(unittest.TestCase):
         self.assertFalse(shape.contains(Point(0, 0)))
         self.assertEqual(len(shape.interiors), 1)
 
+    def test_polygon_from_points_subtracts_hole_shape(self):
+        border = [(-10, -10), (10, -10), (10, 10), (-10, 10)]
+        hole_shape = Point(0, 0).buffer(2)
+        shape = polygon_from_points(border, hole=hole_shape)
+        self.assertFalse(shape.contains(Point(0, 0)))
+        self.assertEqual(len(shape.interiors), 1)
+        self.assertAlmostEqual(shape.area, 400 - hole_shape.area)
+
+    def test_hole_shape_must_be_inside_border(self):
+        border = [(-10, -10), (10, -10), (10, 10), (-10, 10)]
+        with self.assertRaises(ValueError):
+            polygon_from_points(border, hole=Point(10, 0).buffer(2))
+
     def test_invalid_box_dimensions(self):
         invalid = (
             {"width": 0, "height": 10},

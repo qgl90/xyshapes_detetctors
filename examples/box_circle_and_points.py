@@ -7,6 +7,7 @@ import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from shapely.geometry import Point
 from shapely.plotting import plot_polygon
 
 from xyshapes_detectors import box_with_hole, dump_geometries, polygon_from_points
@@ -27,7 +28,8 @@ def build_examples():
         (-700, 650),
         (-1100, 150),
     ]
-    point_shape = polygon_from_points(border_points)
+    point_border_hole = Point(0, 0).buffer(175)
+    point_shape = polygon_from_points(border_points, hole=point_border_hole)
     return box_shape, point_shape, border_points
 
 
@@ -56,7 +58,7 @@ def main():
     axes[1].scatter(xs, ys, color="darkred", zorder=3, label="border points")
     for index, point in enumerate(border_points):
         axes[1].annotate(str(index), point, xytext=(5, 5), textcoords="offset points")
-    axes[1].set_title("Border from ordered (x, y) points")
+    axes[1].set_title("Point-defined border minus a hole shape")
     axes[1].legend(loc="lower right")
 
     for axis in axes:
