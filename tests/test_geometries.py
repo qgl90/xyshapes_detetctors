@@ -4,7 +4,12 @@ from pathlib import Path
 
 from shapely.geometry import Point
 
-from xyshapes_detectors import box_with_hole, dump_geometries, load_geometry
+from xyshapes_detectors import (
+    box_with_hole,
+    dump_geometries,
+    load_geometry,
+    polygon_from_points,
+)
 from xyshapes_detectors.create_geom import all_geometries
 
 
@@ -19,6 +24,9 @@ class GeometryTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             path = dump_geometries({"Box": shape}, directory)[0]
             loaded = load_geometry(path)
+            figure = path.with_suffix(".png")
+            self.assertTrue(figure.is_file())
+            self.assertGreater(figure.stat().st_size, 0)
         self.assertTrue(loaded.equals_exact(shape, tolerance=0))
         self.assertEqual(loaded.area, 19_800)
         self.assertFalse(loaded.contains(Point(0, 0)))
@@ -27,6 +35,20 @@ class GeometryTests(unittest.TestCase):
         shape = box_with_hole(200, 100, hole_radius=10)
         self.assertTrue(shape.is_valid)
         self.assertFalse(shape.contains(Point(0, 0)))
+
+    def test_polygon_from_border_points(self):
+        border = [(-4, -2), (3, -3), (5, 1), (1, 4), (-5, 2)]
+        shape = polygon_from_points(border)
+        self.assertTrue(shape.is_valid)
+        self.assertTrue(shape.contains(Point(0, 0)))
+        self.assertEqual(list(shape.exterior.coords)[0], list(shape.exterior.coords)[-1])
+
+    def test_polygon_from_points_with_hole(self):
+        border = [(-10, -10), (10, -10), (10, 10), (-10, 10)]
+        hole = [(-2, -2), (2, -2), (2, 2), (-2, 2)]
+        shape = polygon_from_points(border, holes=[hole])
+        self.assertFalse(shape.contains(Point(0, 0)))
+        self.assertEqual(len(shape.interiors), 1)
 
     def test_invalid_box_dimensions(self):
         invalid = (
