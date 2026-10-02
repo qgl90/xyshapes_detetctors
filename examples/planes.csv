@@ -1,0 +1,4 @@
+Use,Z,thickness,sigmaX,sigmaY,angle,xyshape,hiteff
+1,2327.5,.02,.055,,0,MyUPShape,1.0
+1,2372.5,.02,.055,,5,MyUPShape,1.0
+
