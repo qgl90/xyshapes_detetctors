@@ -1,4 +1,4 @@
-"""Generate SciFi and Mighty Tracker transverse acceptance shapes."""
+"""Generate Mighty Tracker transverse acceptance shapes."""
 
 import argparse
 
@@ -7,7 +7,45 @@ from shapely import affinity
 from shapely.geometry import Point, Polygon
 from shapely.ops import unary_union
 
-from .geometry_io import dump_geometries
+from .geometry_io import box_with_hole, dump_geometries
+
+
+FT_MODULE_SIZE_X = 529.3
+FT_HEIGHT = 4354.0
+FT_HOLE_SIZE = 260.0
+FT_MODULE_COUNTS = {
+    "FT_8Modules": 8,
+    "FT_10Modules": 10,
+    "FT_12Modules": 12,
+}
+FT_LAYER_SEQUENCE = ("X1", "U", "V", "X2")
+FT_LAYER_ANGLES = {
+    "X1": 0.0,
+    "U": -5.0,
+    "V": 5.0,
+    "X2": 0.0,
+}
+FT_LAYER_Z_OFFSETS = {
+    "X1": -30.0,
+    "U": -10.0,
+    "V": 10.0,
+    "X2": 30.0,
+}
+FT_BOX_DIMENSIONS = {
+    name: (FT_MODULE_SIZE_X * modules, FT_HEIGHT)
+    for name, modules in FT_MODULE_COUNTS.items()
+}
+FT_LOW_LAYOUT = {
+    "T1": (7931.0, "FT_8Modules"),
+    "T2": (8613.0, "FT_8Modules"),
+    "T3": (9298.0, "FT_10Modules"),
+}
+FT_BASELINE_LAYOUT = {
+    "T1": (7931.0, "FT_10Modules"),
+    "T2": (8613.0, "FT_10Modules"),
+    "T3": (9298.0, "FT_12Modules"),
+}
+FT_PLANE_LAYOUT = FT_BASELINE_LAYOUT
 
 
 def _layer_angle(layer):
@@ -69,14 +107,79 @@ def mighty_tracker(flag="FullSciFi", layer="x", fibre_part=True):
 
 
 def ft_geometries():
+    return ft_box_geometries()
+
+
+def ft_box_geometries():
+    return {
+        name: box_with_hole(
+            width,
+            height,
+            hole_width=FT_HOLE_SIZE,
+            hole_height=FT_HOLE_SIZE,
+        )
+        for name, (width, height) in FT_BOX_DIMENSIONS.items()
+    }
+
+
+def ft_layer_geometry(modules, layer):
+    """Return an FT layer with module-count crop applied before stereo rotation."""
+    if modules not in {8, 10, 12}:
+        raise ValueError("modules must be one of 8, 10, or 12")
+    if layer not in FT_LAYER_ANGLES:
+        raise ValueError(f"layer must be one of {', '.join(FT_LAYER_ANGLES)}")
+
+    shape = box_with_hole(
+        FT_MODULE_SIZE_X * modules,
+        FT_HEIGHT,
+        hole_width=FT_HOLE_SIZE,
+        hole_height=FT_HOLE_SIZE,
+    )
+    return affinity.rotate(shape, FT_LAYER_ANGLES[layer], origin=(0, 0))
+
+
+def ft_layer_geometries():
+    """Return reusable X/U/V FT layer shapes for 8, 10, and 12 modules."""
     geometries = {}
-    for design in ("Modest", "FTDR", "Frugal"):
-        for layer in ("x", "u", "v"):
-            geometries[f"{design}_Fibre_{layer}"] = mighty_tracker(design, layer, True)
-        geometries[f"{design}_Pixel_x"] = mighty_tracker(design, "x", False)
-    for layer in ("x", "u", "v"):
-        geometries[f"SciFi_{layer}"] = mighty_tracker("FullSciFi", layer, True)
+    for modules in (8, 10, 12):
+        for layer in ("X", "U", "V"):
+            key = "X1" if layer == "X" else layer
+            geometries[f"FT_{modules}Modules_{layer}"] = ft_layer_geometry(modules, key)
     return geometries
+
+
+def ft_station_layer_layout(station_modules, station_z=None):
+    """Return a station/layer layout using X, U, V, X layer ordering.
+
+    ``station_modules`` maps station names such as ``T1`` to 8, 10, or 12.
+    ``station_z`` maps station names to their center z positions in millimetres;
+    when omitted, the baseline station centers are used.
+    """
+    station_z = station_z or {
+        station: z
+        for station, (z, _) in FT_BASELINE_LAYOUT.items()
+    }
+    layout = {}
+    for station, modules in station_modules.items():
+        for layer in FT_LAYER_SEQUENCE:
+            shape_layer = "X" if layer.startswith("X") else layer
+            layout[f"{station}_{layer}"] = (
+                station_z[station] + FT_LAYER_Z_OFFSETS[layer],
+                f"FT_{modules}Modules_{shape_layer}",
+            )
+    return layout
+
+
+FT_LOW_LAYER_LAYOUT = ft_station_layer_layout({
+    "T1": 8,
+    "T2": 8,
+    "T3": 10,
+})
+FT_BASELINE_LAYER_LAYOUT = ft_station_layer_layout({
+    "T1": 10,
+    "T2": 10,
+    "T3": 12,
+})
 
 
 MightyTracker = mighty_tracker
@@ -93,4 +196,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

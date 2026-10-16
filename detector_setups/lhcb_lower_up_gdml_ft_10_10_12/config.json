@@ -1,0 +1,29 @@
+{
+  "ft": {
+    "stations": {
+      "T1": 10,
+      "T2": 10,
+      "T3": 12
+    }
+  },
+  "include": [
+    "TV",
+    "RICH1",
+    "UP",
+    "MP",
+    "FT",
+    "RICH2",
+    "PicoCal",
+    "MUON"
+  ],
+  "name": "lhcb_lower_up_gdml_ft_10_10_12",
+  "source": "ViewLHCb lower ROOT/GDML extracted surfaces",
+  "tv": {
+    "grouping": "paired_sensor_faces",
+    "z_tolerance_mm": 2.0
+  },
+  "up": {
+    "plane_mode": "all16",
+    "variant": "gdml"
+  }
+}
