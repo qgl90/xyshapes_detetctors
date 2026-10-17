@@ -3,6 +3,8 @@
 `detector_geometry_slides.tex` is the editable Beamer source for the slide
 summary. `assets/` contains the generated geometry summary and six-configuration
 comparison used as figure sources in the deck.
+The UP variant slide labels each border choice and lists the common central
+hole dimensions measured from the saved UP polygons.
 
 Build from this directory with:
 

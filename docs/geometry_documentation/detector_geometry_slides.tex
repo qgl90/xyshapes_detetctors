@@ -93,6 +93,22 @@ TV, RICH1, MP, RICH2, PicoCal, and Muon are shared across the six choices.
 The default catalog selection is UP Y8X6 with SciFi 8/8/10.
 \end{frame}
 
+\begin{frame}{UP variant XY surfaces and central hole}
+\centering
+\includegraphics[page=1,width=0.96\textwidth,height=0.57\textheight,keepaspectratio]{assets/up_variant_comparison.pdf}
+\vspace{1mm}
+\small
+\begin{tabularx}{0.96\textwidth}{@{}l X l@{}}
+\toprule
+Variant & Applied border crop & Central hole [mm] \\
+\midrule
+\texttt{UP\_GDML} & Nominal ViewLHCb/GDML borders & 77.3 $\times$ 79.9 \\
+\texttt{UP\_Y8} & Remove 8 chips at top and bottom & 77.3 $\times$ 79.9 \\
+\texttt{UP\_Y8X6} & Remove 8 top/bottom and 6 left/right chips & 77.3 $\times$ 79.9 \\
+\bottomrule
+\end{tabularx}
+\end{frame}
+
 \begin{frame}{How the acceptance outlines are derived}
 \small
 \begin{tabularx}{\textwidth}{@{}l l X@{}}
@@ -154,7 +170,6 @@ they are not to scale across detector systems.
 \end{columns}
 \end{frame}
 
-\sourcepage{assets/six_configuration_comparison.pdf}{2}
 \sourcepage{assets/six_configuration_comparison.pdf}{3}
 \sourcepage{assets/six_configuration_comparison.pdf}{4}
 
