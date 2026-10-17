@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "default_configuration": "lhcb_lower_up_y8x6_ft_8_8_10",
+  "available_choices": {
+    "detectors": ["TV", "RICH1", "UP", "MP", "FT", "RICH2", "PicoCal", "MUON"],
+    "UP": {
+      "variants": [
+        {"id": "gdml", "label": "Nominal GDML acceptance"},
+        {"id": "y8", "label": "Top/bottom cutoff"},
+        {"id": "y8x6", "label": "Top/bottom and left/right cutoff"}
+      ],
+      "plane_modes": ["all16", "four"]
+    },
+    "FT": {
+      "module_counts_per_station": [8, 10, 12],
+      "stations": ["T1", "T2", "T3"],
+      "layer_sequence_per_station": ["X", "U", "V", "X"]
+    },
+    "TV": {"layer_definition": "Union each two nearby-z sensor-face acceptances; 50 logical layers."},
+    "MP": {"layer_definition": "Five XY unions of the extracted pixel tiles."},
+    "RICH1": {"planes": ["rich1_layerEntry", "rich1_layerExit"]},
+    "RICH2": {"planes": ["rich2_layerEntry", "rich2_layerExit"]},
+    "PicoCal": {"planes": ["picocal_layerEntry", "picocal_layerExit"]},
+    "MUON": {"stations": ["muon_m2", "muon_m3", "muon_m4", "muon_m5"]}
+  },
+  "configurations": [
+    {
+      "id": "lhcb_lower_up_gdml_ft_8_8_10",
+      "label": "UP gdml / SciFi 8-8-10",
+      "description": "Nominal UP acceptance with reduced SciFi modules.",
+      "setup": "lhcb_lower_up_gdml_ft_8_8_10",
+      "shape_dirs": ["shared_shapes", "up_variants/gdml"],
+      "family": "six-way comparison"
+    },
+    {
+      "id": "lhcb_lower_up_y8_ft_8_8_10",
+      "label": "UP y8 / SciFi 8-8-10",
+      "description": "Y8 UP cutoff with reduced SciFi modules.",
+      "setup": "lhcb_lower_up_y8_ft_8_8_10",
+      "shape_dirs": ["shared_shapes", "up_variants/y8"],
+      "family": "six-way comparison"
+    },
+    {
+      "id": "lhcb_lower_up_y8x6_ft_8_8_10",
+      "label": "UP y8x6 / SciFi 8-8-10",
+      "description": "Y8X6 UP cutoff with reduced SciFi modules.",
+      "setup": "lhcb_lower_up_y8x6_ft_8_8_10",
+      "shape_dirs": ["shared_shapes", "up_variants/y8x6"],
+      "family": "six-way comparison"
+    },
+    {
+      "id": "lhcb_lower_up_gdml_ft_10_10_12",
+      "label": "UP gdml / SciFi 10-10-12",
+      "description": "Nominal UP acceptance with baseline SciFi modules.",
+      "setup": "lhcb_lower_up_gdml_ft_10_10_12",
+      "shape_dirs": ["shared_shapes", "up_variants/gdml"],
+      "family": "six-way comparison"
+    },
+    {
+      "id": "lhcb_lower_up_y8_ft_10_10_12",
+      "label": "UP y8 / SciFi 10-10-12",
+      "description": "Y8 UP cutoff with baseline SciFi modules.",
+      "setup": "lhcb_lower_up_y8_ft_10_10_12",
+      "shape_dirs": ["shared_shapes", "up_variants/y8"],
+      "family": "six-way comparison"
+    },
+    {
+      "id": "lhcb_lower_up_y8x6_ft_10_10_12",
+      "label": "UP y8x6 / SciFi 10-10-12",
+      "description": "Y8X6 UP cutoff with baseline SciFi modules.",
+      "setup": "lhcb_lower_up_y8x6_ft_10_10_12",
+      "shape_dirs": ["shared_shapes", "up_variants/y8x6"],
+      "family": "six-way comparison"
+    }
+  ]
+}
