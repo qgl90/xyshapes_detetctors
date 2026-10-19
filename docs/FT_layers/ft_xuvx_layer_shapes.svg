@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="900" viewBox="0 0 1280 900">
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<text x="36" y="48" font-family="Arial, sans-serif" font-size="28" fill="#1f2937" font-weight="700" text-anchor="start">FT reusable layer shapes: module crop then stereo rotation</text>
+<text x="36" y="78" font-family="Arial, sans-serif" font-size="15" fill="#475569" font-weight="400" text-anchor="start">X is unrotated, U is -5 deg, V is +5 deg. The crop is applied before rotation.</text>
+<text x="40.0" y="118" font-family="Arial, sans-serif" font-size="18" fill="#1f2937" font-weight="700" text-anchor="start">8 modules X</text>
+<text x="40.0" y="139" font-family="Arial, sans-serif" font-size="13" fill="#475569" font-weight="400" text-anchor="start">nominal x width 4234.4 mm; angle +0.0 deg</text>
+<path d="M 50.18 337.82 L 50.18 168.18 L 215.16 168.18 L 215.16 337.82 L 50.18 337.82 Z M 137.74 247.93 L 127.60 247.93 L 127.60 258.07 L 137.74 258.07 L 137.74 247.93 Z" fill="#2563eb" fill-opacity="0.34" stroke="#2563eb" stroke-width="1.1" fill-rule="evenodd"/>
+<text x="466.6666666666667" y="118" font-family="Arial, sans-serif" font-size="18" fill="#1f2937" font-weight="700" text-anchor="start">8 modules U</text>
+<text x="466.6666666666667" y="139" font-family="Arial, sans-serif" font-size="13" fill="#475569" font-weight="400" text-anchor="start">nominal x width 4234.4 mm; angle -5.0 deg</text>
+<path d="M 476.85 324.52 L 490.52 168.18 L 642.57 181.48 L 628.89 337.82 L 476.85 324.52 Z M 564.78 248.74 L 555.45 247.92 L 554.63 257.26 L 563.97 258.08 L 564.78 248.74 Z" fill="#d97706" fill-opacity="0.34" stroke="#d97706" stroke-width="1.1" fill-rule="evenodd"/>
+<text x="893.3333333333334" y="118" font-family="Arial, sans-serif" font-size="18" fill="#1f2937" font-weight="700" text-anchor="start">8 modules V</text>
+<text x="893.3333333333334" y="139" font-family="Arial, sans-serif" font-size="13" fill="#475569" font-weight="400" text-anchor="start">nominal x width 4234.4 mm; angle +5.0 deg</text>
+<path d="M 917.19 337.82 L 903.51 181.48 L 1055.56 168.18 L 1069.24 324.52 L 917.19 337.82 Z M 990.63 247.92 L 981.30 248.74 L 982.11 258.08 L 991.45 257.26 L 990.63 247.92 Z" fill="#16a34a" fill-opacity="0.34" stroke="#16a34a" stroke-width="1.1" fill-rule="evenodd"/>
+<text x="40.0" y="368" font-family="Arial, sans-serif" font-size="18" fill="#1f2937" font-weight="700" text-anchor="start">10 modules X</text>
+<text x="40.0" y="389" font-family="Arial, sans-serif" font-size="13" fill="#475569" font-weight="400" text-anchor="start">nominal x width 5293.0 mm; angle +0.0 deg</text>
+<path d="M 52.09 585.91 L 52.09 420.09 L 253.67 420.09 L 253.67 585.91 L 52.09 585.91 Z M 157.83 498.05 L 147.93 498.05 L 147.93 507.95 L 157.83 507.95 L 157.83 498.05 Z" fill="#2563eb" fill-opacity="0.34" stroke="#2563eb" stroke-width="1.1" fill-rule="evenodd"/>
+<text x="466.6666666666667" y="368" font-family="Arial, sans-serif" font-size="18" fill="#1f2937" font-weight="700" text-anchor="start">10 modules U</text>
+<text x="466.6666666666667" y="389" font-family="Arial, sans-serif" font-size="13" fill="#475569" font-weight="400" text-anchor="start">nominal x width 5293.0 mm; angle -5.0 deg</text>
+<path d="M 478.43 570.23 L 491.60 419.76 L 674.51 435.77 L 661.35 586.24 L 478.43 570.23 Z M 581.36 498.90 L 572.37 498.11 L 571.59 507.10 L 580.57 507.89 L 581.36 498.90 Z" fill="#d97706" fill-opacity="0.34" stroke="#d97706" stroke-width="1.1" fill-rule="evenodd"/>
+<text x="893.3333333333334" y="368" font-family="Arial, sans-serif" font-size="18" fill="#1f2937" font-weight="700" text-anchor="start">10 modules V</text>
+<text x="893.3333333333334" y="389" font-family="Arial, sans-serif" font-size="13" fill="#475569" font-weight="400" text-anchor="start">nominal x width 5293.0 mm; angle +5.0 deg</text>
+<path d="M 918.26 586.24 L 905.10 435.77 L 1088.02 419.76 L 1101.18 570.23 L 918.26 586.24 Z M 1007.24 498.11 L 998.25 498.90 L 999.04 507.89 L 1008.02 507.10 L 1007.24 498.11 Z" fill="#16a34a" fill-opacity="0.34" stroke="#16a34a" stroke-width="1.1" fill-rule="evenodd"/>
+<text x="40.0" y="618" font-family="Arial, sans-serif" font-size="18" fill="#1f2937" font-weight="700" text-anchor="start">12 modules X</text>
+<text x="40.0" y="639" font-family="Arial, sans-serif" font-size="13" fill="#475569" font-weight="400" text-anchor="start">nominal x width 6351.6 mm; angle +0.0 deg</text>
+<path d="M 54.15 833.85 L 54.15 672.15 L 290.03 672.15 L 290.03 833.85 L 54.15 833.85 Z M 176.92 748.17 L 167.26 748.17 L 167.26 757.83 L 176.92 757.83 L 176.92 748.17 Z" fill="#2563eb" fill-opacity="0.34" stroke="#2563eb" stroke-width="1.1" fill-rule="evenodd"/>
+<text x="466.6666666666667" y="618" font-family="Arial, sans-serif" font-size="18" fill="#1f2937" font-weight="700" text-anchor="start">12 modules U</text>
+<text x="466.6666666666667" y="639" font-family="Arial, sans-serif" font-size="13" fill="#475569" font-weight="400" text-anchor="start">nominal x width 6351.6 mm; angle -5.0 deg</text>
+<path d="M 480.09 816.11 L 492.75 671.42 L 703.82 689.89 L 691.16 834.58 L 480.09 816.11 Z M 596.65 749.06 L 588.01 748.30 L 587.26 756.94 L 595.90 757.70 L 596.65 749.06 Z" fill="#d97706" fill-opacity="0.34" stroke="#d97706" stroke-width="1.1" fill-rule="evenodd"/>
+<text x="893.3333333333334" y="618" font-family="Arial, sans-serif" font-size="18" fill="#1f2937" font-weight="700" text-anchor="start">12 modules V</text>
+<text x="893.3333333333334" y="639" font-family="Arial, sans-serif" font-size="13" fill="#475569" font-weight="400" text-anchor="start">nominal x width 6351.6 mm; angle +5.0 deg</text>
+<path d="M 919.42 834.58 L 906.76 689.89 L 1117.83 671.42 L 1130.48 816.11 L 919.42 834.58 Z M 1022.56 748.30 L 1013.92 749.06 L 1014.68 757.70 L 1023.32 756.94 L 1022.56 748.30 Z" fill="#16a34a" fill-opacity="0.34" stroke="#16a34a" stroke-width="1.1" fill-rule="evenodd"/>
+</svg>

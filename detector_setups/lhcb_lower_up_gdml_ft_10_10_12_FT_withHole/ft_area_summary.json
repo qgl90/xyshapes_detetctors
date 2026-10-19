@@ -1,0 +1,98 @@
+[
+  {
+    "plane": "scifi_layer1_T1_X1",
+    "z_mm": 7902.7,
+    "source_area_mm2": 22978122.0,
+    "kept_area_mm2": 21665153.898628592,
+    "removed_area_mm2": 1312968.1013714075,
+    "removed_percent": 5.713992211249497
+  },
+  {
+    "plane": "scifi_layer2_T1_U",
+    "z_mm": 7947.699,
+    "source_area_mm2": 22978121.999999996,
+    "kept_area_mm2": 21665153.89862859,
+    "removed_area_mm2": 1312968.1013714075,
+    "removed_percent": 5.713992211249497
+  },
+  {
+    "plane": "scifi_layer3_T1_V",
+    "z_mm": 8032.701,
+    "source_area_mm2": 22978121.999999996,
+    "kept_area_mm2": 21665153.898628585,
+    "removed_area_mm2": 1312968.1013714112,
+    "removed_percent": 5.7139922112495185
+  },
+  {
+    "plane": "scifi_layer4_T1_X2",
+    "z_mm": 8077.7,
+    "source_area_mm2": 22978122.0,
+    "kept_area_mm2": 21665153.898628592,
+    "removed_area_mm2": 1312968.1013714075,
+    "removed_percent": 5.713992211249497
+  },
+  {
+    "plane": "scifi_layer5_T2_X1",
+    "z_mm": 8524.7,
+    "source_area_mm2": 22978122.0,
+    "kept_area_mm2": 21665153.898628592,
+    "removed_area_mm2": 1312968.1013714075,
+    "removed_percent": 5.713992211249497
+  },
+  {
+    "plane": "scifi_layer6_T2_U",
+    "z_mm": 8569.699,
+    "source_area_mm2": 22978121.999999996,
+    "kept_area_mm2": 21665153.89862859,
+    "removed_area_mm2": 1312968.1013714075,
+    "removed_percent": 5.713992211249497
+  },
+  {
+    "plane": "scifi_layer7_T2_V",
+    "z_mm": 8654.701,
+    "source_area_mm2": 22978121.999999996,
+    "kept_area_mm2": 21665153.898628585,
+    "removed_area_mm2": 1312968.1013714112,
+    "removed_percent": 5.7139922112495185
+  },
+  {
+    "plane": "scifi_layer8_T2_X2",
+    "z_mm": 8699.7,
+    "source_area_mm2": 22978122.0,
+    "kept_area_mm2": 21665153.898628592,
+    "removed_area_mm2": 1312968.1013714075,
+    "removed_percent": 5.713992211249497
+  },
+  {
+    "plane": "scifi_layer9_T3_X1",
+    "z_mm": 9209.7,
+    "source_area_mm2": 27587266.4,
+    "kept_area_mm2": 26274298.29862859,
+    "removed_area_mm2": 1312968.1013714075,
+    "removed_percent": 4.759326576015543
+  },
+  {
+    "plane": "scifi_layer10_T3_U",
+    "z_mm": 9254.699,
+    "source_area_mm2": 27587266.39999999,
+    "kept_area_mm2": 26274298.298628587,
+    "removed_area_mm2": 1312968.1013714038,
+    "removed_percent": 4.759326576015532
+  },
+  {
+    "plane": "scifi_layer11_T3_V",
+    "z_mm": 9339.701,
+    "source_area_mm2": 27587266.399999995,
+    "kept_area_mm2": 26274298.298628587,
+    "removed_area_mm2": 1312968.1013714075,
+    "removed_percent": 4.759326576015543
+  },
+  {
+    "plane": "scifi_layer12_T3_X2",
+    "z_mm": 9384.7,
+    "source_area_mm2": 27587266.4,
+    "kept_area_mm2": 26274298.29862859,
+    "removed_area_mm2": 1312968.1013714075,
+    "removed_percent": 4.759326576015543
+  }
+]

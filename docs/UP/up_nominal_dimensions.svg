@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="760" viewBox="0 0 860 760">
+<rect width="100%" height="100%" fill="#f7f8fb" />
+<text x="32.000" y="42.000" fill="#17202a" font-size="24" font-family="Arial, sans-serif" font-weight="700">UP nominal geometry</text>
+<text x="32.000" y="68.000" fill="#4f5f73" font-size="13" font-family="Arial, sans-serif">UP active XY acceptance with border and central hole dimensions.</text>
+<path d="M 100.000 660.000 L 100.000 100.000 L 709.817 100.000 L 709.817 660.000 L 100.000 660.000 Z M 421.732 362.616 L 388.084 362.616 L 388.084 397.384 L 421.732 397.384 L 421.732 362.616 Z" fill="#4c82c9" fill-opacity="0.70" stroke="#1f2f46" stroke-width="1.8" fill-rule="evenodd" />
+<line x1="100.000" y1="74.000" x2="709.817" y2="74.000" stroke="#17202a" stroke-width="1.2" />
+<line x1="100.000" y1="66.000" x2="100.000" y2="82.000" stroke="#17202a" stroke-width="1.2" />
+<line x1="709.817" y1="66.000" x2="709.817" y2="82.000" stroke="#17202a" stroke-width="1.2" />
+<text x="330.908" y="66.000" fill="#17202a" font-size="14" font-family="Arial, sans-serif" font-weight="700">outer X = 1394.1 mm</text>
+<line x1="126.000" y1="100.000" x2="126.000" y2="660.000" stroke="#17202a" stroke-width="1.2" />
+<line x1="118.000" y1="100.000" x2="134.000" y2="100.000" stroke="#17202a" stroke-width="1.2" />
+<line x1="118.000" y1="660.000" x2="134.000" y2="660.000" stroke="#17202a" stroke-width="1.2" />
+<text x="138.000" y="380.000" fill="#17202a" font-size="14" font-family="Arial, sans-serif" font-weight="700">outer Y = 1280.2 mm</text>
+<line x1="388.084" y1="346.616" x2="421.732" y2="346.616" stroke="#9b2d2d" stroke-width="1.2" />
+<line x1="388.084" y1="340.616" x2="388.084" y2="352.616" stroke="#9b2d2d" stroke-width="1.2" />
+<line x1="421.732" y1="340.616" x2="421.732" y2="352.616" stroke="#9b2d2d" stroke-width="1.2" />
+<text x="439.732" y="348.616" fill="#9b2d2d" font-size="13" font-family="Arial, sans-serif" font-weight="700">hole X = 76.9 mm</text>
+<line x1="437.732" y1="362.616" x2="437.732" y2="397.384" stroke="#9b2d2d" stroke-width="1.2" />
+<line x1="431.732" y1="362.616" x2="443.732" y2="362.616" stroke="#9b2d2d" stroke-width="1.2" />
+<line x1="431.732" y1="397.384" x2="443.732" y2="397.384" stroke="#9b2d2d" stroke-width="1.2" />
+<text x="449.732" y="385.000" fill="#9b2d2d" font-size="13" font-family="Arial, sans-serif" font-weight="700">hole Y = 79.5 mm</text>
+<text x="32.000" y="712.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">bounds: x=[-697.1, 697.1] mm, y=[-640.1, 640.1] mm</text>
+</svg>

@@ -1,0 +1,10 @@
+{
+  "sensors": 200,
+  "modules": 50,
+  "centre_z_range_mm": [
+    -287.996,
+    558.146
+  ],
+  "upstream_modules_at_origin": 21,
+  "max_stored_xy_difference_mm2": 0.0
+}

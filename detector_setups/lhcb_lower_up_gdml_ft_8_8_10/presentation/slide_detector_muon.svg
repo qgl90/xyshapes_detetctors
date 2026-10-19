@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<text x="46.00" y="46.00" font-family="Arial, sans-serif" font-size="26" fill="#17202a" font-weight="700" text-anchor="start">MUON XY surfaces</text>
+<text x="46.00" y="74.00" font-family="Arial, sans-serif" font-size="14" fill="#475569" font-weight="400" text-anchor="start">4 planes, z = 15270.000 to 18870.000 mm, XY envelope = 12119.2 x 10057.3 mm</text>
+<rect x="46.00" y="104.00" width="640.00" height="500.00" fill="#ffffff" stroke="#d0d7e2"/>
+<path d="M 614.67 128.00 L 614.67 580.00 L 70.00 580.00 L 70.00 128.00 L 614.67 128.00 Z M 328.66 365.13 L 356.00 365.13 L 356.00 342.87 L 328.66 342.87 L 328.66 365.13 Z" fill="#dbeafe" fill-opacity="0.72" stroke="#2563eb" stroke-width="1.4" fill-rule="evenodd"/>
+<text x="58.00" y="628.00" font-family="Arial, sans-serif" font-size="12" fill="#475569" font-weight="400" text-anchor="start">x-y view; holes are shown by white cutouts where present</text>
+<text x="740.00" y="140.00" font-family="Arial, sans-serif" font-size="12" fill="#475569" font-weight="400" text-anchor="start">z placement of all planes</text>
+<line x1="740.00" y1="148.00" x2="1170.00" y2="148.00" stroke="#64748b" stroke-width="1.2"/>
+<line x1="740.00" y1="142.00" x2="740.00" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="883.33" y1="142.00" x2="883.33" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="1026.67" y1="142.00" x2="1026.67" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="1170.00" y1="142.00" x2="1170.00" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<text x="740.00" y="172.00" font-family="Arial, sans-serif" font-size="11" fill="#475569" font-weight="400" text-anchor="start">15270.0 mm</text>
+<text x="1170.00" y="172.00" font-family="Arial, sans-serif" font-size="11" fill="#475569" font-weight="400" text-anchor="end">18870.0 mm</text>
+<text x="740.00" y="220.00" font-family="Arial, sans-serif" font-size="15" fill="#17202a" font-weight="700" text-anchor="start">Layers</text>
+<text x="740.00" y="246.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">muon_m2: z=15270.000</text>
+<text x="740.00" y="266.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">muon_m3: z=16470.000</text>
+<text x="740.00" y="286.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">muon_m4: z=17670.000</text>
+<text x="740.00" y="306.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">muon_m5: z=18870.000</text>
+</svg>

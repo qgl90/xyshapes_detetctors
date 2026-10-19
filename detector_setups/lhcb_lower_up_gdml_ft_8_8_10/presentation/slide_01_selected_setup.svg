@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<text x="52.00" y="52.00" font-family="Arial, sans-serif" font-size="28" fill="#17202a" font-weight="700" text-anchor="start">LHCb XY surface setup: lhcb_lower_up_gdml_ft_8_8_10</text>
+<text x="52.00" y="80.00" font-family="Arial, sans-serif" font-size="15" fill="#475569" font-weight="400" text-anchor="start">Selected reusable detector planes for transport and acceptance masks.</text>
+<text x="58.00" y="122.00" font-family="Arial, sans-serif" font-size="14" fill="#17202a" font-weight="700" text-anchor="start">detector</text>
+<text x="170.00" y="122.00" font-family="Arial, sans-serif" font-size="14" fill="#17202a" font-weight="700" text-anchor="start">surfaces</text>
+<text x="235.00" y="122.00" font-family="Arial, sans-serif" font-size="14" fill="#17202a" font-weight="700" text-anchor="start">fired layers</text>
+<text x="340.00" y="122.00" font-family="Arial, sans-serif" font-size="14" fill="#17202a" font-weight="700" text-anchor="start">z range [mm]</text>
+<text x="525.00" y="122.00" font-family="Arial, sans-serif" font-size="14" fill="#17202a" font-weight="700" text-anchor="start">XY envelope [mm]</text>
+<text x="730.00" y="122.00" font-family="Arial, sans-serif" font-size="14" fill="#17202a" font-weight="700" text-anchor="start">description</text>
+<text x="58.00" y="148.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="700" text-anchor="start">TV</text>
+<text x="185.00" y="148.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">50</text>
+<text x="255.00" y="148.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">50</text>
+<text x="340.00" y="148.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">-287.5 to 557.6</text>
+<text x="525.00" y="148.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">90.3 x 92.0</text>
+<text x="730.00" y="148.00" font-family="Arial, sans-serif" font-size="12" fill="#334155" font-weight="400" text-anchor="start">VELO/TV layers formed by unioning the nearby-z sensor faces in each layer.</text>
+<text x="58.00" y="173.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="700" text-anchor="start">RICH1</text>
+<text x="185.00" y="173.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">2</text>
+<text x="255.00" y="173.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">2</text>
+<text x="340.00" y="173.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">795.0 to 2237.2</text>
+<text x="525.00" y="173.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">1384.1 x 1142.5</text>
+<text x="730.00" y="173.00" font-family="Arial, sans-serif" font-size="12" fill="#334155" font-weight="400" text-anchor="start">Projective RICH1 radiator entry/exit surfaces from angular acceptance.</text>
+<text x="58.00" y="198.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="700" text-anchor="start">UP</text>
+<text x="185.00" y="198.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">16</text>
+<text x="255.00" y="198.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">4</text>
+<text x="340.00" y="198.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">2314.0 to 2656.0</text>
+<text x="525.00" y="198.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">1393.7 x 1279.8</text>
+<text x="730.00" y="198.00" font-family="Arial, sans-serif" font-size="12" fill="#334155" font-weight="400" text-anchor="start">Upstream Tracker surfaces; choose nominal GDML or Yisheng-inspired border crops.</text>
+<text x="58.00" y="223.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="700" text-anchor="start">MP</text>
+<text x="185.00" y="223.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">5</text>
+<text x="255.00" y="223.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">5</text>
+<text x="340.00" y="223.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">7665.5 to 9132.5</text>
+<text x="525.00" y="223.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">3288.4 x 672.6</text>
+<text x="730.00" y="223.00" font-family="Arial, sans-serif" font-size="12" fill="#334155" font-weight="400" text-anchor="start">Five Mighty Pixel layers, each formed from the union of its extracted tiles.</text>
+<text x="58.00" y="248.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="700" text-anchor="start">FT</text>
+<text x="185.00" y="248.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">12</text>
+<text x="255.00" y="248.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">12</text>
+<text x="340.00" y="248.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">7902.7 to 9384.7</text>
+<text x="525.00" y="248.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">5652.3 x 4798.7</text>
+<text x="730.00" y="248.00" font-family="Arial, sans-serif" font-size="12" fill="#334155" font-weight="400" text-anchor="start">Mighty Tracker X,U,V,X stations; choose 8/10/12 module widths per T station.</text>
+<text x="58.00" y="273.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="700" text-anchor="start">RICH2</text>
+<text x="185.00" y="273.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">2</text>
+<text x="255.00" y="273.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">2</text>
+<text x="340.00" y="273.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">9487.5 to 11839.2</text>
+<text x="525.00" y="273.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">2855.1 x 2375.8</text>
+<text x="730.00" y="273.00" font-family="Arial, sans-serif" font-size="12" fill="#334155" font-weight="400" text-anchor="start">Projective RICH2 radiator entry/exit surfaces from angular acceptance.</text>
+<text x="58.00" y="298.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="700" text-anchor="start">PicoCal</text>
+<text x="185.00" y="298.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">2</text>
+<text x="255.00" y="298.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">2</text>
+<text x="340.00" y="298.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">12565.9 to 12601.0</text>
+<text x="525.00" y="298.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">7801.6 x 6338.8</text>
+<text x="730.00" y="298.00" font-family="Arial, sans-serif" font-size="12" fill="#334155" font-weight="400" text-anchor="start">Two front-region PicoCal surfaces, entry and exit, as a simple volume proxy.</text>
+<text x="58.00" y="323.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="700" text-anchor="start">MUON</text>
+<text x="185.00" y="323.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">4</text>
+<text x="255.00" y="323.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">4</text>
+<text x="340.00" y="323.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">15270.0 to 18870.0</text>
+<text x="525.00" y="323.00" font-family="Arial, sans-serif" font-size="14" fill="#334155" font-weight="400" text-anchor="start">12119.2 x 10057.3</text>
+<text x="730.00" y="323.00" font-family="Arial, sans-serif" font-size="12" fill="#334155" font-weight="400" text-anchor="start">Muon stations M2-M5, rectangular acceptances with central beam holes.</text>
+<rect x="52.00" y="610.00" width="1176.00" height="58.00" fill="#ffffff" stroke="#cbd5e1" rx="5"/>
+<text x="72.00" y="635.00" font-family="Arial, sans-serif" font-size="14" fill="#17202a" font-weight="700" text-anchor="start">Configuration</text>
+<text x="72.00" y="657.00" font-family="Arial, sans-serif" font-size="11" fill="#475569" font-weight="400" text-anchor="start">{"ft": {"stations": {"T1": 8, "T2": 8, "T3": 10}}, "include": ["TV", "RICH1", "UP", "MP", "FT", "RICH2", "PicoCal", "MUON"], "name": "lhcb_lower_up_gdml_ft_8_8_10", "source": "ViewLHCb lower ROOT/GDML extracted surfaces", "tv": {"grouping": "paired_sensor_faces", "z_tolerance_mm": 2.0}, "up": {"plane_mode": "all16", "variant": "gdml"}}</text>
+</svg>

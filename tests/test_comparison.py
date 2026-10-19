@@ -100,7 +100,7 @@ class SavedTVGeometryTests(unittest.TestCase):
         expected = count_tv_hits(list(grouped.values()), tx, ty)
         for up in ["gdml", "y8", "y8x6"]:
             for ft in ["8_8_10", "10_10_12"]:
-                suffix = f"up_{up}_ft_{ft}"
+                suffix = f"up_{up}_ft_{ft}_withHole"
                 np.testing.assert_array_equal(columns[f"nTV_{suffix}"], expected)
                 np.testing.assert_array_equal(columns[f"hasTV_3Hits_{suffix}"], expected >= 3)
                 np.testing.assert_array_equal(columns[f"hasTV_4Hits_{suffix}"], expected >= 4)
@@ -110,13 +110,13 @@ class SavedTVGeometryTests(unittest.TestCase):
     def test_border_tracks_expose_up_and_ft_acceptance_differences(self):
         columns = label_tracks(dict(x=0, y=0, z=0, tx=[.25, .29, .1],
                                    ty=[.05, .05, .22], q_over_p=0), field=zero_field())
-        nominal = columns["nUP_up_gdml_ft_8_8_10"]
-        ycrop = columns["nUP_up_y8_ft_8_8_10"]
-        xycrop = columns["nUP_up_y8x6_ft_8_8_10"]
+        nominal = columns["nUP_up_gdml_ft_8_8_10_withHole"]
+        ycrop = columns["nUP_up_y8_ft_8_8_10_withHole"]
+        xycrop = columns["nUP_up_y8x6_ft_8_8_10_withHole"]
         self.assertTrue(np.all(nominal >= ycrop))
         self.assertTrue(np.all(ycrop >= xycrop))
         self.assertTrue(np.any(nominal > xycrop))
-        low = columns["nFT_up_gdml_ft_8_8_10"]
-        baseline = columns["nFT_up_gdml_ft_10_10_12"]
+        low = columns["nFT_up_gdml_ft_8_8_10_withHole"]
+        baseline = columns["nFT_up_gdml_ft_10_10_12_withHole"]
         self.assertTrue(np.all(baseline >= low))
         self.assertTrue(np.any(baseline > low))

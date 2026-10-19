@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="620" viewBox="0 0 620 620">
+<rect width="100%" height="100%" fill="#f7f8fb" />
+<text x="28.000" y="38.000" fill="#17202a" font-size="22" font-family="Arial, sans-serif" font-weight="700">TV active area, rotated 45 degrees</text>
+<text x="28.000" y="62.000" fill="#4f5f73" font-size="13" font-family="Arial, sans-serif">outer square: 50 x 50 mm; hole: 7.2 x 7.2 mm</text>
+<polygon points="310.000,540.000 80.000,310.000 310.000,80.000 540.000,310.000" fill="#4c82c9" fill-opacity="0.72" stroke="#1f2f46" stroke-width="2" />
+<polygon points="310.000,276.880 276.880,310.000 310.000,343.120 343.120,310.000" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="2" />
+<line x1="100.000" y1="310.000" x2="520.000" y2="310.000" stroke="#1f2f46" stroke-width="0.8" stroke-dasharray="5 5" opacity="0.55" />
+<line x1="310.000" y1="100.000" x2="310.000" y2="520.000" stroke="#1f2f46" stroke-width="0.8" stroke-dasharray="5 5" opacity="0.55" />
+</svg>

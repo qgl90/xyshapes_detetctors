@@ -1,0 +1,84 @@
+{
+  "source": "View_LHCb_run5/LHCb_lower-scenario-Sep2026.root",
+  "masks": "docs/TV/review/tv_sensor_masks.pickle",
+  "origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "field": "none",
+  "material": "none",
+  "azimuth_weighting": "uniform at each eta; midpoint quadrature",
+  "logical_counting": "any sensor hit per module, at actual sensor centre Z",
+  "layers": 50,
+  "reachable_layers": 29,
+  "eta_range": [
+    1.0,
+    7.0
+  ],
+  "n_eta": 601,
+  "n_phi": 1440,
+  "rays": 865440,
+  "maximum_nTV": 11,
+  "convergence": {
+    "max_mean_hit_difference": 0.005208333333333037,
+    "max_acceptance3_difference": 0.00208333333333334,
+    "max_acceptance4_difference": 0.0038194444444443754
+  },
+  "samples": [
+    {
+      "eta": 2.0,
+      "mean_nTV": 4.486111111111111,
+      "acceptance_ge3": 1.0,
+      "acceptance_ge4": 0.9652777777777778
+    },
+    {
+      "eta": 2.5,
+      "mean_nTV": 7.225,
+      "acceptance_ge3": 1.0,
+      "acceptance_ge4": 1.0
+    },
+    {
+      "eta": 3.0,
+      "mean_nTV": 7.668055555555555,
+      "acceptance_ge3": 1.0,
+      "acceptance_ge4": 1.0
+    },
+    {
+      "eta": 3.5,
+      "mean_nTV": 9.188888888888888,
+      "acceptance_ge3": 1.0,
+      "acceptance_ge4": 1.0
+    },
+    {
+      "eta": 4.0,
+      "mean_nTV": 6.5465277777777775,
+      "acceptance_ge3": 1.0,
+      "acceptance_ge4": 1.0
+    },
+    {
+      "eta": 4.5,
+      "mean_nTV": 4.019444444444445,
+      "acceptance_ge3": 1.0,
+      "acceptance_ge4": 0.9979166666666667
+    },
+    {
+      "eta": 5.0,
+      "mean_nTV": 1.7319444444444445,
+      "acceptance_ge3": 0.3819444444444444,
+      "acceptance_ge4": 0.0
+    },
+    {
+      "eta": 5.5,
+      "mean_nTV": 0.0,
+      "acceptance_ge3": 0.0,
+      "acceptance_ge4": 0.0
+    },
+    {
+      "eta": 6.0,
+      "mean_nTV": 0.0,
+      "acceptance_ge3": 0.0,
+      "acceptance_ge4": 0.0
+    }
+  ]
+}

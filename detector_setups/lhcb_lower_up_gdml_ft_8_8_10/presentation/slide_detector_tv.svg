@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<text x="46.00" y="46.00" font-family="Arial, sans-serif" font-size="26" fill="#17202a" font-weight="700" text-anchor="start">TV XY surfaces</text>
+<text x="46.00" y="74.00" font-family="Arial, sans-serif" font-size="14" fill="#475569" font-weight="400" text-anchor="start">50 planes, z = -287.500 to 557.650 mm, XY envelope = 90.3 x 92.0 mm</text>
+<rect x="46.00" y="104.00" width="640.00" height="500.00" fill="#ffffff" stroke="#d0d7e2"/>
+<path d="M 114.45 401.54 L 114.45 401.54 L 70.00 357.09 L 203.94 223.15 L 201.42 220.63 L 244.83 177.22 L 240.06 172.45 L 284.51 128.00 L 419.00 262.50 L 375.59 305.90 L 379.24 309.55 L 425.74 263.05 L 469.15 306.46 L 513.60 350.91 L 379.66 484.85 L 382.17 487.37 L 338.77 530.78 L 343.54 535.55 L 299.09 580.00 L 164.59 445.50 L 208.00 402.10 L 204.36 398.45 L 157.86 444.95 L 114.45 401.54 Z M 248.81 354.00 L 291.80 396.99 L 334.79 354.00 L 291.80 311.01 L 248.81 354.00 Z" fill="#dbeafe" fill-opacity="0.72" stroke="#2563eb" stroke-width="1.4" fill-rule="evenodd"/>
+<text x="58.00" y="628.00" font-family="Arial, sans-serif" font-size="12" fill="#475569" font-weight="400" text-anchor="start">x-y view; holes are shown by white cutouts where present</text>
+<text x="740.00" y="140.00" font-family="Arial, sans-serif" font-size="12" fill="#475569" font-weight="400" text-anchor="start">z placement of all planes</text>
+<line x1="740.00" y1="148.00" x2="1170.00" y2="148.00" stroke="#64748b" stroke-width="1.2"/>
+<line x1="740.00" y1="142.00" x2="740.00" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="746.36" y1="142.00" x2="746.36" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="752.72" y1="142.00" x2="752.72" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="759.08" y1="142.00" x2="759.08" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="765.44" y1="142.00" x2="765.44" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="771.80" y1="142.00" x2="771.80" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="778.16" y1="142.00" x2="778.16" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="784.52" y1="142.00" x2="784.52" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="801.05" y1="142.00" x2="801.05" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="807.41" y1="142.00" x2="807.41" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="821.41" y1="142.00" x2="821.41" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="827.77" y1="142.00" x2="827.77" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="838.07" y1="142.00" x2="838.07" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="844.43" y1="142.00" x2="844.43" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="849.06" y1="142.00" x2="849.06" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="855.42" y1="142.00" x2="855.42" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="860.86" y1="142.00" x2="860.86" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="867.22" y1="142.00" x2="867.22" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="872.67" y1="142.00" x2="872.67" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="879.03" y1="142.00" x2="879.03" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="884.47" y1="142.00" x2="884.47" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="890.83" y1="142.00" x2="890.83" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="896.27" y1="142.00" x2="896.27" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="902.63" y1="142.00" x2="902.63" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="908.08" y1="142.00" x2="908.08" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="914.44" y1="142.00" x2="914.44" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="919.93" y1="142.00" x2="919.93" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="926.29" y1="142.00" x2="926.29" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="931.74" y1="142.00" x2="931.74" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="938.10" y1="142.00" x2="938.10" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="943.54" y1="142.00" x2="943.54" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="949.90" y1="142.00" x2="949.90" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="955.34" y1="142.00" x2="955.34" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="961.70" y1="142.00" x2="961.70" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="967.15" y1="142.00" x2="967.15" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="973.51" y1="142.00" x2="973.51" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="978.95" y1="142.00" x2="978.95" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="985.31" y1="142.00" x2="985.31" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="993.65" y1="142.00" x2="993.65" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="1000.01" y1="142.00" x2="1000.01" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="1009.07" y1="142.00" x2="1009.07" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="1015.43" y1="142.00" x2="1015.43" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="1110.22" y1="142.00" x2="1110.22" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="1116.58" y1="142.00" x2="1116.58" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="1128.03" y1="142.00" x2="1128.03" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="1134.39" y1="142.00" x2="1134.39" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="1145.83" y1="142.00" x2="1145.83" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="1152.19" y1="142.00" x2="1152.19" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="1163.64" y1="142.00" x2="1163.64" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="1170.00" y1="142.00" x2="1170.00" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<text x="740.00" y="172.00" font-family="Arial, sans-serif" font-size="11" fill="#475569" font-weight="400" text-anchor="start">-287.5 mm</text>
+<text x="1170.00" y="172.00" font-family="Arial, sans-serif" font-size="11" fill="#475569" font-weight="400" text-anchor="end">557.6 mm</text>
+<text x="740.00" y="220.00" font-family="Arial, sans-serif" font-size="15" fill="#17202a" font-weight="700" text-anchor="start">Layers</text>
+<text x="740.00" y="246.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">TV_layer1: z=-287.500</text>
+<text x="740.00" y="266.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">TV_layer2: z=-275.000</text>
+<text x="740.00" y="286.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">TV_layer3: z=-262.500</text>
+<text x="740.00" y="306.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">TV_layer4: z=-250.000</text>
+<text x="740.00" y="326.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">TV_layer5: z=-237.500</text>
+<text x="740.00" y="346.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">TV_layer6: z=-225.000</text>
+<text x="740.00" y="366.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">TV_layer7: z=-212.500</text>
+<text x="740.00" y="386.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">TV_layer8: z=-200.000</text>
+<text x="740.00" y="406.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">TV_layer9: z=-167.500</text>
+<text x="740.00" y="426.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">TV_layer10: z=-155.000</text>
+<text x="740.00" y="446.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">TV_layer11: z=-127.500</text>
+<text x="740.00" y="466.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">TV_layer12: z=-115.000</text>
+<text x="740.00" y="486.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">TV_layer13: z=-94.750</text>
+<text x="740.00" y="506.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">TV_layer14: z=-82.250</text>
+<text x="740.00" y="526.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">TV_layer15: z=-73.150</text>
+<text x="740.00" y="546.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">TV_layer16: z=-60.650</text>
+<text x="740.00" y="566.00" font-family="Arial, sans-serif" font-size="11" fill="#64748b" font-weight="400" text-anchor="start">... plus 34 more</text>
+</svg>

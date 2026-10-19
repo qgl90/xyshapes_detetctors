@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-18",
+  "configuration": "lhcb_lower_up_y8x6_ft_8_8_10_FT_withHole",
+  "single_z_spline": {
+    "tracks": 24,
+    "step_mm": 10,
+    "median_ms_per_track": 314.41275049292017,
+    "integration_nodes": 2005,
+    "mask_only_median_ms": 0.37924999196548015
+  },
+  "batch_driver": [
+    {"tracks": 8192, "batch_size": 1024, "workers": 1, "step_mm": 10,
+     "seconds": 10.276302874990506, "worker_initialization_included": false},
+    {"tracks": 8192, "batch_size": 1024, "workers": 4, "step_mm": 10,
+     "seconds": 3.647174042009283, "worker_initialization_included": true}
+  ],
+  "shared_hit_count_checksum": {"nFT": 71956, "nMP": 10815, "nUP": 31987, "nMuon": 32140},
+  "accuracy_checks": {
+    "batch_vs_z_10mm_tracks": 12,
+    "batch_vs_z_10mm_max_position_error_mm": 0.0001170337786644376,
+    "batch_vs_z_changed_flag_tracks": 0,
+    "batch_50mm_vs_10mm_tracks": 4096,
+    "batch_50mm_vs_10mm_max_position_error_mm": 0.027118579144522238,
+    "batch_50mm_vs_10mm_changed_flag_tracks": 0
+  }
+}

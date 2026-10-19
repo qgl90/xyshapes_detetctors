@@ -24,8 +24,10 @@ from .trajectory import TrackState, Trajectory, TrajectoryError, create_trajecto
 from .transport import BatchTransportResult, DetectorTransport, TrackTransportResult
 from .variants import ft_with_hole_layers, mp_hole_envelope
 from .comparison import DEFAULT_COMPARISON, GeometryComparison, label_tracks
+from .selection import MTSelection
 
 __all__ = [
+    "MTSelection",
     "DEFAULT_COMPARISON",
     "GeometryComparison",
     "label_tracks",

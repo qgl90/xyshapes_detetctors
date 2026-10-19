@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="820" viewBox="0 0 1120 820">
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<text x="36" y="48" font-family="Arial, sans-serif" font-size="28" fill="#1f2937" font-weight="700" text-anchor="start">ViewLHCb lower mask: TV</text>
+<text x="36" y="78" font-family="Arial, sans-serif" font-size="15" fill="#475569" font-weight="400" text-anchor="start">100 z layers, z = -287.996 to 558.146 mm, union size = 90.3 x 92.0 mm</text>
+<path d="M 135.45 432.71 L 296.38 271.78 L 293.36 268.75 L 345.52 216.59 L 339.78 210.86 L 393.19 157.45 L 554.79 319.05 L 502.64 371.21 L 503.20 371.77 L 507.02 375.59 L 562.89 319.72 L 615.05 371.88 L 616.30 373.13 L 668.45 425.29 L 507.52 586.22 L 510.54 589.25 L 458.39 641.41 L 464.12 647.14 L 410.71 700.55 L 249.11 538.95 L 301.27 486.79 L 296.96 482.49 L 296.89 482.41 L 241.01 538.28 L 188.86 486.12 L 135.45 432.71 Z M 422.46 397.85 L 401.95 377.34 L 350.29 429.00 L 401.95 480.66 L 430.30 452.31 L 453.61 429.00 L 422.46 397.85 Z" fill="#2864b4" fill-opacity="0.26" stroke="#2864b4" stroke-width="1.2" fill-rule="evenodd"/>
+<path d="M 348.94 427.64 L 510.54 589.25 L 457.13 642.66 L 295.53 481.05 L 348.94 427.64 Z" fill="none" stroke="#111827" stroke-opacity="0.16" stroke-width="1.0" fill-rule="evenodd"/>
+<path d="M 297.05 271.11 L 350.46 324.52 L 188.86 486.12 L 135.45 432.71 L 297.05 271.11 Z" fill="none" stroke="#111827" stroke-opacity="0.16" stroke-width="1.0" fill-rule="evenodd"/>
+<path d="M 348.94 427.64 L 510.54 589.25 L 457.13 642.66 L 295.53 481.05 L 348.94 427.64 Z" fill="none" stroke="#111827" stroke-opacity="0.245" stroke-width="1.0" fill-rule="evenodd"/>
+<path d="M 297.05 271.11 L 350.46 324.52 L 188.86 486.12 L 135.45 432.71 L 297.05 271.11 Z" fill="none" stroke="#111827" stroke-opacity="0.245" stroke-width="1.0" fill-rule="evenodd"/>
+<path d="M 302.52 485.54 L 464.12 647.14 L 410.71 700.55 L 249.11 538.95 L 302.52 485.54 Z" fill="none" stroke="#111827" stroke-opacity="0.33" stroke-width="1.0" fill-rule="evenodd"/>
+<path d="M 349.21 323.27 L 402.62 376.68 L 241.01 538.28 L 187.61 484.87 L 349.21 323.27 Z" fill="none" stroke="#111827" stroke-opacity="0.33" stroke-width="1.0" fill-rule="evenodd"/>
+<path d="M 615.05 371.88 L 668.45 425.29 L 506.85 586.89 L 453.44 533.48 L 615.05 371.88 Z" fill="none" stroke="#111827" stroke-opacity="0.41500000000000004" stroke-width="1.0" fill-rule="evenodd"/>
+<path d="M 346.77 215.34 L 508.37 376.95 L 454.96 430.36 L 293.36 268.75 L 346.77 215.34 Z" fill="none" stroke="#111827" stroke-opacity="0.41500000000000004" stroke-width="1.0" fill-rule="evenodd"/>
+<path d="M 615.05 371.88 L 668.45 425.29 L 506.85 586.89 L 453.44 533.48 L 615.05 371.88 Z" fill="none" stroke="#111827" stroke-opacity="0.5" stroke-width="1.0" fill-rule="evenodd"/>
+<path d="M 346.77 215.34 L 508.37 376.95 L 454.96 430.36 L 293.36 268.75 L 346.77 215.34 Z" fill="none" stroke="#111827" stroke-opacity="0.5" stroke-width="1.0" fill-rule="evenodd"/>
+<path d="M 615.05 371.88 L 668.45 425.29 L 506.85 586.89 L 453.44 533.48 L 615.05 371.88 Z" fill="none" stroke="#111827" stroke-opacity="0.5850000000000001" stroke-width="1.0" fill-rule="evenodd"/>
+<path d="M 346.77 215.34 L 508.37 376.95 L 454.96 430.36 L 293.36 268.75 L 346.77 215.34 Z" fill="none" stroke="#111827" stroke-opacity="0.5850000000000001" stroke-width="1.0" fill-rule="evenodd"/>
+<path d="M 562.89 319.72 L 616.30 373.13 L 454.69 534.73 L 401.28 481.32 L 562.89 319.72 Z" fill="none" stroke="#111827" stroke-opacity="0.67" stroke-width="1.0" fill-rule="evenodd"/>
+<path d="M 393.19 157.45 L 554.79 319.05 L 501.38 372.46 L 339.78 210.86 L 393.19 157.45 Z" fill="none" stroke="#111827" stroke-opacity="0.67" stroke-width="1.0" fill-rule="evenodd"/>
+<text x="790" y="124" font-family="Arial, sans-serif" font-size="15" fill="#334155" font-weight="700" text-anchor="start">Representative z outlines:</text>
+<text x="812" y="150" font-family="Arial, sans-serif" font-size="13" fill="#334155" font-weight="400" text-anchor="start">TV_m287p996: z=-287.996 mm</text>
+<text x="812" y="172" font-family="Arial, sans-serif" font-size="13" fill="#334155" font-weight="400" text-anchor="start">TV_m167p996: z=-167.996 mm</text>
+<text x="812" y="194" font-family="Arial, sans-serif" font-size="13" fill="#334155" font-weight="400" text-anchor="start">TV_m49p454: z=-49.454 mm</text>
+<text x="812" y="216" font-family="Arial, sans-serif" font-size="13" fill="#334155" font-weight="400" text-anchor="start">TV_54p854: z=54.854 mm</text>
+<text x="812" y="238" font-family="Arial, sans-serif" font-size="13" fill="#334155" font-weight="400" text-anchor="start">TV_147p754: z=147.754 mm</text>
+<text x="812" y="260" font-family="Arial, sans-serif" font-size="13" fill="#334155" font-weight="400" text-anchor="start">TV_253p354: z=253.354 mm</text>
+<text x="812" y="282" font-family="Arial, sans-serif" font-size="13" fill="#334155" font-weight="400" text-anchor="start">TV_558p146: z=558.146 mm</text>
+<line x1="92.00" y1="429.00" x2="711.90" y2="429.00" stroke="#334155" stroke-width="1"/>
+<line x1="401.95" y1="744.00" x2="401.95" y2="114.00" stroke="#334155" stroke-width="1"/>
+<text x="711.9023483034143" y="455.0" font-family="Arial, sans-serif" font-size="14" fill="#1f2937" font-weight="400" text-anchor="end">x [mm]</text>
+<text x="383.95117415170716" y="124.0" font-family="Arial, sans-serif" font-size="14" fill="#1f2937" font-weight="400" text-anchor="end">y [mm]</text>
+</svg>

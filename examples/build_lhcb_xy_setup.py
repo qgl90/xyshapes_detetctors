@@ -13,6 +13,7 @@ import subprocess
 from xml.sax.saxutils import escape
 
 from shapely.ops import unary_union
+from xyshapes_detectors.variants import mp_hole_envelope
 
 from xyshapes_detectors.create_geom_muon import muon_geometries, muon_plane_layout
 from xyshapes_detectors.layout import DetectorLayer, load_layout
@@ -57,6 +58,7 @@ DEFAULT_CONFIGS = {
         "up": {"variant": "gdml", "plane_mode": "all16"},
         "tv": dict(TV_CONFIG),
         "ft": {"stations": {"T1": 10, "T2": 10, "T3": 12}},
+        "ft_acceptance": "FT_withHole",
     },
     "lower": {
         "name": "lhcb_xy_lower",
@@ -65,6 +67,7 @@ DEFAULT_CONFIGS = {
         "up": {"variant": "y8x6", "plane_mode": "all16"},
         "tv": dict(TV_CONFIG),
         "ft": {"stations": {"T1": 8, "T2": 8, "T3": 10}},
+        "ft_acceptance": "FT_withHole",
     },
 }
 
@@ -252,6 +255,18 @@ def build_up_rows(config, source_rows, shape_dir, setup_shape_dir):
 
 def build_ft_rows(config, setup_shape_dir):
     centers = ft_layer_centers()
+    mode = config.setdefault("ft_acceptance", "FT_withHole")
+    if mode not in {"nominal", "FT_withHole"}:
+        raise ValueError("ft_acceptance must be nominal or FT_withHole")
+    hole = None
+    if mode == "FT_withHole":
+        mp_rows = build_mp_rows(read_rows(BASE_LAYOUT), setup_shape_dir)
+        mp_layers = [DetectorLayer("MP", r["layer"], float(r["z"]), r["xyshape"],
+                                   load_shape(setup_shape_dir / "MP" / f"{r['xyshape']}.pickle"))
+                     for r in mp_rows]
+        hole = mp_hole_envelope(mp_layers)
+        config["ft_hole"] = dict(operation="FT minus MP sides joined across central X gap",
+                                  bounds_mm=list(hole.bounds), vertices_mm=list(hole.exterior.coords))
     rows = []
     for station in ("T1", "T2", "T3"):
         modules = int(config["ft"]["stations"][station])
@@ -261,10 +276,11 @@ def build_ft_rows(config, setup_shape_dir):
             shape_layer = FT_SHAPE_LAYER[layer]
             shape_name = f"FT_{modules}Modules_{shape_layer}"
             (setup_shape_dir / "FT").mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(
-                FT_SHAPE_DIR / f"{shape_name}.pickle",
-                setup_shape_dir / "FT" / f"{shape_name}.pickle",
-            )
+            geometry = load_shape(FT_SHAPE_DIR / f"{shape_name}.pickle")
+            if hole is not None:
+                geometry = geometry.difference(hole)
+                shape_name += "_FT_withHole"
+            write_shape(setup_shape_dir / "FT" / f"{shape_name}.pickle", geometry)
             rows.append({
                 "Use": "1",
                 "detector": "FT",

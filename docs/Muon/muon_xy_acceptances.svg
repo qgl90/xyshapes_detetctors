@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="760" viewBox="0 0 1180 760">
+<rect width="100%" height="100%" fill="#f7f8fb" />
+<text x="34.000" y="40.000" fill="#17202a" font-size="24" font-family="Arial, sans-serif" font-weight="700">Muon station XY acceptances</text>
+<text x="34.000" y="66.000" fill="#4f5f73" font-size="13" font-family="Arial, sans-serif">Outer size is 2*xmax by 2*ymax. Central hole is 2*xmin by 2*ymin.</text>
+<rect x="40" y="100" width="540" height="290" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<text x="54.000" y="130.000" fill="#17202a" font-size="19" font-family="Arial, sans-serif" font-weight="700">M2</text>
+<text x="54.000" y="152.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">z = 15270 mm</text>
+<path d="M 76.000 354.000 L 76.000 136.000 L 338.533 136.000 L 338.533 354.000 L 76.000 354.000 Z M 215.400 238.381 L 199.133 238.381 L 199.133 251.619 L 215.400 251.619 L 215.400 238.381 Z" fill="#7a8fbd" fill-opacity="0.70" stroke="#1f2f46" stroke-width="1.4" fill-rule="evenodd" />
+<text x="54.000" y="354.000" fill="#17202a" font-size="12" font-family="Arial, sans-serif" font-weight="700">outer: 9818.6 x 8153.1 mm</text>
+<text x="54.000" y="372.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">hole: 608.4 x 495.1 mm</text>
+<rect x="620" y="100" width="540" height="290" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<text x="634.000" y="130.000" fill="#17202a" font-size="19" font-family="Arial, sans-serif" font-weight="700">M3</text>
+<text x="634.000" y="152.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">z = 16470 mm</text>
+<path d="M 656.000 354.000 L 656.000 136.000 L 918.528 136.000 L 918.528 354.000 L 656.000 354.000 Z M 795.426 238.392 L 779.102 238.392 L 779.102 251.608 L 795.426 251.608 L 795.426 238.392 Z" fill="#7a8fbd" fill-opacity="0.70" stroke="#1f2f46" stroke-width="1.4" fill-rule="evenodd" />
+<text x="634.000" y="354.000" fill="#17202a" font-size="12" font-family="Arial, sans-serif" font-weight="700">outer: 10585.0 x 8789.7 mm</text>
+<text x="634.000" y="372.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">hole: 658.2 x 532.9 mm</text>
+<rect x="40" y="420" width="540" height="290" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<text x="54.000" y="450.000" fill="#17202a" font-size="19" font-family="Arial, sans-serif" font-weight="700">M4</text>
+<text x="54.000" y="472.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">z = 17670 mm</text>
+<path d="M 76.000 674.000 L 76.000 456.000 L 338.607 456.000 L 338.607 674.000 L 76.000 674.000 Z M 215.522 558.383 L 199.086 558.383 L 199.086 571.617 L 215.522 571.617 L 215.522 558.383 Z" fill="#7a8fbd" fill-opacity="0.70" stroke="#1f2f46" stroke-width="1.4" fill-rule="evenodd" />
+<text x="54.000" y="674.000" fill="#17202a" font-size="12" font-family="Arial, sans-serif" font-weight="700">outer: 11353.8 x 9425.2 mm</text>
+<text x="54.000" y="692.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">hole: 710.6 x 572.1 mm</text>
+<rect x="620" y="420" width="540" height="290" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<text x="634.000" y="450.000" fill="#17202a" font-size="19" font-family="Arial, sans-serif" font-weight="700">M5</text>
+<text x="634.000" y="472.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">z = 18870 mm</text>
+<path d="M 656.000 674.000 L 656.000 456.000 L 918.693 456.000 L 918.693 674.000 L 656.000 674.000 Z M 795.575 558.329 L 779.118 558.329 L 779.118 571.671 L 795.575 571.671 L 795.575 558.329 Z" fill="#7a8fbd" fill-opacity="0.70" stroke="#1f2f46" stroke-width="1.4" fill-rule="evenodd" />
+<text x="634.000" y="674.000" fill="#17202a" font-size="12" font-family="Arial, sans-serif" font-weight="700">outer: 12119.2 x 10057.3 mm</text>
+<text x="634.000" y="692.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">hole: 759.2 x 615.5 mm</text>
+</svg>

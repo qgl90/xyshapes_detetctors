@@ -11,6 +11,7 @@ from .configuration import LoadedMaskConfiguration, load_mask_configuration
 from .magnetic_field import MagneticField
 from .propagation import PlaneCrossings, propagate
 from .trajectory import TrackState, Trajectory, TrajectoryError, create_trajectory
+from .selection import MTSelection
 
 
 @dataclass(frozen=True)
@@ -44,13 +45,16 @@ class BatchTransportResult:
 class DetectorTransport:
     """Connect one loaded detector mask configuration to one field service."""
 
-    def __init__(self, configuration, field, *, step_mm=10.0):
+    def __init__(self, configuration, field, *, step_mm=10.0, mt_selection=None):
         if not isinstance(configuration, LoadedMaskConfiguration):
             raise TypeError("configuration must be a LoadedMaskConfiguration")
         if not callable(getattr(field, "b_at", None)):
             raise TypeError("field must provide b_at(x, y, z)")
         self.configuration = configuration
         self.field = field
+        self.mt_selection = MTSelection() if mt_selection is None else mt_selection
+        if not isinstance(self.mt_selection, MTSelection):
+            raise TypeError("mt_selection must be an MTSelection")
         self.step_mm = float(step_mm)
         if not np.isfinite(self.step_mm) or self.step_mm <= 0:
             raise ValueError("step_mm must be finite and positive")
@@ -66,13 +70,14 @@ class DetectorTransport:
         exact_surfaces=True,
         step_mm=10.0,
         catalog=None,
+        mt_selection=None,
     ):
         """Load a named setup and ROOT/NPZ field map as one transport service."""
         masks = load_mask_configuration(
             configuration, catalog=catalog, exact_surfaces=exact_surfaces
         )
         field = MagneticField.load(field_path, polarity=polarity, scale=scale)
-        return cls(masks, field, step_mm=step_mm)
+        return cls(masks, field, step_mm=step_mm, mt_selection=mt_selection)
 
     def propagate(self, state, *, z_end=None, label_suffix="", min_muon_stations=3):
         """Transport one state through every mask surface and return its labels.
@@ -107,6 +112,7 @@ class DetectorTransport:
         labels = self._labels(
             hits, counts, min_muon_stations=min_muon_stations,
             suffix=label_suffix,
+            mt_selection=self.mt_selection,
         )
         return TrackTransportResult(
             self.configuration.id, state, path, hits, counts, labels
@@ -186,10 +192,10 @@ class DetectorTransport:
         hits = {f"{station.detector}_{station.name}": fired[:, index]
                 for index, station in enumerate(model.stations)}
         return self._labels(hits, counts, min_muon_stations=min_muon_stations,
-                            suffix=label_suffix)
+                            suffix=label_suffix, mt_selection=self.mt_selection)
 
     @staticmethod
-    def _labels(hits, counts, *, min_muon_stations, suffix):
+    def _labels(hits, counts, *, min_muon_stations, suffix, mt_selection=None):
         def put(name, value):
             if isinstance(value, np.generic):
                 value = value.item()
@@ -202,6 +208,9 @@ class DetectorTransport:
         if "TV" in counts:
             put("hasTV_3Hits", counts["TV"] >= 3)
             put("hasTV_4Hits", counts["TV"] >= 4)
+        if "MP" in counts and "FT" in counts:
+            selection = MTSelection() if mt_selection is None else mt_selection
+            put("hasMT", selection.evaluate(counts["MP"], counts["FT"]))
 
         face_hits = {}
         for station_key, fired in hits.items():

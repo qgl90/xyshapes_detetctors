@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="760" viewBox="0 0 860 760">
+<rect width="100%" height="100%" fill="#f7f8fb" />
+<text x="28.000" y="36.000" fill="#17202a" font-size="22" font-family="Arial, sans-serif" font-weight="700">UP_v1_Borders comparison</text>
+<text x="28.000" y="60.000" fill="#4f5f73" font-size="13" font-family="Arial, sans-serif">Variant keeps central 5/6 in X and central 3/4 in Y, preserving the central hole.</text>
+<rect x="32" y="92" width="366" height="316" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<text x="48.000" y="122.000" fill="#17202a" font-size="17" font-family="Arial, sans-serif" font-weight="700">UPaU original</text>
+<text x="48.000" y="142.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">area=1778714.9 mm^2</text>
+<path d="M 64.000 376.000 L 64.000 124.000 L 338.417 124.000 L 338.417 376.000 L 64.000 376.000 Z M 208.779 242.177 L 193.638 242.177 L 193.638 257.823 L 208.779 257.823 L 208.779 242.177 Z" fill="#4c82c9" fill-opacity="0.70" stroke="#1f2f46" stroke-width="1.4" fill-rule="evenodd" />
+<rect x="442" y="92" width="366" height="316" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<text x="458.000" y="122.000" fill="#17202a" font-size="17" font-family="Arial, sans-serif" font-weight="700">UPaU UP_v1_Borders</text>
+<text x="458.000" y="142.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">area=1109404.0 mm^2</text>
+<path d="M 496.868 344.500 L 496.868 155.500 L 725.549 155.500 L 725.549 344.500 L 496.868 344.500 Z M 603.638 242.177 L 603.638 257.823 L 618.779 257.823 L 618.779 242.177 L 603.638 242.177 Z" fill="#4c82c9" fill-opacity="0.70" stroke="#1f2f46" stroke-width="1.4" fill-rule="evenodd" />
+<rect x="32" y="257" width="366" height="316" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<text x="48.000" y="287.000" fill="#17202a" font-size="17" font-family="Arial, sans-serif" font-weight="700">UPaX original</text>
+<text x="48.000" y="307.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">area=1778714.9 mm^2</text>
+<path d="M 64.000 541.000 L 64.000 289.000 L 338.417 289.000 L 338.417 541.000 L 64.000 541.000 Z M 208.779 407.177 L 193.638 407.177 L 193.638 422.823 L 208.779 422.823 L 208.779 407.177 Z" fill="#4c82c9" fill-opacity="0.70" stroke="#1f2f46" stroke-width="1.4" fill-rule="evenodd" />
+<rect x="442" y="257" width="366" height="316" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<text x="458.000" y="287.000" fill="#17202a" font-size="17" font-family="Arial, sans-serif" font-weight="700">UPaX UP_v1_Borders</text>
+<text x="458.000" y="307.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">area=1109404.0 mm^2</text>
+<path d="M 496.868 509.500 L 496.868 320.500 L 725.549 320.500 L 725.549 509.500 L 496.868 509.500 Z M 603.638 407.177 L 603.638 422.823 L 618.779 422.823 L 618.779 407.177 L 603.638 407.177 Z" fill="#4c82c9" fill-opacity="0.70" stroke="#1f2f46" stroke-width="1.4" fill-rule="evenodd" />
+<rect x="32" y="422" width="366" height="316" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<text x="48.000" y="452.000" fill="#17202a" font-size="17" font-family="Arial, sans-serif" font-weight="700">UPbV original</text>
+<text x="48.000" y="472.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">area=1778714.9 mm^2</text>
+<path d="M 64.000 706.000 L 64.000 454.000 L 338.417 454.000 L 338.417 706.000 L 64.000 706.000 Z M 208.779 572.177 L 193.638 572.177 L 193.638 587.823 L 208.779 587.823 L 208.779 572.177 Z" fill="#4c82c9" fill-opacity="0.70" stroke="#1f2f46" stroke-width="1.4" fill-rule="evenodd" />
+<rect x="442" y="422" width="366" height="316" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<text x="458.000" y="452.000" fill="#17202a" font-size="17" font-family="Arial, sans-serif" font-weight="700">UPbV UP_v1_Borders</text>
+<text x="458.000" y="472.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">area=1109404.0 mm^2</text>
+<path d="M 496.868 674.500 L 496.868 485.500 L 725.549 485.500 L 725.549 674.500 L 496.868 674.500 Z M 603.638 572.177 L 603.638 587.823 L 618.779 587.823 L 618.779 572.177 L 603.638 572.177 Z" fill="#4c82c9" fill-opacity="0.70" stroke="#1f2f46" stroke-width="1.4" fill-rule="evenodd" />
+<rect x="32" y="587" width="366" height="316" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<text x="48.000" y="617.000" fill="#17202a" font-size="17" font-family="Arial, sans-serif" font-weight="700">UPbX original</text>
+<text x="48.000" y="637.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">area=1778714.9 mm^2</text>
+<path d="M 64.000 871.000 L 64.000 619.000 L 338.417 619.000 L 338.417 871.000 L 64.000 871.000 Z M 208.779 737.177 L 193.638 737.177 L 193.638 752.823 L 208.779 752.823 L 208.779 737.177 Z" fill="#4c82c9" fill-opacity="0.70" stroke="#1f2f46" stroke-width="1.4" fill-rule="evenodd" />
+<rect x="442" y="587" width="366" height="316" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<text x="458.000" y="617.000" fill="#17202a" font-size="17" font-family="Arial, sans-serif" font-weight="700">UPbX UP_v1_Borders</text>
+<text x="458.000" y="637.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">area=1109404.0 mm^2</text>
+<path d="M 496.868 839.500 L 496.868 650.500 L 725.549 650.500 L 725.549 839.500 L 496.868 839.500 Z M 603.638 737.177 L 603.638 752.823 L 618.779 752.823 L 618.779 737.177 L 603.638 737.177 Z" fill="#4c82c9" fill-opacity="0.70" stroke="#1f2f46" stroke-width="1.4" fill-rule="evenodd" />
+</svg>

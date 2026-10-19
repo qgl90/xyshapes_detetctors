@@ -1,0 +1,257 @@
+\documentclass[aspectratio=169,10pt]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,graphicx,booktabs,tabularx,xcolor}
+\definecolor{lhcbgreen}{HTML}{16836B}
+\definecolor{lhcbink}{HTML}{20303C}
+\setbeamercolor{structure}{fg=lhcbgreen}
+\setbeamercolor{normal text}{fg=lhcbink,bg=white}
+\setbeamercolor{frametitle}{fg=lhcbink,bg=white}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\setbeamersize{text margin left=8mm,text margin right=8mm}
+\setlength{\tabcolsep}{7pt}
+\renewcommand{\arraystretch}{1.2}
+\newcommand{\asset}[1]{assets/transport_ft_with_hole/#1}
+\input{assets/transport_ft_with_hole/values.tex}
+\input{assets/transport_ft_with_hole/inventory_rows.tex}
+\input{assets/transport_ft_with_hole/area_rows.tex}
+\input{assets/transport_ft_with_hole/toy_rows.tex}
+\title{LHCb Detector Masks and Field Transport}
+\subtitle{Configurable XY surfaces and the FT\_withHole variants}
+\date{18 October 2026}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\begin{center}\small Six original setups + six FT\_withHole variants\\
+TV, RICH1, UP, MP, FT, RICH2, PicoCal, and Muon\end{center}
+\end{frame}
+
+\begin{frame}{Detector planes and logical layers}
+\begin{columns}[T,onlytextwidth]
+\column{0.54\textwidth}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+System & Surfaces & Layers & Global $z$ range [mm]\\
+\midrule
+\InventoryRows
+\bottomrule
+\end{tabular}
+\column{0.41\textwidth}
+\small Each physical surface has a global $z$, an XY polygon, and a stable
+logical layer label. A logical layer fires if any of its physical surfaces
+contains the transported crossing.\\[3mm]
+UP keeps 16 physical planes and counts four logical layers. FT keeps
+X/U/V/X in each of T1, T2, and T3: 12 logical layers.\\[3mm]
+FT\_withHole keeps every plane position and label. Only the FT XY masks change.
+\end{columns}
+\end{frame}
+
+\begin{frame}{Global Z placement of the detector surfaces}
+\centering\includegraphics[width=\textwidth,height=0.68\textheight,keepaspectratio]{\asset{z_layout.pdf}}
+\par\vspace{3mm}\small Every tick is a physical surface Z position. UP contains
+four groups of four surfaces; each FT station contains X/U/V/X.\\[2mm]
+The FT\_withHole variant changes the XY masks while retaining all placements.
+\end{frame}
+
+\begin{frame}{TV, RICH1, UP, and MP XY acceptance}
+\centering\includegraphics[width=\textwidth,height=0.78\textheight,keepaspectratio]{\asset{xy_inventory_1.pdf}}
+\par\scriptsize XY unions of stored surfaces; axes are scaled independently.
+Open sensor gaps are shown as gaps rather than assigned a rectangular hole size.
+\end{frame}
+
+\begin{frame}{FT, RICH2, PicoCal, and Muon XY acceptance}
+\centering\includegraphics[width=\textwidth,height=0.78\textheight,keepaspectratio]{\asset{xy_inventory_2.pdf}}
+\par\scriptsize XY unions of stored surfaces. FT: nominal outline in blue,
+retained FT\_withHole in green, stepped MP envelope in red.
+\end{frame}
+
+\begin{frame}{The three UP border variants}
+\centering\includegraphics[width=\textwidth,height=0.74\textheight,keepaspectratio]{\asset{up_variants.pdf}}
+\small
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\texttt{UP\_GDML} & Original extracted acceptance.\\
+\texttt{UP\_Y8} & Top/bottom cutoff.\\
+\texttt{UP\_Y8X6} & Top/bottom and left/right cutoffs.\\
+\end{tabularx}
+\end{frame}
+
+\begin{frame}{FT\_withHole joins the MP sides near X=0}
+\centering
+$H_{\rm MP}=\operatorname{join}_{x=0}\!\left(\bigcup_{i=1}^{5} A_{{\rm MP},i}\right),
+\qquad A_{{\rm FT},j}^{\rm withHole}=A_{{\rm FT},j}\setminus H_{\rm MP}$
+\par\vspace{2mm}
+\includegraphics[width=\textwidth,height=0.61\textheight,keepaspectratio]{\asset{mp_hole_construction.pdf}}
+\par\small
+Hole envelope: \HoleWidth{} $\times$ \HoleHeight{} mm; area \HoleArea{} m$^2$.\\
+MP active union: \MPArea{} m$^2$; the envelope additionally excludes
+\GapArea{} m$^2$ across the inner gap; the outer square steps are preserved.\\[1mm]
+One global XY envelope is used at every FT plane; there is no projection in $z$.
+\end{frame}
+
+\begin{frame}{FT 8 modules: original and FT\_withHole}
+\centering\includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{\asset{ft_compare_8.pdf}}
+\end{frame}
+
+\begin{frame}{FT 10 modules: original and FT\_withHole}
+\centering\includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{\asset{ft_compare_10.pdf}}
+\end{frame}
+
+\begin{frame}{FT 12 modules: original and FT\_withHole}
+\centering\includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{\asset{ft_compare_12.pdf}}
+\end{frame}
+
+\begin{frame}{Setup inventory and FT active area}
+\begin{columns}[T,onlytextwidth]
+\column{0.5\textwidth}
+\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+UP choice & FT modules & Original & With hole\\
+\midrule
+GDML & 8/8/10 & Yes & Yes\\
+Y8 & 8/8/10 & Yes & Yes\\
+Y8X6 & 8/8/10 & Yes & Yes\\
+GDML & 10/10/12 & Yes & Yes\\
+Y8 & 10/10/12 & Yes & Yes\\
+Y8X6 & 10/10/12 & Yes & Yes\\
+\bottomrule
+\end{tabular}\\[3mm]
+Each original catalog ID has an additional ID ending in
+\texttt{\_FT\_withHole}. Other detector masks are identical to its parent setup.
+\column{0.46\textwidth}
+\small
+\begin{tabular}{@{}rrrr@{}}
+\toprule
+Modules & Original & Kept & Removed\\
+ & [m$^2$] & [m$^2$] & \\
+\midrule
+\AreaRows
+\bottomrule
+\end{tabular}\\[3mm]
+Areas are per FT plane. X/U/V rotations preserve these areas for the current
+MP envelope. The original area already excludes the 260 mm beam opening.
+\end{columns}
+\end{frame}
+
+\begin{frame}{Field map and magnet polarity}
+\centering\includegraphics[width=\textwidth,height=0.60\textheight,keepaspectratio]{\asset{field_polarity.pdf}}
+\small
+The ROOT service reads Bx, By, Bz on a 100 mm grid. Coordinates are mm,
+field is tesla, momentum is MeV/$c$.\\[2mm]
+\texttt{polarity=-1} reverses all three components, including fringe fields.\\
+On-axis $\int_0^{10000\,{\rm mm}} B_y\,dz=\FieldIntegral$ T\,m for the supplied map.
+\end{frame}
+
+\begin{frame}{Toy trajectories through the full detector}
+\centering\includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{\asset{toy_trajectories.pdf}}
+\small
+Initial slopes $t_x=0.06$, $t_y=0.03$; start at $z=-300$ mm with the zero-field
+line through the origin. The same field trajectory is evaluated against both mask variants.\\[2mm]
+RK4 transport in $z$; cubic Hermite XY interpolation. No material effects.
+A nearly transverse or curling path raises \texttt{TrajectoryError}.
+\end{frame}
+
+\begin{frame}{Fired layers before and after the enlarged hole}
+\small Reference setup: UP Y8X6, FT 8/8/10; supplied field polarity $+1$.
+\par\vspace{3mm}\centering
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Track & $p$ [GeV/$c$] & nMP & nFT original & nFT with hole & nUP & nMuon\\
+\midrule
+\ToyRows
+\bottomrule
+\end{tabular}
+\par\vspace{4mm}\raggedright
+FT\_withHole can only reduce FT acceptance. MP, UP, TV, RICH, PicoCal, and
+Muon use the same masks and return the same flags as the parent setup.\\[3mm]
+An XY point in an MP sensor gap is also rejected by FT when it lies inside
+the solid envelope. Removing FT overlap does not guarantee an MP hit at a different $z$.
+\end{frame}
+
+\begin{frame}{Batch and parallel propagation}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Method at 10 mm steps & Per track & 4 million tracks\\
+\midrule
+Individual Z spline & 314 ms & 14.6 days\\
+Batch of 1024, one process & 1.25 ms & 1.4 hours\\
+Batch of 1024, four processes & 0.45 ms & 30 minutes\\
+\bottomrule
+\end{tabular}
+\par\vspace{4mm}\small
+Measured on 18 October 2026. Batch timing: 8192 toy tracks at 10--100 GeV/$c$,
+including labels; four-process timing includes worker startup. Four-million
+times are extrapolations. Serial/parallel hit-count checksums agreed.\\[3mm]
+The individual Z path uses about 2005 nodes; vectorized batches use roughly
+1500 main steps with longer drift steps outside the field. Reuse crossings to
+compare geometries sharing the same physical Z planes.\\[3mm]
+50 mm steps reduced cost further: maximum XY difference 0.0272 mm, with no changed
+layer flags on a 4096-track check. The default remains 10 mm.
+\end{frame}
+
+\begin{frame}[fragile]{Batch mask columns and geometry comparisons}
+\small
+\begin{verbatim}
+columns = dict(x=x, y=y, z=z, tx=tx, ty=ty, q_over_p=qop)
+batch = transport.propagate_batch(columns, label_suffix="base")
+track_table.update(batch.as_columns())
+
+# Different XY mask, same state/field/Z planes: reuse transport.
+other = DetectorTransport(other_configuration, transport.field)
+track_table.update(other.labels_from_crossings(
+    batch.crossings, label_suffix="withHole",
+))
+\end{verbatim}
+\vspace{3mm}
+\small A worker loads the geometry and field once, then processes chunks of
+1024--4096 tracks. The process-pool example is
+\texttt{examples/benchmark\_transport.py}.\\[2mm]
+Batch transport raises on failed/incomplete tracks, reporting their row indices.
+\end{frame}
+
+\begin{frame}[fragile]{Loading a setup and appending track flags}
+\small
+\begin{verbatim}
+from xyshapes_detectors import DetectorTransport, TrackState
+
+transport = DetectorTransport.from_files(
+    "lhcb_lower_up_y8x6_ft_8_8_10_FT_withHole",
+    "MagField/magnetic_field_v5r0.root", polarity=+1,
+)
+state = TrackState.from_charge_momentum(
+    charge=1, momentum_mev=50_000,
+    x=0, y=0, tx=0.06, ty=0.03, z=-300,
+)
+result = transport.propagate(state, label_suffix="hole")
+track_row.update(result.as_record())
+\end{verbatim}
+\small
+\texttt{result.layer\_hits}: explicit logical-layer booleans.\\
+\texttt{result.trajectory}: path and XY intercepts at requested $z$.\\
+Returned fields include \texttt{nTV\_hole}, \texttt{nUP\_hole}, \texttt{nMP\_hole},
+\texttt{nFT\_hole}, \texttt{nMuon\_hole}, RICH flags, and \texttt{hasPicoCal\_hole}.
+\end{frame}
+
+\begin{frame}{Geometry derivation and reusable files}
+\small
+\begin{enumerate}
+\item Detector surfaces and placements originate from the saved ViewLHCb/GDML
+acceptances and simplified FT module-count constructions.
+\item \texttt{build\_ft\_with\_hole\_variants.py} joins the two MP sides near X=0
+within each horizontal band, subtracts this stepped hole from each FT
+mask, and saves named shape pickles.
+\item Every new setup stores \texttt{layout.csv}, \texttt{config.json}, and
+\texttt{ft\_area\_summary.json}. The config records the envelope vertices and operation.
+\item Catalog entries reuse shared source masks and nine derived FT shapes.
+Both catalog IDs and setup directory paths can be loaded.
+\end{enumerate}
+\vspace{3mm}
+\textbf{Sources:} \texttt{detector\_setups/catalog.json}, saved XY pickles,
+\texttt{variants.py}, \texttt{transport.py}, and the supplied field ROOT file.\\[2mm]
+\textbf{Scope:} geometric acceptance along a vacuum trajectory. This is not a
+material, scattering, light-transport, or detector-efficiency model.
+\end{frame}
+\end{document}

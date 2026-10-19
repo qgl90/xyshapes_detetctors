@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="1080" viewBox="0 0 1180 1080">
+<rect width="100%" height="100%" fill="#f7f8fb" />
+<text x="34.000" y="40.000" fill="#17202a" font-size="24" font-family="Arial, sans-serif" font-weight="700">Run 5 XY Shape Inventory</text>
+<text x="34.000" y="66.000" fill="#4f5f73" font-size="13" font-family="Arial, sans-serif">Representative active surfaces used by the TV, UP, and Mighty Tracker layout.</text>
+<rect x="40.000" y="100.000" width="520.000" height="280.000" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<text x="54.000" y="130.000" fill="#17202a" font-size="18" font-family="Arial, sans-serif" font-weight="700">TV</text>
+<text x="54.000" y="151.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">global XY surface, rotated 45 deg</text>
+<path d="M 180.000 352.000 L 68.000 240.000 L 180.000 128.000 L 292.000 240.000 L 180.000 352.000 Z M 180.000 223.872 L 163.872 240.000 L 180.000 256.128 L 196.128 240.000 L 180.000 223.872 Z" fill="#d78a4a" fill-opacity="0.68" stroke="#1f2f46" stroke-width="1.5" fill-rule="evenodd" />
+<text x="54.000" y="344.000" fill="#17202a" font-size="12" font-family="Arial, sans-serif" font-weight="700">outer: 50 x 50 mm</text>
+<text x="54.000" y="362.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">hole: 7.2 x 7.2 mm</text>
+<rect x="620.000" y="100.000" width="520.000" height="280.000" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<text x="634.000" y="130.000" fill="#17202a" font-size="18" font-family="Arial, sans-serif" font-weight="700">UP</text>
+<text x="634.000" y="151.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">loaded from UP/UPaX.pickle</text>
+<path d="M 648.000 352.000 L 648.000 128.000 L 891.927 128.000 L 891.927 352.000 L 648.000 352.000 Z M 776.693 233.046 L 763.234 233.046 L 763.234 246.954 L 776.693 246.954 L 776.693 233.046 Z" fill="#4c82c9" fill-opacity="0.68" stroke="#1f2f46" stroke-width="1.5" fill-rule="evenodd" />
+<text x="634.000" y="344.000" fill="#17202a" font-size="12" font-family="Arial, sans-serif" font-weight="700">outer: 1394.1 x 1280.2 mm</text>
+<text x="634.000" y="362.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">hole: 76.9 x 79.5 mm</text>
+<rect x="40.000" y="430.000" width="520.000" height="280.000" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<text x="54.000" y="460.000" fill="#17202a" font-size="18" font-family="Arial, sans-serif" font-weight="700">UP lower</text>
+<text x="54.000" y="481.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">UP_v1_Borders variant</text>
+<path d="M 68.000 682.000 L 68.000 458.000 L 339.030 458.000 L 339.030 682.000 L 68.000 682.000 Z M 194.542 560.729 L 194.542 579.271 L 212.488 579.271 L 212.488 560.729 L 194.542 560.729 Z" fill="#8c6bb1" fill-opacity="0.68" stroke="#1f2f46" stroke-width="1.5" fill-rule="evenodd" />
+<text x="54.000" y="674.000" fill="#17202a" font-size="12" font-family="Arial, sans-serif" font-weight="700">outer: 1161.8 x 960.2 mm</text>
+<text x="54.000" y="692.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">hole: 76.9 x 79.5 mm</text>
+<rect x="620.000" y="430.000" width="520.000" height="280.000" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<text x="634.000" y="460.000" fill="#17202a" font-size="18" font-family="Arial, sans-serif" font-weight="700">FT 8 modules</text>
+<text x="634.000" y="481.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">FT_Low T1 and T2</text>
+<path d="M 648.000 682.000 L 648.000 458.000 L 865.847 458.000 L 865.847 682.000 L 648.000 682.000 Z M 763.612 563.312 L 750.235 563.312 L 750.235 576.688 L 763.612 576.688 L 763.612 563.312 Z" fill="#8bbf61" fill-opacity="0.68" stroke="#1f2f46" stroke-width="1.5" fill-rule="evenodd" />
+<text x="634.000" y="674.000" fill="#17202a" font-size="12" font-family="Arial, sans-serif" font-weight="700">outer: 4234.4 x 4354 mm</text>
+<text x="634.000" y="692.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">hole: 260 x 260 mm</text>
+<rect x="40.000" y="760.000" width="520.000" height="280.000" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<text x="54.000" y="790.000" fill="#17202a" font-size="18" font-family="Arial, sans-serif" font-weight="700">FT 10 modules</text>
+<text x="54.000" y="811.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">FT_Low T3 or FT_Baseline T1/T2</text>
+<path d="M 68.000 1012.000 L 68.000 788.000 L 340.309 788.000 L 340.309 1012.000 L 68.000 1012.000 Z M 210.842 893.312 L 197.466 893.312 L 197.466 906.688 L 210.842 906.688 L 210.842 893.312 Z" fill="#6a9f58" fill-opacity="0.68" stroke="#1f2f46" stroke-width="1.5" fill-rule="evenodd" />
+<text x="54.000" y="1004.000" fill="#17202a" font-size="12" font-family="Arial, sans-serif" font-weight="700">outer: 5293.0 x 4354 mm</text>
+<text x="54.000" y="1022.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">hole: 260 x 260 mm</text>
+<rect x="620.000" y="760.000" width="520.000" height="280.000" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<text x="634.000" y="790.000" fill="#17202a" font-size="18" font-family="Arial, sans-serif" font-weight="700">FT 12 modules</text>
+<text x="634.000" y="811.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">FT_Baseline T3</text>
+<path d="M 648.000 1012.000 L 648.000 788.000 L 974.770 788.000 L 974.770 1012.000 L 648.000 1012.000 Z M 818.073 893.312 L 804.697 893.312 L 804.697 906.688 L 818.073 906.688 L 818.073 893.312 Z" fill="#5a9e63" fill-opacity="0.68" stroke="#1f2f46" stroke-width="1.5" fill-rule="evenodd" />
+<text x="634.000" y="1004.000" fill="#17202a" font-size="12" font-family="Arial, sans-serif" font-weight="700">outer: 6351.6 x 4354 mm</text>
+<text x="634.000" y="1022.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">hole: 260 x 260 mm</text>
+</svg>
