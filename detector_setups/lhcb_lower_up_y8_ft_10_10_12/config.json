@@ -19,11 +19,17 @@
   "name": "lhcb_lower_up_y8_ft_10_10_12",
   "source": "ViewLHCb lower ROOT/GDML extracted surfaces",
   "tv": {
-    "grouping": "paired_sensor_faces",
-    "z_tolerance_mm": 2.0
+    "grouping": "physical_module",
+    "surfaces": "coplanar_sensitive_silicon",
+    "z_placement": "sensor_centres",
+    "counting": "any_sensor_hit_per_module"
   },
   "up": {
     "plane_mode": "all16",
     "variant": "y8"
-  }
+  },
+  "shape_dirs": [
+    "../shared_shapes",
+    "../up_variants/y8"
+  ]
 }

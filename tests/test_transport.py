@@ -14,6 +14,7 @@ from xyshapes_detectors.acceptance import (
 )
 from xyshapes_detectors.geometry_io import box_with_hole
 from xyshapes_detectors.layout import DetectorLayer
+from xyshapes_detectors.configuration import LoadedMaskConfiguration
 from xyshapes_detectors.magnetic_field import (
     MEV_PER_TESLA_MM,
     FieldMapError,
@@ -27,10 +28,16 @@ from xyshapes_detectors.propagation import (
     propagate_to_z,
     trajectory,
 )
+from xyshapes_detectors.trajectory import (
+    TrackState,
+    TrajectoryError,
+    create_trajectory,
+)
+from xyshapes_detectors.transport import DetectorTransport
 
 
 ROOT = Path(__file__).resolve().parents[1]
-FIELD_FILE = ROOT / "magnetic_field_v5r0.root"
+FIELD_FILE = ROOT / "MagField" / "magnetic_field_v5r0.root"
 
 
 def linear_field_samples():
@@ -237,6 +244,152 @@ class PropagationTest(unittest.TestCase):
             single = propagate([track], field, planes)
             np.testing.assert_allclose(batch.x[index], single.x[0], atol=1e-9)
             np.testing.assert_allclose(batch.y[index], single.y[0], atol=1e-9)
+
+
+class ZTrajectoryTest(unittest.TestCase):
+    def test_straight_track_intercepts_exact_sensor_planes(self):
+        state = TrackState(10.0, -5.0, 0.1, -0.2, 0.0, z=100.0)
+        path = create_trajectory(
+            zero_field(), state, 1100.0, sensor_z=(100.0, 500.0, 1100.0),
+            step_mm=250.0,
+        )
+        np.testing.assert_allclose(
+            path.intercepts((100.0, 500.0, 1100.0)),
+            ((10.0, -5.0), (50.0, -85.0), (110.0, -205.0)),
+            atol=1e-12,
+        )
+
+    def test_z_stepping_agrees_with_path_length_propagator(self):
+        field = UniformField(0.0, -1.0, 0.0)
+        initial = TrackState.from_charge_momentum(
+            +1, 10000.0, 0.0, 0.0, 0.05, -0.02
+        )
+        planes = np.asarray((500.0, 1000.0, 2000.0))
+        z_path = create_trajectory(
+            field, initial, 2000.0, sensor_z=planes, step_mm=2.0
+        )
+        path_track = Track.from_slopes(
+            +1, 10000.0, 0.05, -0.02, origin=(0.0, 0.0, 0.0)
+        )
+        path_length = propagate([path_track], field, planes, step=2.0)
+        np.testing.assert_allclose(
+            z_path.intercepts(planes),
+            np.column_stack((path_length.x[0], path_length.y[0])),
+            atol=0.02,
+        )
+
+    def test_hermite_interpolation_agrees_between_integration_nodes(self):
+        field = UniformField(0.0, -1.0, 0.0)
+        initial = TrackState.from_charge_momentum(
+            +1, 10000.0, 0.0, 0.0, 0.05, -0.02
+        )
+        path = create_trajectory(field, initial, 2000.0, step_mm=10.0)
+        z_query = 1234.5
+        interpolated = path.xy_at(z_query)
+        reference = propagate(
+            [Track.from_slopes(+1, 10000.0, 0.05, -0.02)],
+            field,
+            [z_query],
+            step=0.25,
+        )
+        np.testing.assert_allclose(
+            interpolated, (reference.x[0, 0], reference.y[0, 0]), atol=0.02
+        )
+
+    def test_trajectory_can_fire_exact_acceptance_surfaces(self):
+        model = AcceptanceModel.from_layers(toy_layers(), exact_surfaces=True)
+        track = Track.from_slopes(+1, 50000.0, 0.02, 0.01)
+        state = TrackState.from_charge_momentum(
+            track.charge, track.p, track.x, track.y, track.tx, track.ty, z=track.z
+        )
+        path = create_trajectory(
+            zero_field(), state, max(model.plane_z) + 10,
+            sensor_z=model.plane_z,
+        )
+        z_stepped = model.counts(fired=model.fired_trajectory(path))
+        path_length = model.evaluate([track], zero_field())
+        for detector in model.detectors:
+            self.assertEqual(
+                z_stepped[detector][0], path_length[f"n{detector}"][0]
+            )
+
+    def test_trajectory_must_span_all_acceptance_surfaces(self):
+        model = AcceptanceModel.from_layers(toy_layers(), exact_surfaces=True)
+        path = create_trajectory(zero_field(), TrackState(0, 0, 0, 0, 0), 1000)
+        with self.assertRaisesRegex(ValueError, "span all acceptance surfaces"):
+            model.fired_trajectory(path)
+
+    def test_state_tuple_uses_q_over_p_in_inverse_mev(self):
+        state = TrackState.from_values((1.0, 2.0, 0.03, -0.04, -2e-4), z=15.0)
+        self.assertEqual(state.as_tuple(), (1.0, 2.0, 0.03, -0.04, -2e-4))
+        self.assertEqual(state.z, 15.0)
+
+    def test_curling_track_raises_instead_of_returning_partial_hits(self):
+        state = TrackState(0.0, 0.0, 0.0, 0.0, 1.0 / 50.0)
+        with self.assertRaisesRegex(TrajectoryError, "curling|transverse"):
+            create_trajectory(
+                UniformField(0.0, -1.0, 0.0), state, 500.0, step_mm=5.0
+            )
+
+    def test_z_trajectory_rejects_extrapolation_and_upstream_requests(self):
+        state = TrackState(0.0, 0.0, 0.0, 0.0, 0.0, z=10.0)
+        path = create_trajectory(zero_field(), state, 20.0)
+        with self.assertRaises(ValueError):
+            path.xy_at(21.0)
+        with self.assertRaises(ValueError):
+            create_trajectory(zero_field(), state, 5.0)
+
+
+class DetectorTransportTest(unittest.TestCase):
+    def setUp(self):
+        model = AcceptanceModel.from_layers(toy_layers(), exact_surfaces=True)
+        self.configuration = LoadedMaskConfiguration(
+            "toy", "Toy", "test setup", Path("."), {}, model
+        )
+
+    def test_facade_returns_detector_and_layer_flags(self):
+        service = DetectorTransport(self.configuration, zero_field())
+        state = TrackState.from_charge_momentum(
+            +1, 50000.0, 0.0, 0.0, 0.02, 0.01
+        )
+        result = service.propagate(state, label_suffix="toy")
+        self.assertEqual(result.detector_counts["TV"], 2)
+        self.assertEqual(result.detector_counts["MUON"], 4)
+        self.assertTrue(result.labels["nTV_toy"] == 2)
+        self.assertTrue(result.labels["hasRich1Entry_toy"])
+        self.assertTrue(result.labels["inPicoCal_toy"])
+        self.assertTrue(result.labels["isMuon_toy"])
+        self.assertTrue(result.layer_hits["MUON_M2"])
+        row = {"q_over_p": state.q_over_p, **result.as_record()}
+        self.assertEqual(row["q_over_p"], state.q_over_p)
+
+    def test_batch_matches_single_track_positions_and_labels(self):
+        service = DetectorTransport(self.configuration, UniformField(0, -1, 0))
+        states = [TrackState.from_charge_momentum(q, 50000, 0, 0, .02, .01)
+                  for q in (-1, 0, 1)]
+        batch = service.propagate_batch(states, label_suffix="toy")
+        for row, state in enumerate(states):
+            single = service.propagate(state, label_suffix="toy")
+            for name, value in single.labels.items():
+                self.assertEqual(batch.labels[name][row], value, name)
+            np.testing.assert_allclose(
+                single.trajectory.intercepts(batch.crossings.plane_z),
+                np.column_stack((batch.crossings.x[row], batch.crossings.y[row])),
+                atol=2e-5,
+            )
+
+    def test_batch_accepts_broadcast_columns_and_reuses_crossings(self):
+        service = DetectorTransport(self.configuration, zero_field())
+        columns = dict(x=0, y=0, z=0, tx=[.02, .04], ty=.01, q_over_p=1 / 50000)
+        batch = service.propagate_batch(columns)
+        labels = service.labels_from_crossings(batch.crossings, label_suffix="other")
+        np.testing.assert_array_equal(labels["nTV_other"], batch.labels["nTV"])
+        np.testing.assert_array_equal(batch.as_columns()["nMuon"], [4, 4])
+
+    def test_failed_batch_transport_raises(self):
+        service = DetectorTransport(self.configuration, UniformField(0, -1, 0))
+        with self.assertRaisesRegex(TrajectoryError, "batch tracks failed"):
+            service.propagate_batch([TrackState(0, 0, 0, 0, 1 / 50)])
 
 
 def toy_layers():
@@ -552,6 +705,49 @@ class LHCbFieldMapTest(unittest.TestCase):
     def test_integrated_field_is_about_four_tesla_metre(self):
         integral = self.field.integral_bdl(-1200.0, 14100.0)[1]
         self.assertAlmostEqual(integral / 1000.0, -4.23, places=1)
+
+    def test_origin_to_10000_mm_field_integral_is_about_four_tesla_metre(self):
+        integral = self.field.integral_bdl(0.0, 10000.0)[1]
+        self.assertAlmostEqual(integral / 1000.0, -4.19, delta=0.08)
+
+    def test_reversed_polarity_flips_all_field_components(self):
+        reversed_field = MagneticField.load(FIELD_FILE, polarity=-1)
+        points = np.asarray(((0.0, 0.0, 4800.0), (500.0, -250.0, 6000.0)))
+        np.testing.assert_allclose(
+            reversed_field.b_at_points(points), -self.field.b_at_points(points)
+        )
+        np.testing.assert_allclose(
+            reversed_field.integral_bdl(0.0, 10000.0),
+            -self.field.integral_bdl(0.0, 10000.0),
+            atol=1e-6,
+        )
+        with self.assertRaises(ValueError):
+            MagneticField.load(FIELD_FILE, polarity=0)
+
+    def test_reversed_polarity_matches_reversing_track_charge(self):
+        from xyshapes_detectors.trajectory import create_trajectory
+
+        positive_state = TrackState.from_charge_momentum(
+            +1, 50000.0, 0.0, 0.0, 0.01, -0.005
+        )
+        negative_state = TrackState.from_charge_momentum(
+            -1, 50000.0, 0.0, 0.0, 0.01, -0.005
+        )
+        planes = (1000.0, 5000.0, 10000.0)
+        positive_reversed = create_trajectory(
+            MagneticField.load(FIELD_FILE, polarity=-1),
+            positive_state,
+            10000.0,
+            sensor_z=planes,
+        )
+        negative_nominal = create_trajectory(
+            self.field, negative_state, 10000.0, sensor_z=planes
+        )
+        np.testing.assert_allclose(
+            positive_reversed.intercepts(planes),
+            negative_nominal.intercepts(planes),
+            atol=1e-9,
+        )
 
     def test_bending_is_inversely_proportional_to_momentum(self):
         planes = [12000.0]

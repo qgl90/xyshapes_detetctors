@@ -14,10 +14,10 @@ momenta are MeV/c, so a single constant relates the two:
 :data:`MEV_PER_TESLA_MM` is that constant, and
 :func:`MagneticField.bending_radius` uses it directly.
 
-The LHCb map shipped with this repository (``magnetic_field_v5r0.root``) holds
-both a ``field`` TNtuple of ``x, y, z, bx, by, bz`` samples on a regular
-100 mm grid and three TH3D projections. The TNtuple is the authoritative
-source here because it covers the full grid without over/underflow bins.
+The LHCb map (``MagField/magnetic_field_v5r0.root``) stores the components in
+three regular-grid ROOT histograms named ``Bx``, ``By``, and ``Bz``. The reader
+uses those TH3 histograms directly, accepting either TH3F or TH3D. A ``field``
+TNtuple reader remains as a fallback for older map files.
 """
 
 from __future__ import annotations
@@ -38,6 +38,13 @@ _trapezoid = getattr(np, "trapezoid", None) or np.trapz
 
 class FieldMapError(RuntimeError):
     """Raised when a field source cannot be turned into a regular grid."""
+
+
+def _polarity_scale(polarity):
+    polarity = float(polarity)
+    if polarity not in (-1.0, 1.0):
+        raise ValueError("polarity must be +1 or -1")
+    return polarity
 
 
 @dataclass(frozen=True)
@@ -116,9 +123,15 @@ class MagneticField:
     # ------------------------------------------------------------------ I/O
 
     @classmethod
-    def from_root(cls, path, *, tree="field", scale=1.0):
-        """Read a field map from a ROOT file holding an ``x, y, z, bx, by, bz``
-        ntuple. Requires :mod:`uproot`."""
+    def from_root(
+        cls, path, *, tree="field", components=("Bx", "By", "Bz"),
+        scale=1.0, polarity=1,
+    ):
+        """Read Bx/By/Bz TH3 histograms, or fall back to a field TNtuple.
+
+        Histogram bin contents are sampled at bin centres and interpolated on
+        their common regular grid. Requires :mod:`uproot`.
+        """
         try:
             import uproot
         except ImportError as error:  # pragma: no cover - depends on the env
@@ -130,14 +143,78 @@ class MagneticField:
 
         path = Path(path)
         with uproot.open(path) as handle:
-            columns = handle[tree].arrays(library="np")
+            if all(name in handle for name in components):
+                histograms = {
+                    canonical: handle[source_name]
+                    for canonical, source_name in zip(("Bx", "By", "Bz"), components)
+                }
+                return cls.from_histograms(
+                    histograms, scale=scale * _polarity_scale(polarity), source=path
+                )
+            try:
+                columns = handle[tree].arrays(library="np")
+            except KeyError as error:
+                raise FieldMapError(
+                    f"{path} needs Bx/By/Bz TH3 histograms or a '{tree}' TNtuple"
+                ) from error
         try:
             samples = [columns[name] for name in ("x", "y", "z", "bx", "by", "bz")]
         except KeyError as error:
             raise FieldMapError(
                 f"{path}:{tree} must provide x, y, z, bx, by, bz branches"
             ) from error
-        return cls.from_samples(*samples, scale=scale, source=path)
+        return cls.from_samples(
+            *samples, scale=scale * _polarity_scale(polarity), source=path
+        )
+
+    @classmethod
+    def from_histograms(cls, histograms, *, scale=1.0, source=None):
+        """Build a map from named ``Bx``, ``By``, ``Bz`` ROOT-like TH3 objects."""
+        names = ("Bx", "By", "Bz")
+        missing = [name for name in names if name not in histograms]
+        if missing:
+            raise FieldMapError(f"missing field component histograms: {missing}")
+
+        axes = None
+        values = []
+        for name in names:
+            histogram = histograms[name]
+            classname = getattr(histogram, "classname", "")
+            if classname and not classname.startswith("TH3"):
+                raise FieldMapError(f"{name} must be a TH3 histogram, got {classname}")
+            edges = tuple(
+                np.asarray(histogram.axis(index).edges(), dtype=float)
+                for index in range(3)
+            )
+            if axes is None:
+                axes = edges
+            elif any(
+                not np.array_equal(current, reference)
+                for current, reference in zip(edges, axes)
+            ):
+                raise FieldMapError("Bx, By, and Bz histograms need identical axes")
+            array = np.asarray(histogram.values(flow=False), dtype=np.float32)
+            if array.shape != tuple(len(edge) - 1 for edge in edges):
+                raise FieldMapError(f"{name} histogram values do not match its axes")
+            values.append(array)
+
+        centres = tuple(0.5 * (edge[:-1] + edge[1:]) for edge in axes)
+        origin, spacing, shape = [], [], []
+        for axis_name, nodes in zip("xyz", centres):
+            if nodes.size < 2:
+                raise FieldMapError(f"the {axis_name} axis needs at least two bins")
+            steps = np.diff(nodes)
+            step = float(steps[0])
+            if step <= 0 or not np.allclose(steps, step, rtol=0, atol=1e-6 * abs(step)):
+                raise FieldMapError(f"the {axis_name} histogram axis is not regular")
+            origin.append(float(nodes[0]))
+            spacing.append(step)
+            shape.append(int(nodes.size))
+
+        grid = Grid(tuple(origin), tuple(spacing), tuple(shape))
+        return cls(
+            np.stack(values, axis=-1), grid, scale=scale, source=source
+        )
 
     @classmethod
     def from_samples(cls, x, y, z, bx, by, bz, *, scale=1.0, source=None):
@@ -177,7 +254,7 @@ class MagneticField:
         return cls(values, grid, scale=scale, source=source)
 
     @classmethod
-    def from_npz(cls, path, *, scale=1.0):
+    def from_npz(cls, path, *, scale=1.0, polarity=1):
         """Load a map previously written by :meth:`to_npz`."""
         path = Path(path)
         with np.load(path) as payload:
@@ -188,7 +265,9 @@ class MagneticField:
             )
             values = payload["values"]
             source = str(payload["source"]) if "source" in payload else path
-        return cls(values, grid, scale=scale, source=source)
+        return cls(
+            values, grid, scale=scale * _polarity_scale(polarity), source=source
+        )
 
     def to_npz(self, path):
         """Write the map as a compressed ``.npz``, for hosts without uproot."""
@@ -205,12 +284,20 @@ class MagneticField:
         return path
 
     @classmethod
-    def load(cls, path, **kwargs):
-        """Load from ``.root`` or ``.npz``, picking the reader by suffix."""
+    def load(cls, path, *, scale=1.0, polarity=1, **kwargs):
+        """Load a map, optionally reversing the full vector field.
+
+        ``polarity=-1`` reverses Bx, By, and Bz. ``scale`` remains available
+        for non-polarity field-strength adjustments.
+        """
         path = Path(path)
         if path.suffix == ".npz":
-            return cls.from_npz(path, **kwargs)
-        return cls.from_root(path, **kwargs)
+            return cls.from_npz(
+                path, scale=scale, polarity=polarity, **kwargs
+            )
+        return cls.from_root(
+            path, scale=scale, polarity=polarity, **kwargs
+        )
 
     # -------------------------------------------------------------- queries
 

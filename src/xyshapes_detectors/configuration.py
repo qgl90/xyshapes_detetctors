@@ -163,6 +163,11 @@ def load_mask_configuration(identifier, *, catalog=None, exact_surfaces=True):
         raise FileNotFoundError(f"detector setup directory not found: {setup_path}")
     config_path = setup_path / "config.json"
     config = json.loads(config_path.read_text(encoding="utf-8")) if config_path.exists() else {}
+    if not shape_dirs and config.get("shape_dirs"):
+        shape_dirs = [
+            (setup_path / relative_path).resolve()
+            for relative_path in config["shape_dirs"]
+        ]
     if shape_dirs:
         model = AcceptanceModel.from_layout(
             setup_path / "layout.csv",

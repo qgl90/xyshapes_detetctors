@@ -1,8 +1,8 @@
 """Turn propagated tracks into per-detector acceptance counts.
 
 The layout CSVs describe one Shapely XY shape per extracted surface, so a
-single logical layer can appear many times: the Target Velo sensors are
-exported as an entry and an exit face 1 mm apart, and one Mighty Pixel station
+single logical layer can appear many times: each Target Velo module has
+different sensors at two centre-Z positions 0.992 mm apart, and one Mighty Pixel station
 is 120 staggered tiles spread over 5 mm in ``z``.  Counting raw surfaces would
 therefore be meaningless.
 
@@ -56,6 +56,10 @@ def _add_canonical_flags(columns, suffix=""):
         return columns.get(key)
 
     aliases = {}
+    tv_count = value("nTV")
+    if tv_count is not None:
+        aliases["hasTV_3Hits"] = tv_count >= 3
+        aliases["hasTV_4Hits"] = tv_count >= 4
     muon_count = value("nMUON")
     if muon_count is not None:
         aliases["nMuon"] = muon_count
@@ -319,6 +323,33 @@ class AcceptanceModel:
                     crossings.y[reached, column],
                 )
                 hits[reached, station] |= inside
+        return hits
+
+    def fired_trajectory(self, trajectory):
+        """Return logical-layer hits for a Z-integrated trajectory.
+
+        The trajectory must reach the last surface in this model. Each
+        surface is tested at its own z, including surfaces grouped into one
+        logical layer; this avoids replacing a thick layer with a mean-z mask.
+        """
+        if self.plane_z.size == 0:
+            return np.zeros((1, 0), dtype=bool)
+        if self.plane_z[-1] > trajectory.z[-1]:
+            raise ValueError(
+                "trajectory must span all acceptance surfaces: "
+                f"[{self.plane_z[0]:g}, {self.plane_z[-1]:g}] mm"
+            )
+        downstream = self.plane_z >= trajectory.z[0]
+        xy = np.full((len(self.plane_z), 2), np.nan)
+        xy[downstream] = trajectory.intercepts(self.plane_z[downstream])
+        hits = np.zeros((1, len(self.stations)), dtype=bool)
+        for station, members in enumerate(self._members):
+            for column, geometry in members:
+                if not downstream[column]:
+                    continue
+                hits[0, station] |= shapely.contains_xy(
+                    geometry, xy[column, 0], xy[column, 1]
+                )
         return hits
 
     def counts(self, crossings=None, *, fired=None):

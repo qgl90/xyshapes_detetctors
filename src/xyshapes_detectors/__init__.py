@@ -20,8 +20,15 @@ from .magnetic_field import (
     zero_field,
 )
 from .propagation import Track, propagate, propagate_to_z, trajectory
+from .trajectory import TrackState, Trajectory, TrajectoryError, create_trajectory
+from .transport import BatchTransportResult, DetectorTransport, TrackTransportResult
+from .variants import ft_with_hole_layers, mp_hole_envelope
+from .comparison import DEFAULT_COMPARISON, GeometryComparison, label_tracks
 
 __all__ = [
+    "DEFAULT_COMPARISON",
+    "GeometryComparison",
+    "label_tracks",
     "box_with_hole",
     "polygon_from_points",
     "dump_geometries",
@@ -35,6 +42,15 @@ __all__ = [
     "propagate",
     "propagate_to_z",
     "trajectory",
+    "TrackState",
+    "Trajectory",
+    "TrajectoryError",
+    "create_trajectory",
+    "DetectorTransport",
+    "TrackTransportResult",
+    "BatchTransportResult",
+    "ft_with_hole_layers",
+    "mp_hole_envelope",
     "AcceptanceModel",
     "Station",
     "group_stations",
