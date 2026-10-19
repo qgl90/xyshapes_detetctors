@@ -89,6 +89,10 @@ they do not determine the polarity of the input data.
 
 See [clone and decay-study quickstart](docs/decay_study_quickstart.md) and
 [the geometry, TV and validation slides](docs/geometry_documentation/acceptance_study_summary.pdf).
+The [tool user-guide presentation](docs/geometry_documentation/tool_user_guide_slides.pdf)
+explains the workflow, default geometries and every flag family; the
+[runtime output schema](docs/geometry_documentation/tool_output_schema.json)
+lists all 492 default column names and dtypes.
 
 Each of the six original setups also has an `_FT_withHole` variant. Its FT
 acceptance excludes the **MP left/right sides joined near X=0**, filling their

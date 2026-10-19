@@ -1,0 +1,3542 @@
+{
+  "api": "PolarityComparison.label_tracks",
+  "sample_states": {
+    "x": [
+      0.0,
+      0.0
+    ],
+    "y": [
+      0.0,
+      0.0
+    ],
+    "z": [
+      0.0,
+      0.0
+    ],
+    "tx": [
+      0.04,
+      0.02
+    ],
+    "ty": [
+      0.01,
+      -0.01
+    ],
+    "q_over_p": [
+      5e-05,
+      -2e-05
+    ]
+  },
+  "units": "mm, MeV/c, tesla",
+  "map_polarity": "magdown",
+  "polarity_factors": {
+    "magup": -1,
+    "magdown": 1
+  },
+  "geometries": {
+    "up_gdml_ft_8_8_10_withHole": "lhcb_lower_up_gdml_ft_8_8_10_FT_withHole",
+    "up_gdml_ft_10_10_12_withHole": "lhcb_lower_up_gdml_ft_10_10_12_FT_withHole",
+    "up_y8_ft_8_8_10_withHole": "lhcb_lower_up_y8_ft_8_8_10_FT_withHole",
+    "up_y8_ft_10_10_12_withHole": "lhcb_lower_up_y8_ft_10_10_12_FT_withHole",
+    "up_y8x6_ft_8_8_10_withHole": "lhcb_lower_up_y8x6_ft_8_8_10_FT_withHole",
+    "up_y8x6_ft_10_10_12_withHole": "lhcb_lower_up_y8x6_ft_10_10_12_FT_withHole"
+  },
+  "mt_selection": {
+    "min_mp": 3,
+    "min_ft": 10,
+    "mixed_min_mp": 1,
+    "mixed_min_ft": 6
+  },
+  "include_layer_hits": false,
+  "properties_per_prediction": 41,
+  "predictions": 12,
+  "total_columns": 492,
+  "properties": {
+    "nTV": "int64",
+    "hasTV": "bool",
+    "nRICH1": "int64",
+    "hasRICH1": "bool",
+    "nUP": "int64",
+    "hasUP": "bool",
+    "nMP": "int64",
+    "hasMP": "bool",
+    "nFT": "int64",
+    "hasFT": "bool",
+    "nRICH2": "int64",
+    "hasRICH2": "bool",
+    "nPicoCal": "int64",
+    "hasPicoCal": "bool",
+    "nMUON": "int64",
+    "hasMUON": "bool",
+    "hasTV_3Hits": "bool",
+    "hasTV_4Hits": "bool",
+    "hasMT": "bool",
+    "RICH1_entry": "bool",
+    "RICH1_exit": "bool",
+    "RICH1_entry_exit": "bool",
+    "RICH1_entry_only": "bool",
+    "RICH2_entry": "bool",
+    "RICH2_exit": "bool",
+    "RICH2_entry_exit": "bool",
+    "RICH2_entry_only": "bool",
+    "PicoCal_entry": "bool",
+    "PicoCal_exit": "bool",
+    "PicoCal_entry_exit": "bool",
+    "PicoCal_entry_only": "bool",
+    "inPicoCal": "bool",
+    "nMuon": "int64",
+    "hasMuon": "bool",
+    "isMuon": "bool",
+    "hasRich1Entry": "bool",
+    "hasRich1Exit": "bool",
+    "hasRich2Entry": "bool",
+    "hasRich2Exit": "bool",
+    "hasRichEntry": "bool",
+    "hasRichExit": "bool"
+  },
+  "columns": {
+    "nTV_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        7,
+        4
+      ]
+    },
+    "hasTV_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nRICH1_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasRICH1_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nUP_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        4
+      ]
+    },
+    "hasUP_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nMP_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        3,
+        5
+      ]
+    },
+    "hasMP_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nFT_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        0
+      ]
+    },
+    "hasFT_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "nRICH2_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        2
+      ]
+    },
+    "hasRICH2_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "nPicoCal_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        2
+      ]
+    },
+    "hasPicoCal_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "nMUON_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        4
+      ]
+    },
+    "hasMUON_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasTV_3Hits_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasTV_4Hits_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasMT_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "RICH1_entry_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_exit_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_exit_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_only_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "RICH2_entry_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "RICH2_exit_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "RICH2_entry_exit_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "RICH2_entry_only_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "PicoCal_entry_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "PicoCal_exit_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "PicoCal_entry_exit_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "PicoCal_entry_only_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "inPicoCal_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "nMuon_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        4
+      ]
+    },
+    "hasMuon_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "isMuon_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasRich1Entry_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich1Exit_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich2Entry_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasRich2Exit_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasRichEntry_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasRichExit_up_gdml_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nTV_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        7,
+        4
+      ]
+    },
+    "hasTV_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nRICH1_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasRICH1_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nUP_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        4
+      ]
+    },
+    "hasUP_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nMP_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        3,
+        5
+      ]
+    },
+    "hasMP_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nFT_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        0
+      ]
+    },
+    "hasFT_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "nRICH2_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        2
+      ]
+    },
+    "hasRICH2_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "nPicoCal_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        2
+      ]
+    },
+    "hasPicoCal_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "nMUON_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        4
+      ]
+    },
+    "hasMUON_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasTV_3Hits_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasTV_4Hits_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasMT_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "RICH1_entry_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_exit_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_exit_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_only_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "RICH2_entry_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "RICH2_exit_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "RICH2_entry_exit_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "RICH2_entry_only_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "PicoCal_entry_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "PicoCal_exit_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "PicoCal_entry_exit_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "PicoCal_entry_only_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "inPicoCal_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "nMuon_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        4
+      ]
+    },
+    "hasMuon_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "isMuon_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasRich1Entry_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich1Exit_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich2Entry_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasRich2Exit_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasRichEntry_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasRichExit_up_gdml_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nTV_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        7,
+        4
+      ]
+    },
+    "hasTV_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nRICH1_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasRICH1_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nUP_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        4
+      ]
+    },
+    "hasUP_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nMP_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        3,
+        5
+      ]
+    },
+    "hasMP_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nFT_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        0
+      ]
+    },
+    "hasFT_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "nRICH2_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        2
+      ]
+    },
+    "hasRICH2_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "nPicoCal_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        2
+      ]
+    },
+    "hasPicoCal_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "nMUON_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        4
+      ]
+    },
+    "hasMUON_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasTV_3Hits_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasTV_4Hits_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasMT_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "RICH1_entry_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_exit_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_exit_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_only_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "RICH2_entry_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "RICH2_exit_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "RICH2_entry_exit_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "RICH2_entry_only_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "PicoCal_entry_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "PicoCal_exit_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "PicoCal_entry_exit_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "PicoCal_entry_only_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "inPicoCal_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "nMuon_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        4
+      ]
+    },
+    "hasMuon_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "isMuon_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasRich1Entry_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich1Exit_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich2Entry_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasRich2Exit_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasRichEntry_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasRichExit_up_y8_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nTV_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        7,
+        4
+      ]
+    },
+    "hasTV_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nRICH1_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasRICH1_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nUP_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        4
+      ]
+    },
+    "hasUP_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nMP_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        3,
+        5
+      ]
+    },
+    "hasMP_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nFT_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        0
+      ]
+    },
+    "hasFT_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "nRICH2_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        2
+      ]
+    },
+    "hasRICH2_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "nPicoCal_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        2
+      ]
+    },
+    "hasPicoCal_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "nMUON_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        4
+      ]
+    },
+    "hasMUON_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasTV_3Hits_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasTV_4Hits_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasMT_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "RICH1_entry_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_exit_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_exit_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_only_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "RICH2_entry_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "RICH2_exit_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "RICH2_entry_exit_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "RICH2_entry_only_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "PicoCal_entry_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "PicoCal_exit_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "PicoCal_entry_exit_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "PicoCal_entry_only_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "inPicoCal_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "nMuon_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        4
+      ]
+    },
+    "hasMuon_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "isMuon_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasRich1Entry_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich1Exit_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich2Entry_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasRich2Exit_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasRichEntry_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasRichExit_up_y8_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nTV_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        7,
+        4
+      ]
+    },
+    "hasTV_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nRICH1_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasRICH1_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nUP_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        4
+      ]
+    },
+    "hasUP_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nMP_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        3,
+        5
+      ]
+    },
+    "hasMP_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nFT_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        0
+      ]
+    },
+    "hasFT_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "nRICH2_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        2
+      ]
+    },
+    "hasRICH2_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "nPicoCal_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        2
+      ]
+    },
+    "hasPicoCal_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "nMUON_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        4
+      ]
+    },
+    "hasMUON_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasTV_3Hits_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasTV_4Hits_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasMT_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "RICH1_entry_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_exit_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_exit_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_only_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "RICH2_entry_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "RICH2_exit_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "RICH2_entry_exit_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "RICH2_entry_only_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "PicoCal_entry_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "PicoCal_exit_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "PicoCal_entry_exit_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "PicoCal_entry_only_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "inPicoCal_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "nMuon_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        4
+      ]
+    },
+    "hasMuon_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "isMuon_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasRich1Entry_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich1Exit_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich2Entry_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasRich2Exit_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasRichEntry_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasRichExit_up_y8x6_ft_8_8_10_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nTV_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        7,
+        4
+      ]
+    },
+    "hasTV_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nRICH1_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasRICH1_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nUP_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        4
+      ]
+    },
+    "hasUP_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nMP_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        3,
+        5
+      ]
+    },
+    "hasMP_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nFT_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        0
+      ]
+    },
+    "hasFT_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "nRICH2_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        2
+      ]
+    },
+    "hasRICH2_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "nPicoCal_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        2
+      ]
+    },
+    "hasPicoCal_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "nMUON_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        4
+      ]
+    },
+    "hasMUON_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasTV_3Hits_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasTV_4Hits_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasMT_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "RICH1_entry_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_exit_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_exit_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_only_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "RICH2_entry_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "RICH2_exit_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "RICH2_entry_exit_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "RICH2_entry_only_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "PicoCal_entry_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "PicoCal_exit_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "PicoCal_entry_exit_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "PicoCal_entry_only_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "inPicoCal_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "nMuon_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        4
+      ]
+    },
+    "hasMuon_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "isMuon_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasRich1Entry_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich1Exit_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich2Entry_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasRich2Exit_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        true
+      ]
+    },
+    "hasRichEntry_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasRichExit_up_y8x6_ft_10_10_12_withHole_magup": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nTV_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        7,
+        4
+      ]
+    },
+    "hasTV_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nRICH1_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasRICH1_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nUP_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        4
+      ]
+    },
+    "hasUP_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nMP_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        5,
+        0
+      ]
+    },
+    "hasMP_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nFT_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        0
+      ]
+    },
+    "hasFT_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "nRICH2_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasRICH2_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nPicoCal_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasPicoCal_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nMUON_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        0
+      ]
+    },
+    "hasMUON_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasTV_3Hits_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasTV_4Hits_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasMT_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_exit_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_exit_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_only_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "RICH2_entry_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH2_exit_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH2_entry_exit_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH2_entry_only_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "PicoCal_entry_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "PicoCal_exit_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "PicoCal_entry_exit_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "PicoCal_entry_only_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "inPicoCal_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nMuon_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        0
+      ]
+    },
+    "hasMuon_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "isMuon_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich1Entry_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich1Exit_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich2Entry_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich2Exit_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRichEntry_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRichExit_up_gdml_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nTV_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        7,
+        4
+      ]
+    },
+    "hasTV_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nRICH1_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasRICH1_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nUP_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        4
+      ]
+    },
+    "hasUP_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nMP_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        5,
+        0
+      ]
+    },
+    "hasMP_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nFT_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        0
+      ]
+    },
+    "hasFT_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "nRICH2_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasRICH2_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nPicoCal_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasPicoCal_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nMUON_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        0
+      ]
+    },
+    "hasMUON_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasTV_3Hits_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasTV_4Hits_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasMT_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_exit_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_exit_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_only_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "RICH2_entry_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH2_exit_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH2_entry_exit_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH2_entry_only_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "PicoCal_entry_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "PicoCal_exit_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "PicoCal_entry_exit_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "PicoCal_entry_only_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "inPicoCal_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nMuon_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        0
+      ]
+    },
+    "hasMuon_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "isMuon_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich1Entry_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich1Exit_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich2Entry_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich2Exit_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRichEntry_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRichExit_up_gdml_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nTV_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        7,
+        4
+      ]
+    },
+    "hasTV_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nRICH1_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasRICH1_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nUP_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        4
+      ]
+    },
+    "hasUP_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nMP_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        5,
+        0
+      ]
+    },
+    "hasMP_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nFT_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        0
+      ]
+    },
+    "hasFT_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "nRICH2_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasRICH2_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nPicoCal_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasPicoCal_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nMUON_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        0
+      ]
+    },
+    "hasMUON_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasTV_3Hits_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasTV_4Hits_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasMT_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_exit_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_exit_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_only_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "RICH2_entry_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH2_exit_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH2_entry_exit_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH2_entry_only_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "PicoCal_entry_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "PicoCal_exit_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "PicoCal_entry_exit_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "PicoCal_entry_only_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "inPicoCal_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nMuon_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        0
+      ]
+    },
+    "hasMuon_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "isMuon_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich1Entry_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich1Exit_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich2Entry_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich2Exit_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRichEntry_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRichExit_up_y8_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nTV_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        7,
+        4
+      ]
+    },
+    "hasTV_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nRICH1_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasRICH1_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nUP_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        4
+      ]
+    },
+    "hasUP_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nMP_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        5,
+        0
+      ]
+    },
+    "hasMP_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nFT_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        0
+      ]
+    },
+    "hasFT_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "nRICH2_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasRICH2_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nPicoCal_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasPicoCal_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nMUON_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        0
+      ]
+    },
+    "hasMUON_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasTV_3Hits_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasTV_4Hits_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasMT_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_exit_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_exit_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_only_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "RICH2_entry_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH2_exit_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH2_entry_exit_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH2_entry_only_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "PicoCal_entry_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "PicoCal_exit_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "PicoCal_entry_exit_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "PicoCal_entry_only_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "inPicoCal_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nMuon_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        0
+      ]
+    },
+    "hasMuon_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "isMuon_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich1Entry_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich1Exit_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich2Entry_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich2Exit_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRichEntry_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRichExit_up_y8_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nTV_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        7,
+        4
+      ]
+    },
+    "hasTV_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nRICH1_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasRICH1_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nUP_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        4
+      ]
+    },
+    "hasUP_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nMP_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        5,
+        0
+      ]
+    },
+    "hasMP_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nFT_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        0
+      ]
+    },
+    "hasFT_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "nRICH2_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasRICH2_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nPicoCal_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasPicoCal_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nMUON_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        0
+      ]
+    },
+    "hasMUON_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasTV_3Hits_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasTV_4Hits_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasMT_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_exit_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_exit_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_only_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "RICH2_entry_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH2_exit_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH2_entry_exit_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH2_entry_only_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "PicoCal_entry_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "PicoCal_exit_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "PicoCal_entry_exit_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "PicoCal_entry_only_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "inPicoCal_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nMuon_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        0
+      ]
+    },
+    "hasMuon_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "isMuon_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich1Entry_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich1Exit_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich2Entry_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich2Exit_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRichEntry_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRichExit_up_y8x6_ft_8_8_10_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nTV_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        7,
+        4
+      ]
+    },
+    "hasTV_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nRICH1_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasRICH1_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nUP_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        4
+      ]
+    },
+    "hasUP_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "nMP_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        5,
+        0
+      ]
+    },
+    "hasMP_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nFT_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        0,
+        0
+      ]
+    },
+    "hasFT_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "nRICH2_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasRICH2_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nPicoCal_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        2,
+        0
+      ]
+    },
+    "hasPicoCal_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nMUON_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        0
+      ]
+    },
+    "hasMUON_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasTV_3Hits_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasTV_4Hits_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        true
+      ]
+    },
+    "hasMT_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_exit_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_exit_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH1_entry_only_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "RICH2_entry_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH2_exit_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH2_entry_exit_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "RICH2_entry_only_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "PicoCal_entry_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "PicoCal_exit_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "PicoCal_entry_exit_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "PicoCal_entry_only_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        false,
+        false
+      ]
+    },
+    "inPicoCal_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "nMuon_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "int64",
+      "example_values": [
+        4,
+        0
+      ]
+    },
+    "hasMuon_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "isMuon_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich1Entry_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich1Exit_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich2Entry_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRich2Exit_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRichEntry_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    },
+    "hasRichExit_up_y8x6_ft_10_10_12_withHole_magdown": {
+      "dtype": "bool",
+      "example_values": [
+        true,
+        false
+      ]
+    }
+  }
+}
