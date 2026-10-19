@@ -23,11 +23,16 @@ from .propagation import Track, propagate, propagate_to_z, trajectory
 from .trajectory import TrackState, Trajectory, TrajectoryError, create_trajectory
 from .transport import BatchTransportResult, DetectorTransport, TrackTransportResult
 from .variants import ft_with_hole_layers, mp_hole_envelope
-from .comparison import DEFAULT_COMPARISON, GeometryComparison, label_tracks
+from .comparison import (
+    DEFAULT_COMPARISON, GeometryComparison, PolarityComparison,
+    label_tracks, label_tracks_both_polarities,
+)
 from .selection import MTSelection
 
 __all__ = [
     "MTSelection",
+    "PolarityComparison",
+    "label_tracks_both_polarities",
     "DEFAULT_COMPARISON",
     "GeometryComparison",
     "label_tracks",

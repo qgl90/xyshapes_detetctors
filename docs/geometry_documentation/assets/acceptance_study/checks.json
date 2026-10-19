@@ -1,0 +1,36 @@
+{
+  "tracks": 2624,
+  "eta_range": [
+    1.5,
+    5.5
+  ],
+  "phi_samples": 32,
+  "eta_samples": 41,
+  "momentum_MeV": 20000,
+  "charges": [
+    -1,
+    1
+  ],
+  "origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "map_polarity": "magdown",
+  "field_integral_By_Tm": -4.185630786372348,
+  "mt_selection": {
+    "min_mp": 3,
+    "min_ft": 10,
+    "mixed_min_mp": 1,
+    "mixed_min_ft": 6
+  },
+  "invariants": {
+    "identical_MP_magup": true,
+    "baseline_FT_contains_lower_magup": true,
+    "UP_crop_order_magup": true,
+    "identical_MP_magdown": true,
+    "baseline_FT_contains_lower_magdown": true,
+    "UP_crop_order_magdown": true
+  },
+  "weighting": "uniform eta grid and azimuth; equal charges; illustrative toy, not physics efficiency"
+}

@@ -58,14 +58,37 @@ tracks.update(flags)  # dict of same-length track columns
 ```
 
 This propagates each track once and applies all three UP variants (`gdml`,
-`y8`, `y8x6`) with both FT layouts (`8_8_10`, `10_10_12`). Columns include
-`hasTV_3Hits_up_y8x6_ft_8_8_10`, `hasTV_4Hits_up_y8x6_ft_8_8_10`,
-`nUP_up_y8x6_ft_8_8_10` and `nFT_up_y8x6_ft_8_8_10`, plus the corresponding
+`y8`, `y8x6`) with both FT layouts (`8_8_10`, `10_10_12`), using **FT_withHole**.
+Columns include
+`hasTV_3Hits_up_y8x6_ft_8_8_10_withHole`, `hasTV_4Hits_up_y8x6_ft_8_8_10_withHole`,
+`nUP_up_y8x6_ft_8_8_10_withHole` and `nFT_up_y8x6_ft_8_8_10_withHole`, plus the corresponding
 fields for each other configuration. The TV flags mean >=3 and >=4 logical
 module hits. `hasUP`/`hasFT` mean at least one hit; require `nUP == 4` or
 `nFT == 12` for all logical layers. All detector flags are geometry-suffixed.
 See [the comparison API](docs/geometry_comparison.md) for batching, custom
 geometry labels, field polarity and externally projected crossings.
+
+### Both Magnet Polarities
+
+```python
+from xyshapes_detectors import label_tracks_both_polarities
+
+tracks.update(label_tracks_both_polarities(
+    states, field_path="MagField/magnetic_field_v5r0.root",
+    map_polarity="magdown",  # polarity of the supplied map
+))
+```
+
+This returns both `_magup` and `_magdown` columns for each geometry, for example
+`hasMT_up_y8x6_ft_8_8_10_withHole_magup`. Transport runs twice per track, once
+per polarity, not twelve times. For large samples reuse `PolarityComparison`.
+The default `hasMT` rule is `(nMP >= 3) | (nFT >= 10) | ((nMP >= 1) & (nFT >= 6))`.
+Its four thresholds are configurable with `MTSelection`, globally or per
+geometry. These flags describe hypothetical acceptance under each polarity;
+they do not determine the polarity of the input data.
+
+See [clone and decay-study quickstart](docs/decay_study_quickstart.md) and
+[the geometry, TV and validation slides](docs/geometry_documentation/acceptance_study_summary.pdf).
 
 Each of the six original setups also has an `_FT_withHole` variant. Its FT
 acceptance excludes the **MP left/right sides joined near X=0**, filling their

@@ -16,7 +16,7 @@ tracks.update(label_tracks(
 ))
 ```
 
-Provide the field ROOT file separately (or an equivalent supported NPZ map).
+The repository includes this ROOT map; an equivalent supported NPZ map also works.
 For reverse polarity use `polarity=-1`, which reverses all three components,
 not only By. There is no material scattering or energy loss.
 
@@ -24,12 +24,14 @@ Default geometry labels and their masks:
 
 | Output suffix | UP | FT modules T1 / T2 / T3 |
 |---|---|---|
-| up_gdml_ft_8_8_10 | nominal GDML | 8 / 8 / 10 |
-| up_gdml_ft_10_10_12 | nominal GDML | 10 / 10 / 12 |
-| up_y8_ft_8_8_10 | top/bottom cutoff | 8 / 8 / 10 |
-| up_y8_ft_10_10_12 | top/bottom cutoff | 10 / 10 / 12 |
-| up_y8x6_ft_8_8_10 | top/bottom and left/right cutoff | 8 / 8 / 10 |
-| up_y8x6_ft_10_10_12 | top/bottom and left/right cutoff | 10 / 10 / 12 |
+| up_gdml_ft_8_8_10_withHole | nominal GDML | 8 / 8 / 10 |
+| up_gdml_ft_10_10_12_withHole | nominal GDML | 10 / 10 / 12 |
+| up_y8_ft_8_8_10_withHole | top/bottom cutoff | 8 / 8 / 10 |
+| up_y8_ft_10_10_12_withHole | top/bottom cutoff | 10 / 10 / 12 |
+| up_y8x6_ft_8_8_10_withHole | top/bottom and left/right cutoff | 8 / 8 / 10 |
+| up_y8x6_ft_10_10_12_withHole | top/bottom and left/right cutoff | 10 / 10 / 12 |
+
+All six default setups use FT_withHole, subtracting the joined MP envelope.
 
 Each setup includes TV, UP, RICH1, MP, FT, RICH2, PicoCal and Muon. TV is
 identical across them: 200 sensitive silicon sensors represented by 100
@@ -41,7 +43,7 @@ not a review-only alternative.
 ## Returned Columns
 
 All arrays are in input-track order, with one scalar per track. For each
-suffix, for example `up_y8x6_ft_8_8_10`, the outputs include:
+suffix, for example `up_y8x6_ft_8_8_10_withHole`, the outputs include:
 
 - `nTV_<suffix>`: number of fired modules, counting each module once.
 - `hasTV_3Hits_<suffix>`: `nTV >= 3`.
@@ -49,6 +51,7 @@ suffix, for example `up_y8x6_ft_8_8_10`, the outputs include:
 - `nUP_<suffix>`: 0-4 logical UP layers, backed by 16 physical surfaces.
 - `nFT_<suffix>`: 0-12 logical X/U/V/X layers, four per station.
 - `nMP_<suffix>`, `nMuon_<suffix>` and detector-presence flags.
+- `hasMT_<suffix>`: `(nMP>=3) | (nFT>=10) | ((nMP>=1) & (nFT>=6))` by default.
 - `hasRich1Entry_<suffix>`, `hasRich1Exit_<suffix>` and equivalent RICH2 flags.
 - `hasRichEntry_<suffix>` and `hasRichExit_<suffix>`: either RICH detector.
 - `hasPicoCal_<suffix>`: at least one configured PicoCal surface hit.
@@ -101,8 +104,42 @@ comparison = GeometryComparison.from_files(
 
 Suffixes must start with a letter and contain only letters, digits and
 underscores. All 12 catalog configurations use the same updated TV masks.
-The default six compare nominal FT surfaces; select `_FT_withHole` explicitly
-to subtract the filled-central-gap MP acceptance from FT.
+The default six compare FT_withHole surfaces. Nominal FT remains available
+only when explicitly selected by configuration ID without `_FT_withHole`.
+
+## Both Polarities and Configurable MT Cuts
+
+```python
+from xyshapes_detectors import MTSelection, PolarityComparison
+
+comparison = PolarityComparison.from_files(
+    "MagField/magnetic_field_v5r0.root", map_polarity="magdown",
+    mt_selection=MTSelection(min_mp=3, min_ft=10, mixed_min_mp=1, mixed_min_ft=6),
+)
+flags = comparison.label_tracks(states)
+```
+
+All columns gain a polarity suffix after the geometry suffix, such as
+`hasMT_up_y8x6_ft_8_8_10_withHole_magup`. One field load and one set of geometry
+objects are reused. Two independent transports are necessary because reversing
+the field changes the trajectory; all six geometries share each transport.
+An iterator of states is materialized once so both polarities see the same
+ordered tracks. Uniform arrays are preferable for large batches.
+
+`map_polarity` labels the supplied field, not a desired output polarity.
+The bundled map has negative integrated By (about -4.186 T m from Z=0 to
+10000 mm) and is designated magdown. Thus magdown uses factor +1 and magup -1.
+All Bx, By, Bz components reverse together. For an already MagUp map pass
+`map_polarity="magup"`. These are ideal sign reversals, not independently
+measured maps. The positive/negative Y convention is described in
+[this LHCb doctoral detector description](https://infoscience.epfl.ch/record/292179/files/EPFL_TH8771.pdf).
+
+Use `label_tracks_both_polarities` for the equivalent one-call API. For custom
+MT cuts per geometry, supply a mapping from the same output suffixes to
+`MTSelection` objects; omitted suffixes use the default cut. Unknown labels
+raise an error. Counts remain available so cuts can also be applied offline
+without rerunning propagation. The two polarity flags are alternative
+predictions, not indicators of which polarity was present in the data.
 
 ## External Projection Service
 
