@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FT projection of M4 border rays</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f7f8fb;
+      color: #17202a;
+    }
+    header {
+      padding: 16px 20px 10px;
+      background: #fff;
+      border-bottom: 1px solid #d9dee7;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      color: #4f5f73;
+      font-size: 13px;
+    }
+    main {
+      position: relative;
+      min-height: 0;
+    }
+    canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: linear-gradient(#fbfcfe, #eef2f7);
+    }
+    .panel {
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      width: 310px;
+      padding: 10px 12px;
+      border: 1px solid #d9dee7;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.94);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .key {
+      display: inline-block;
+      width: 11px;
+      height: 11px;
+      margin-right: 6px;
+      border: 1px solid rgba(0,0,0,.25);
+      vertical-align: -1px;
+    }
+    table {
+      border-collapse: collapse;
+      margin-top: 8px;
+      width: 100%;
+      font-size: 12px;
+    }
+    td, th {
+      text-align: right;
+      padding: 2px 4px;
+    }
+    th:first-child, td:first-child {
+      text-align: left;
+    }
+    .bad { color: #a23b3b; font-weight: 700; }
+    .good { color: #2f6d3a; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FT projection of M4 border rays</h1>
+    <div class="meta">
+      <span>Rays originate at (0,0,0)</span>
+      <span>Outer and inner M4 borders are projected to T1, T2, and T3</span>
+      <span>Drag to rotate. Wheel to zoom.</span>
+    </div>
+  </header>
+  <main>
+    <canvas id="scene"></canvas>
+    <div class="panel">
+      <div><span class="key" style="background:#6a9f58"></span>FT active surface</div>
+      <div><span class="key" style="background:#f2c14e"></span>M4 outer projection at FT z</div>
+      <div><span class="key" style="background:#ffffff"></span>M4 inner hole projection</div>
+      <div><span class="key" style="background:#7a8fbd"></span>Muon M4 reference</div>
+      <table>
+        <thead><tr><th>layer</th><th>x margin</th><th>y margin</th></tr></thead>
+        <tbody id="margins"></tbody>
+      </table>
+    </div>
+  </main>
+  <script>
+    const surfaces = [{"outer": [[-2646.5, -2177.0], [-2646.5, 2177.0], [2646.5, 2177.0], [2646.5, -2177.0]], "holes": [[[130.0, 130.0], [-130.0, 130.0], [-130.0, -130.0], [130.0, -130.0]]], "bounds": [-2646.5, -2177.0, 2646.5, 2177.0], "station": "T1", "shape": "FT_10Modules", "z": 7931.0, "requiredOuter": [[-2548.018896434635, -2115.2043800833617], [-2548.018896434635, 2115.2043800833617], [2548.018896434635, 2115.2043800833617], [2548.018896434635, -2115.2043800833617]], "requiredInner": [[-159.47279569892473, -128.39961212263725], [-159.47279569892473, 128.39961212263725], [159.47279569892473, 128.39961212263725], [159.47279569892473, -128.39961212263725]], "xMargin": 98.48110356536517, "yMargin": 61.795619916638316}, {"outer": [[-2646.5, -2177.0], [-2646.5, 2177.0], [2646.5, 2177.0], [2646.5, -2177.0]], "holes": [[[130.0, 130.0], [-130.0, 130.0], [-130.0, -130.0], [130.0, -130.0]]], "bounds": [-2646.5, -2177.0, 2646.5, 2177.0], "station": "T2", "shape": "FT_10Modules", "z": 8613.0, "requiredOuter": [[-2767.1273174872663, -2297.0943545149403], [-2767.1273174872663, 2297.0943545149403], [2767.1273174872663, 2297.0943545149403], [2767.1273174872663, -2297.0943545149403]], "requiredInner": [[-173.18612903225807, -139.4409102524618], [-173.18612903225807, 139.4409102524618], [173.18612903225807, 139.4409102524618], [173.18612903225807, -139.4409102524618]], "xMargin": -120.62731748726628, "yMargin": -120.09435451494028}, {"outer": [[-3175.7999999999997, -2177.0], [-3175.7999999999997, 2177.0], [3175.7999999999997, 2177.0], [3175.7999999999997, -2177.0]], "holes": [[[130.0, 130.0], [-130.0, 130.0], [-130.0, -130.0], [130.0, -130.0]]], "bounds": [-3175.7999999999997, -2177.0, 3175.7999999999997, 2177.0], "station": "T3", "shape": "FT_12Modules", "z": 9298.0, "requiredOuter": [[-2987.199558573854, -2479.7844314733443], [-2987.199558573854, 2479.7844314733443], [2987.199558573854, 2479.7844314733443], [2987.199558573854, -2479.7844314733443]], "requiredInner": [[-186.95978494623657, -150.53077714238822], [-186.95978494623657, 150.53077714238822], [186.95978494623657, 150.53077714238822], [186.95978494623657, -150.53077714238822]], "xMargin": 188.6004414261456, "yMargin": -302.7844314733443}];
+    const m4 = {"outer": [[-5676.9, -4712.603883], [-5676.9, 4712.603883], [5676.9, 4712.603883], [5676.9, -4712.603883]], "holes": [[[355.3, 286.069997], [-355.3, 286.069997], [-355.3, -286.069997], [355.3, -286.069997]]], "bounds": [-5676.9, -4712.603883, 5676.9, 4712.603883], "station": "M4", "shape": "Muon M4", "z": 17670.0};
+    const canvas = document.getElementById("scene");
+    const context = canvas.getContext("2d");
+    let yaw = -0.58;
+    let pitch = 0.40;
+    let zoom = 0.15;
+    let dragging = false;
+    let lastX = 0;
+    let lastY = 0;
+    const zCenter = 11600;
+
+    document.getElementById("margins").innerHTML = surfaces.map(surface => {
+      const xClass = surface.xMargin >= 0 ? "good" : "bad";
+      const yClass = surface.yMargin >= 0 ? "good" : "bad";
+      return `<tr><td>${surface.station}</td><td class="${xClass}">${surface.xMargin.toFixed(1)}</td><td class="${yClass}">${surface.yMargin.toFixed(1)}</td></tr>`;
+    }).join("");
+
+    function resize() {
+      const ratio = window.devicePixelRatio || 1;
+      canvas.width = Math.floor(canvas.clientWidth * ratio);
+      canvas.height = Math.floor(canvas.clientHeight * ratio);
+      context.setTransform(ratio, 0, 0, ratio, 0, 0);
+      draw();
+    }
+
+    function rotate(point) {
+      const x = point.x;
+      const y = point.y;
+      const z = point.z - zCenter;
+      const cy = Math.cos(yaw);
+      const sy = Math.sin(yaw);
+      const cp = Math.cos(pitch);
+      const sp = Math.sin(pitch);
+      const x1 = x * cy - z * sy;
+      const z1 = x * sy + z * cy;
+      return {x: x1, y: y * cp - z1 * sp, z: y * sp + z1 * cp};
+    }
+
+    function project(point) {
+      const rotated = rotate(point);
+      const distance = 8200;
+      const scale = zoom * distance / (distance + rotated.z);
+      return {
+        x: canvas.clientWidth / 2 + rotated.x * scale,
+        y: canvas.clientHeight / 2 - rotated.y * scale,
+        depth: rotated.z
+      };
+    }
+
+    function pathFor(points, z) {
+      context.beginPath();
+      points.forEach(([x, y], index) => {
+        const projected = project({x, y, z});
+        if (index === 0) context.moveTo(projected.x, projected.y);
+        else context.lineTo(projected.x, projected.y);
+      });
+      context.closePath();
+    }
+
+    function drawPolygon(points, z, fill, stroke, lineWidth, dash=[]) {
+      pathFor(points, z);
+      context.fillStyle = fill;
+      context.strokeStyle = stroke;
+      context.lineWidth = lineWidth;
+      context.setLineDash(dash);
+      context.fill();
+      context.stroke();
+      context.setLineDash([]);
+    }
+
+    function drawSurface(surface) {
+      drawPolygon(surface.outer, surface.z, "#6a9f5866", "#1f2f46", 1.2);
+      surface.holes.forEach(hole => drawPolygon(hole, surface.z, "#f7f8fb", "#9b2d2d", 1.0));
+      drawPolygon(surface.requiredOuter, surface.z, "#f2c14e55", "#a77400", 2.0, [8, 5]);
+      drawPolygon(surface.requiredInner, surface.z, "#ffffffbb", "#a23b3b", 1.5, [4, 4]);
+
+      const label = project({x: surface.bounds[0], y: surface.bounds[3] + 180, z: surface.z});
+      context.fillStyle = "#17202a";
+      context.font = "12px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif";
+      context.fillText(`${surface.station} ${surface.shape} z=${surface.z.toFixed(0)}`, label.x, label.y);
+    }
+
+    function drawM4() {
+      drawPolygon(m4.outer, m4.z, "#7a8fbd33", "#2b3f73", 1.5);
+      m4.holes.forEach(hole => drawPolygon(hole, m4.z, "#f7f8fb", "#9b2d2d", 1.0));
+      const label = project({x: m4.bounds[0], y: m4.bounds[3] + 240, z: m4.z});
+      context.fillStyle = "#17202a";
+      context.font = "12px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif";
+      context.fillText("M4 reference z=17670", label.x, label.y);
+    }
+
+    function drawRays() {
+      const corners = [
+        [m4.bounds[2], m4.bounds[3]],
+        [-m4.bounds[2], m4.bounds[3]],
+        [m4.bounds[2], -m4.bounds[3]],
+        [-m4.bounds[2], -m4.bounds[3]]
+      ];
+      context.strokeStyle = "#a77400";
+      context.lineWidth = 1.0;
+      context.setLineDash([6, 6]);
+      corners.forEach(([x, y]) => {
+        const p0 = project({x: 0, y: 0, z: 0});
+        const p1 = project({x, y, z: m4.z});
+        context.beginPath();
+        context.moveTo(p0.x, p0.y);
+        context.lineTo(p1.x, p1.y);
+        context.stroke();
+      });
+      context.setLineDash([]);
+    }
+
+    function drawAxis() {
+      const start = project({x: -3400, y: -2600, z: 7600});
+      const end = project({x: -3400, y: -2600, z: 18000});
+      context.strokeStyle = "#59677a";
+      context.lineWidth = 2;
+      context.beginPath();
+      context.moveTo(start.x, start.y);
+      context.lineTo(end.x, end.y);
+      context.stroke();
+      context.fillStyle = "#59677a";
+      context.font = "14px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif";
+      context.fillText("z", end.x + 8, end.y);
+    }
+
+    function draw() {
+      context.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight);
+      drawAxis();
+      drawRays();
+      [...surfaces, m4]
+        .map(surface => ({surface, depth: rotate({x: 0, y: 0, z: surface.z}).z}))
+        .sort((a, b) => b.depth - a.depth)
+        .forEach(item => item.surface.station === "M4" ? drawM4() : drawSurface(item.surface));
+    }
+
+    canvas.addEventListener("pointerdown", event => {
+      dragging = true;
+      lastX = event.clientX;
+      lastY = event.clientY;
+      canvas.setPointerCapture(event.pointerId);
+    });
+    canvas.addEventListener("pointermove", event => {
+      if (!dragging) return;
+      yaw += (event.clientX - lastX) * 0.006;
+      pitch += (event.clientY - lastY) * 0.006;
+      pitch = Math.max(-1.2, Math.min(1.2, pitch));
+      lastX = event.clientX;
+      lastY = event.clientY;
+      draw();
+    });
+    canvas.addEventListener("pointerup", () => { dragging = false; });
+    canvas.addEventListener("wheel", event => {
+      event.preventDefault();
+      zoom *= event.deltaY > 0 ? 0.92 : 1.08;
+      zoom = Math.max(0.045, Math.min(0.5, zoom));
+      draw();
+    }, {passive: false});
+    window.addEventListener("resize", resize);
+    resize();
+  </script>
+</body>
+</html>

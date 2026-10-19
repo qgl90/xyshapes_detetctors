@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FT T3 projection to M4</title>
+  <style>
+    body {
+      margin: 32px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #17202a;
+      background: #f7f8fb;
+    }
+    h1 {
+      font-size: 24px;
+      margin: 0 0 8px;
+    }
+    p {
+      color: #4f5f73;
+      margin: 0 0 20px;
+    }
+    table {
+      border-collapse: collapse;
+      background: #fff;
+      border: 1px solid #d9dee7;
+      min-width: 920px;
+    }
+    th, td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #e5e9f0;
+      text-align: right;
+      font-size: 14px;
+    }
+    th:first-child, td:first-child {
+      text-align: left;
+    }
+    th {
+      background: #eef2f7;
+      font-weight: 700;
+    }
+    .ok {
+      color: #245f32;
+      background: #dff1e3;
+      font-weight: 700;
+    }
+    .fail {
+      color: #8f2828;
+      background: #f7dddd;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <h1>FT T3 projection to Muon M4</h1>
+  <p>Scale factor from T3 to M4: 17670 / 9298 = 1.90041. Green means the projected FT border covers M4 in that coordinate. Red means the detector would need to be larger.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>T3 map</th>
+        <th>Projected full X at M4</th>
+        <th>M4 full X</th>
+        <th>X margin</th>
+        <th>X status</th>
+        <th>Projected full Y at M4</th>
+        <th>M4 full Y</th>
+        <th>Y margin</th>
+        <th>Y status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>FT_10Modules</td>
+        <td>10058.9 mm</td>
+        <td>11353.8 mm</td>
+        <td>-1294.9 mm</td>
+        <td class="fail">make wider</td>
+        <td>8274.4 mm</td>
+        <td>9425.2 mm</td>
+        <td>-1150.8 mm</td>
+        <td class="fail">make taller</td>
+      </tr>
+      <tr>
+        <td>FT_12Modules</td>
+        <td>12070.6 mm</td>
+        <td>11353.8 mm</td>
+        <td>+716.8 mm</td>
+        <td class="ok">OK</td>
+        <td>8274.4 mm</td>
+        <td>9425.2 mm</td>
+        <td>-1150.8 mm</td>
+        <td class="fail">make taller</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

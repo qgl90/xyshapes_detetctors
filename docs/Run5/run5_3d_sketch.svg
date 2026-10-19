@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760">
+<rect width="100%" height="100%" fill="#f7f8fb" />
+<text x="38.000" y="42.000" fill="#17202a" font-size="26" font-family="Arial, sans-serif" font-weight="700">Run 5 3D detector sketch</text>
+<text x="38.000" y="70.000" fill="#4f5f73" font-size="14" font-family="Arial, sans-serif">TV, UP, UP lower option, Mighty Tracker, and Muon surfaces along z.</text>
+<line x1="143.600" y1="720.160" x2="747.440" y2="380.500" stroke="#59677a" stroke-width="3" />
+<text x="125.600" y="744.160" fill="#59677a" font-size="12" font-family="Arial, sans-serif">0 mm</text>
+<text x="755.440" y="380.500" fill="#59677a" font-size="15" font-family="Arial, sans-serif" font-weight="700">z</text>
+<polygon points="622.179,500.915 622.179,18.165 1203.901,18.165 1203.901,500.915" fill="#7a8fbd" fill-opacity="0.24" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="931.261,244.768 894.819,244.768 894.819,274.312 931.261,274.312" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<text x="622.179" y="12.405" fill="#17202a" font-size="11" font-family="Arial, sans-serif">M5 z=18870 mm</text>
+<polygon points="602.149,507.345 602.149,54.935 1147.131,54.935 1147.131,507.345" fill="#7a8fbd" fill-opacity="0.24" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="891.694,267.409 857.586,267.409 857.586,294.871 891.694,294.871" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<text x="602.149" y="49.175" fill="#17202a" font-size="11" font-family="Arial, sans-serif">M4 z=17670 mm</text>
+<polygon points="582.200,513.692 582.200,91.788 1090.280,91.788 1090.280,513.692" fill="#7a8fbd" fill-opacity="0.24" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="852.037,289.951 820.443,289.951 820.443,315.529 852.037,315.529" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<text x="582.200" y="86.028" fill="#17202a" font-size="11" font-family="Arial, sans-serif">M3 z=16470 mm</text>
+<polygon points="562.194,520.014 562.194,128.666 1033.486,128.666 1033.486,520.014" fill="#7a8fbd" fill-opacity="0.24" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="812.442,312.458 783.238,312.458 783.238,336.222 812.442,336.222" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<text x="562.194" y="122.906" fill="#17202a" font-size="11" font-family="Arial, sans-serif">M2 z=15270 mm</text>
+<polygon points="454.298,536.332 454.298,327.340 759.174,327.340 759.174,536.332" fill="#5a9e63" fill-opacity="0.36" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="612.976,425.596 600.496,425.596 600.496,438.076 612.976,438.076" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<text x="454.298" y="321.580" fill="#17202a" font-size="11" font-family="Arial, sans-serif">T3 FT_12Modules z=9298 mm</text>
+<polygon points="457.784,548.662 457.784,339.670 711.848,339.670 711.848,548.662" fill="#6a9f58" fill-opacity="0.36" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="591.056,437.926 578.576,437.926 578.576,450.406 591.056,450.406" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<text x="457.784" y="333.910" fill="#17202a" font-size="11" font-family="Arial, sans-serif">T2 FT_10Modules z=8613 mm</text>
+<polygon points="435.960,560.938 435.960,351.946 690.024,351.946 690.024,560.938" fill="#6a9f58" fill-opacity="0.36" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="569.232,450.202 556.752,450.202 556.752,462.682 569.232,462.682" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<text x="435.960" y="346.186" fill="#17202a" font-size="11" font-family="Arial, sans-serif">T1 FT_10Modules z=7931 mm</text>
+<polygon points="366.453,574.355 366.453,528.267 422.219,528.267 422.219,574.355" fill="none" stroke="#8c6bb1" stroke-width="2.4" stroke-dasharray="8 5" />
+<text x="366.453" y="522.507" fill="#17202a" font-size="11" font-family="Arial, sans-serif">UPbX lower option z=2660 mm</text>
+<polygon points="360.621,582.181 360.621,520.729 427.539,520.729 427.539,582.181" fill="#4c82c9" fill-opacity="0.58" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="395.926,549.547 392.234,549.547 392.234,553.363 395.926,553.363" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<text x="360.621" y="514.969" fill="#17202a" font-size="11" font-family="Arial, sans-serif">UPbX z=2652 mm</text>
+<polygon points="364.693,575.345 364.693,529.257 420.459,529.257 420.459,575.345" fill="none" stroke="#8c6bb1" stroke-width="2.4" stroke-dasharray="8 5" />
+<text x="364.693" y="523.497" fill="#17202a" font-size="11" font-family="Arial, sans-serif">UPbV lower option z=2606 mm</text>
+<polygon points="358.861,583.171 358.861,521.719 425.779,521.719 425.779,583.171" fill="#4c82c9" fill-opacity="0.58" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="394.166,550.537 390.474,550.537 390.474,554.353 394.166,554.353" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<text x="358.861" y="515.959" fill="#17202a" font-size="11" font-family="Arial, sans-serif">UPbV z=2598 mm</text>
+<polygon points="357.493,579.395 357.493,533.307 413.259,533.307 413.259,579.395" fill="none" stroke="#8c6bb1" stroke-width="2.4" stroke-dasharray="8 5" />
+<text x="357.493" y="527.547" fill="#17202a" font-size="11" font-family="Arial, sans-serif">UPaU lower option z=2380 mm</text>
+<polygon points="351.661,587.221 351.661,525.769 418.579,525.769 418.579,587.221" fill="#4c82c9" fill-opacity="0.58" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="386.966,554.587 383.274,554.587 383.274,558.403 386.966,558.403" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<text x="351.661" y="520.009" fill="#17202a" font-size="11" font-family="Arial, sans-serif">UPaU z=2372 mm</text>
+<polygon points="355.733,580.385 355.733,534.297 411.499,534.297 411.499,580.385" fill="none" stroke="#8c6bb1" stroke-width="2.4" stroke-dasharray="8 5" />
+<text x="355.733" y="528.537" fill="#17202a" font-size="11" font-family="Arial, sans-serif">UPaX lower option z=2326 mm</text>
+<polygon points="349.901,588.211 349.901,526.759 416.819,526.759 416.819,588.211" fill="#4c82c9" fill-opacity="0.58" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="385.206,555.577 381.514,555.577 381.514,559.393 385.206,559.393" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<text x="349.901" y="520.999" fill="#17202a" font-size="11" font-family="Arial, sans-serif">UPaX z=2318 mm</text>
+<polygon points="334.160,586.857 332.463,585.160 334.160,583.463 335.857,585.160" fill="#d78a4a" fill-opacity="0.18" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="334.160,584.916 333.916,585.160 334.160,585.404 334.404,585.160" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<text x="332.463" y="577.703" fill="#17202a" font-size="11" font-family="Arial, sans-serif">TV19 z=780 mm</text>
+<polygon points="332.846,587.596 331.149,585.899 332.846,584.202 334.543,585.899" fill="#d78a4a" fill-opacity="0.18" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="332.846,585.655 332.602,585.899 332.846,586.143 333.091,585.899" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<polygon points="331.533,588.335 329.836,586.638 331.533,584.941 333.230,586.638" fill="#d78a4a" fill-opacity="0.18" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="331.533,586.394 331.288,586.638 331.533,586.882 331.777,586.638" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<polygon points="330.219,589.074 328.522,587.377 330.219,585.680 331.916,587.377" fill="#d78a4a" fill-opacity="0.18" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="330.219,587.132 329.975,587.377 330.219,587.621 330.463,587.377" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<polygon points="328.905,589.813 327.208,588.116 328.905,586.419 330.602,588.116" fill="#d78a4a" fill-opacity="0.18" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="328.905,587.871 328.661,588.116 328.905,588.360 329.150,588.116" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<polygon points="327.592,590.552 325.895,588.855 327.592,587.158 329.289,588.855" fill="#d78a4a" fill-opacity="0.18" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="327.592,588.610 327.347,588.855 327.592,589.099 327.836,588.855" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<polygon points="326.278,591.291 324.581,589.594 326.278,587.897 327.975,589.594" fill="#d78a4a" fill-opacity="0.18" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="326.278,589.349 326.034,589.594 326.278,589.838 326.522,589.594" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<polygon points="324.964,592.030 323.267,590.333 324.964,588.636 326.661,590.333" fill="#d78a4a" fill-opacity="0.18" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="324.964,590.088 324.720,590.333 324.964,590.577 325.209,590.333" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<polygon points="323.651,592.769 321.953,591.072 323.651,589.375 325.348,591.072" fill="#d78a4a" fill-opacity="0.18" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="323.651,590.827 323.406,591.072 323.651,591.316 323.895,591.072" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<polygon points="322.337,593.508 320.640,591.811 322.337,590.113 324.034,591.811" fill="#d78a4a" fill-opacity="0.18" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="322.337,591.566 322.092,591.811 322.337,592.055 322.581,591.811" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<polygon points="321.023,594.247 319.326,592.549 321.023,590.852 322.720,592.549" fill="#d78a4a" fill-opacity="0.18" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="321.023,592.305 320.779,592.549 321.023,592.794 321.268,592.549" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<polygon points="319.709,594.985 318.012,593.288 319.709,591.591 321.407,593.288" fill="#d78a4a" fill-opacity="0.18" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="319.709,593.044 319.465,593.288 319.709,593.533 319.954,593.288" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<polygon points="318.396,595.724 316.699,594.027 318.396,592.330 320.093,594.027" fill="#d78a4a" fill-opacity="0.18" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="318.396,593.783 318.151,594.027 318.396,594.272 318.640,594.027" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<polygon points="317.082,596.463 315.385,594.766 317.082,593.069 318.779,594.766" fill="#d78a4a" fill-opacity="0.18" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="317.082,594.522 316.838,594.766 317.082,595.011 317.326,594.766" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<polygon points="315.768,597.202 314.071,595.505 315.768,593.808 317.465,595.505" fill="#d78a4a" fill-opacity="0.18" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="315.768,595.261 315.524,595.505 315.768,595.750 316.013,595.505" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<polygon points="314.455,597.941 312.758,596.244 314.455,594.547 316.152,596.244" fill="#d78a4a" fill-opacity="0.18" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="314.455,596.000 314.210,596.244 314.455,596.489 314.699,596.244" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<polygon points="313.141,598.680 311.444,596.983 313.141,595.286 314.838,596.983" fill="#d78a4a" fill-opacity="0.18" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="313.141,596.739 312.897,596.983 313.141,597.228 313.385,596.983" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<polygon points="311.827,599.419 310.130,597.722 311.827,596.025 313.524,597.722" fill="#d78a4a" fill-opacity="0.18" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="311.827,597.478 311.583,597.722 311.827,597.966 312.072,597.722" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<polygon points="310.514,600.158 308.817,598.461 310.514,596.764 312.211,598.461" fill="#d78a4a" fill-opacity="0.18" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="310.514,598.217 310.269,598.461 310.514,598.705 310.758,598.461" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<polygon points="309.200,600.897 307.503,599.200 309.200,597.503 310.897,599.200" fill="#d78a4a" fill-opacity="0.18" stroke="#1f2f46" stroke-width="1.2" />
+<polygon points="309.200,598.956 308.956,599.200 309.200,599.444 309.444,599.200" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="0.9" />
+<text x="307.503" y="591.743" fill="#17202a" font-size="11" font-family="Arial, sans-serif">TV00 z=0 mm</text>
+<rect x="950.000" y="96.000" width="250.000" height="160.000" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<rect x="970.000" y="120.000" width="14.000" height="14.000" fill="#d78a4a" fill-opacity="0.65" stroke="#1f2f46" />
+<text x="994.000" y="132.000" fill="#17202a" font-size="12" font-family="Arial, sans-serif">TV layers</text>
+<rect x="970.000" y="148.000" width="14.000" height="14.000" fill="#4c82c9" fill-opacity="0.65" stroke="#1f2f46" />
+<text x="994.000" y="160.000" fill="#17202a" font-size="12" font-family="Arial, sans-serif">UP nominal</text>
+<line x1="970.000" y1="181.000" x2="984.000" y2="181.000" stroke="#8c6bb1" stroke-width="2.4" stroke-dasharray="8 5" />
+<text x="994.000" y="185.000" fill="#17202a" font-size="12" font-family="Arial, sans-serif">UP lower option</text>
+<rect x="970.000" y="204.000" width="14.000" height="14.000" fill="#6a9f58" fill-opacity="0.65" stroke="#1f2f46" />
+<text x="994.000" y="216.000" fill="#17202a" font-size="12" font-family="Arial, sans-serif">Mighty Tracker</text>
+<rect x="970.000" y="232.000" width="14.000" height="14.000" fill="#7a8fbd" fill-opacity="0.65" stroke="#1f2f46" />
+<text x="994.000" y="244.000" fill="#17202a" font-size="12" font-family="Arial, sans-serif">Muon</text>
+</svg>

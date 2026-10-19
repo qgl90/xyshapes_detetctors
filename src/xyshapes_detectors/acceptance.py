@@ -36,6 +36,7 @@ from shapely.ops import unary_union
 
 from .layout import load_layout
 from .propagation import Track, propagate
+from .selection import MTSelection
 
 
 #: Default ``z`` tolerance in mm for merging surfaces into one station.
@@ -60,6 +61,8 @@ def _add_canonical_flags(columns, suffix=""):
     if tv_count is not None:
         aliases["hasTV_3Hits"] = tv_count >= 3
         aliases["hasTV_4Hits"] = tv_count >= 4
+    if value("nMP") is not None and value("nFT") is not None:
+        aliases["hasMT"] = MTSelection().evaluate(value("nMP"), value("nFT"))
     muon_count = value("nMUON")
     if muon_count is not None:
         aliases["nMuon"] = muon_count

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1168" height="560" viewBox="0 0 1168 560">
+<rect width="100%" height="100%" fill="#f7f8fb" />
+<text x="34.000" y="34.000" fill="#17202a" font-size="22" font-family="Arial, sans-serif" font-weight="700">FT baseline acceptance scenario</text>
+<text x="34.000" y="58.000" fill="#4f5f73" font-size="13" font-family="Arial, sans-serif">T1/T2 = FT_10Modules, T3 = FT_12Modules</text>
+<rect x="36.099" y="137.433" width="375.803" height="309.134" fill="#6a9f58" fill-opacity="0.72" stroke="#1f2f46" stroke-width="2" />
+<rect x="214.770" y="282.770" width="18.460" height="18.460" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="1.8" />
+<line x1="36.099" y1="292.000" x2="411.901" y2="292.000" stroke="#1f2f46" stroke-width="0.8" stroke-dasharray="5 5" opacity="0.65" />
+<line x1="224.000" y1="137.433" x2="224.000" y2="446.567" stroke="#1f2f46" stroke-width="0.8" stroke-dasharray="5 5" opacity="0.65" />
+<text x="36.099" y="90.000" fill="#17202a" font-size="20" font-family="Arial, sans-serif" font-weight="700">T1</text>
+<text x="36.099" y="114.000" fill="#4f5f73" font-size="13" font-family="Arial, sans-serif">z = 7931.0 mm</text>
+<text x="36.099" y="136.000" fill="#4f5f73" font-size="13" font-family="Arial, sans-serif">FT_10Modules</text>
+<text x="36.099" y="472.567" fill="#17202a" font-size="13" font-family="Arial, sans-serif">5293 x 4354 mm</text>
+<text x="174.000" y="332.000" fill="#9b2d2d" font-size="12" font-family="Arial, sans-serif">260 x 260 mm</text>
+<rect x="396.099" y="137.433" width="375.803" height="309.134" fill="#6a9f58" fill-opacity="0.72" stroke="#1f2f46" stroke-width="2" />
+<rect x="574.770" y="282.770" width="18.460" height="18.460" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="1.8" />
+<line x1="396.099" y1="292.000" x2="771.901" y2="292.000" stroke="#1f2f46" stroke-width="0.8" stroke-dasharray="5 5" opacity="0.65" />
+<line x1="584.000" y1="137.433" x2="584.000" y2="446.567" stroke="#1f2f46" stroke-width="0.8" stroke-dasharray="5 5" opacity="0.65" />
+<text x="396.099" y="90.000" fill="#17202a" font-size="20" font-family="Arial, sans-serif" font-weight="700">T2</text>
+<text x="396.099" y="114.000" fill="#4f5f73" font-size="13" font-family="Arial, sans-serif">z = 8613.0 mm</text>
+<text x="396.099" y="136.000" fill="#4f5f73" font-size="13" font-family="Arial, sans-serif">FT_10Modules</text>
+<text x="396.099" y="472.567" fill="#17202a" font-size="13" font-family="Arial, sans-serif">5293 x 4354 mm</text>
+<text x="534.000" y="332.000" fill="#9b2d2d" font-size="12" font-family="Arial, sans-serif">260 x 260 mm</text>
+<rect x="718.518" y="137.433" width="450.964" height="309.134" fill="#5a9e63" fill-opacity="0.72" stroke="#1f2f46" stroke-width="2" />
+<rect x="934.770" y="282.770" width="18.460" height="18.460" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="1.8" />
+<line x1="718.518" y1="292.000" x2="1169.482" y2="292.000" stroke="#1f2f46" stroke-width="0.8" stroke-dasharray="5 5" opacity="0.65" />
+<line x1="944.000" y1="137.433" x2="944.000" y2="446.567" stroke="#1f2f46" stroke-width="0.8" stroke-dasharray="5 5" opacity="0.65" />
+<text x="718.518" y="90.000" fill="#17202a" font-size="20" font-family="Arial, sans-serif" font-weight="700">T3</text>
+<text x="718.518" y="114.000" fill="#4f5f73" font-size="13" font-family="Arial, sans-serif">z = 9298.0 mm</text>
+<text x="718.518" y="136.000" fill="#4f5f73" font-size="13" font-family="Arial, sans-serif">FT_12Modules</text>
+<text x="718.518" y="472.567" fill="#17202a" font-size="13" font-family="Arial, sans-serif">6352 x 4354 mm</text>
+<text x="894.000" y="332.000" fill="#9b2d2d" font-size="12" font-family="Arial, sans-serif">260 x 260 mm</text>
+</svg>

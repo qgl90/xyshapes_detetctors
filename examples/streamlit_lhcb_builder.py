@@ -109,10 +109,12 @@ with middle:
         ft_t1 = st.selectbox("T1 modules", (8, 10, 12), index=(8, 10, 12).index(ft_base.get("T1", 10)))
         ft_t2 = st.selectbox("T2 modules", (8, 10, 12), index=(8, 10, 12).index(ft_base.get("T2", 10)))
         ft_t3 = st.selectbox("T3 modules", (8, 10, 12), index=(8, 10, 12).index(ft_base.get("T3", 12)))
+        ft_acceptance = st.selectbox("FT acceptance", ("FT_withHole", "nominal"))
         st.caption("Every FT station is generated as X, U, V, X. U=-5 deg and V=+5 deg.")
     else:
         st.info("FT disabled.")
         ft_t1 = ft_t2 = ft_t3 = 10
+        ft_acceptance = "FT_withHole"
 
 with right:
     st.subheader("Other Detectors")
@@ -136,6 +138,7 @@ if "UP" in include:
     config["up"] = {"variant": up_variant, "plane_mode": up_planes}
 if "FT" in include:
     config["ft"] = {"stations": {"T1": ft_t1, "T2": ft_t2, "T3": ft_t3}}
+    config["ft_acceptance"] = ft_acceptance
 if "TV" in include:
     config["tv"] = dict(TV_CONFIG)
 

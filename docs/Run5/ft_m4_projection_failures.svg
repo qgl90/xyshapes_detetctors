@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="760" viewBox="0 0 1180 760">
+<rect width="100%" height="100%" fill="#f7f8fb" />
+<text x="34.000" y="40.000" fill="#17202a" font-size="24" font-family="Arial, sans-serif" font-weight="700">FT coverage against rays to M4 outer border</text>
+<text x="34.000" y="66.000" fill="#4f5f73" font-size="13" font-family="Arial, sans-serif">Amber shows the M4 border projected onto the FT z plane. Red shows required area outside the FT map.</text>
+<rect x="38.000" y="118.000" width="344.000" height="524.000" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<text x="54.000" y="148.000" fill="#17202a" font-size="17" font-family="Arial, sans-serif" font-weight="700">T1 FT_10Modules</text>
+<text x="304.000" y="148.000" fill="#2f6d3a" font-size="17" font-family="Arial, sans-serif" font-weight="700">PASS</text>
+<path d="M 342.865 604.778 L 342.865 384.186 L 77.135 384.186 L 77.135 604.778 L 342.865 604.778 Z" fill="#f2c14e" fill-opacity="0.38" stroke="#a77400" stroke-width="2" stroke-dasharray="8 5" />
+<path d="M 72.000 608.000 L 72.000 380.964 L 348.000 380.964 L 348.000 608.000 L 72.000 608.000 Z M 216.779 487.703 L 203.221 487.703 L 203.221 501.261 L 216.779 501.261 L 216.779 487.703 Z" fill="#6a9f58" fill-opacity="0.58" stroke="#1f2f46" stroke-width="1.5" fill-rule="evenodd" />
+<path d="M 216.779 501.261 L 203.221 501.261 L 203.221 487.703 L 216.779 487.703 L 216.779 501.261 Z" fill="#d34f4f" fill-opacity="0.55" stroke="#8f2828" stroke-width="1.2" />
+<text x="54.000" y="564.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">required half x,y: 2548.0, 2115.2 mm</text>
+<text x="54.000" y="584.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">FT half x,y: 2646.5, 2177.0 mm</text>
+<text x="54.000" y="604.000" fill="#2f6d3a" font-size="12" font-family="Arial, sans-serif" font-weight="700">margin x,y: +98.5, +61.8 mm</text>
+<rect x="418.000" y="118.000" width="344.000" height="524.000" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<text x="434.000" y="148.000" fill="#17202a" font-size="17" font-family="Arial, sans-serif" font-weight="700">T2 FT_10Modules</text>
+<text x="684.000" y="148.000" fill="#a23b3b" font-size="17" font-family="Arial, sans-serif" font-weight="700">FAIL</text>
+<path d="M 728.000 608.000 L 728.000 378.882 L 452.000 378.882 L 452.000 608.000 L 728.000 608.000 Z" fill="#f2c14e" fill-opacity="0.38" stroke="#a77400" stroke-width="2" stroke-dasharray="8 5" />
+<path d="M 458.016 602.011 L 458.016 384.871 L 721.984 384.871 L 721.984 602.011 L 458.016 602.011 Z M 596.483 486.958 L 583.517 486.958 L 583.517 499.924 L 596.483 499.924 L 596.483 486.958 Z" fill="#6a9f58" fill-opacity="0.58" stroke="#1f2f46" stroke-width="1.5" fill-rule="evenodd" />
+<path d="M 452.000 608.000 L 452.000 378.882 L 728.000 378.882 L 728.000 608.000 L 452.000 608.000 Z M 721.984 602.011 L 721.984 384.871 L 458.016 384.871 L 458.016 602.011 L 721.984 602.011 Z M 596.483 499.924 L 583.517 499.924 L 583.517 486.958 L 596.483 486.958 L 596.483 499.924 Z" fill="#d34f4f" fill-opacity="0.55" stroke="#8f2828" stroke-width="1.2" />
+<text x="434.000" y="564.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">required half x,y: 2767.1, 2297.1 mm</text>
+<text x="434.000" y="584.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">FT half x,y: 2646.5, 2177.0 mm</text>
+<text x="434.000" y="604.000" fill="#a23b3b" font-size="12" font-family="Arial, sans-serif" font-weight="700">margin x,y: -120.6, -120.1 mm</text>
+<rect x="798.000" y="118.000" width="344.000" height="524.000" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<text x="814.000" y="148.000" fill="#17202a" font-size="17" font-family="Arial, sans-serif" font-weight="700">T3 FT_12Modules</text>
+<text x="1064.000" y="148.000" fill="#a23b3b" font-size="17" font-family="Arial, sans-serif" font-weight="700">FAIL</text>
+<path d="M 1099.805 608.000 L 1099.805 392.489 L 840.195 392.489 L 840.195 608.000 L 1099.805 608.000 Z" fill="#f2c14e" fill-opacity="0.38" stroke="#a77400" stroke-width="2" stroke-dasharray="8 5" />
+<path d="M 832.000 594.843 L 832.000 405.646 L 1108.000 405.646 L 1108.000 594.843 L 832.000 594.843 Z M 975.649 494.595 L 964.351 494.595 L 964.351 505.893 L 975.649 505.893 L 975.649 494.595 Z" fill="#6a9f58" fill-opacity="0.58" stroke="#1f2f46" stroke-width="1.5" fill-rule="evenodd" />
+<path d="M 1099.805 608.000 L 840.195 608.000 L 840.195 594.843 L 1099.805 594.843 L 1099.805 608.000 Z M 840.195 392.489 L 1099.805 392.489 L 1099.805 405.646 L 840.195 405.646 L 840.195 392.489 Z M 975.649 505.893 L 964.351 505.893 L 964.351 494.595 L 975.649 494.595 L 975.649 505.893 Z" fill="#d34f4f" fill-opacity="0.55" stroke="#8f2828" stroke-width="1.2" />
+<text x="814.000" y="564.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">required half x,y: 2987.2, 2479.8 mm</text>
+<text x="814.000" y="584.000" fill="#4f5f73" font-size="12" font-family="Arial, sans-serif">FT half x,y: 3175.8, 2177.0 mm</text>
+<text x="814.000" y="604.000" fill="#a23b3b" font-size="12" font-family="Arial, sans-serif" font-weight="700">margin x,y: +188.6, -302.8 mm</text>
+<rect x="830.000" y="84.000" width="300.000" height="78.000" fill="#ffffff" stroke="#d9dee7" rx="6" />
+<rect x="850.000" y="106.000" width="14.000" height="14.000" fill="#6a9f58" fill-opacity="0.58" stroke="#1f2f46" />
+<text x="874.000" y="118.000" fill="#17202a" font-size="12" font-family="Arial, sans-serif">FT active map</text>
+<rect x="850.000" y="132.000" width="14.000" height="14.000" fill="#d34f4f" fill-opacity="0.55" stroke="#8f2828" />
+<text x="874.000" y="144.000" fill="#17202a" font-size="12" font-family="Arial, sans-serif">M4-required area outside FT</text>
+</svg>

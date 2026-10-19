@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<text x="46.00" y="46.00" font-family="Arial, sans-serif" font-size="26" fill="#17202a" font-weight="700" text-anchor="start">FT XY surfaces</text>
+<text x="46.00" y="74.00" font-family="Arial, sans-serif" font-size="14" fill="#475569" font-weight="400" text-anchor="start">12 planes, z = 7902.700 to 9384.700 mm, XY envelope = 5652.3 x 4798.7 mm</text>
+<rect x="46.00" y="104.00" width="640.00" height="500.00" fill="#ffffff" stroke="#d0d7e2"/>
+<path d="M 336.20 148.16 L 516.99 132.35 L 566.66 128.00 L 568.49 148.95 L 585.48 148.95 L 585.48 169.97 L 602.40 171.45 L 586.43 354.00 L 602.40 536.55 L 585.48 538.03 L 585.48 559.05 L 568.49 559.05 L 566.66 580.00 L 516.99 575.65 L 336.20 559.84 L 155.41 575.65 L 105.74 580.00 L 103.91 559.05 L 86.92 559.05 L 86.92 538.03 L 70.00 536.55 L 85.97 354.00 L 70.00 171.45 L 86.92 169.97 L 86.92 148.95 L 103.91 148.95 L 105.74 128.00 L 155.41 132.35 L 336.20 148.16 Z M 324.81 343.68 L 323.96 353.47 L 323.96 354.53 L 324.29 358.34 L 324.90 365.30 L 325.88 365.39 L 335.67 366.24 L 336.73 366.24 L 340.54 365.91 L 347.50 365.30 L 347.59 364.32 L 348.45 354.53 L 348.45 353.47 L 348.11 349.66 L 347.50 342.70 L 346.52 342.61 L 336.73 341.76 L 335.67 341.76 L 331.86 342.09 L 324.90 342.70 L 324.81 343.68 Z" fill="#dbeafe" fill-opacity="0.72" stroke="#2563eb" stroke-width="1.4" fill-rule="evenodd"/>
+<text x="58.00" y="628.00" font-family="Arial, sans-serif" font-size="12" fill="#475569" font-weight="400" text-anchor="start">x-y view; holes are shown by white cutouts where present</text>
+<text x="740.00" y="140.00" font-family="Arial, sans-serif" font-size="12" fill="#475569" font-weight="400" text-anchor="start">z placement of all planes</text>
+<line x1="740.00" y1="148.00" x2="1170.00" y2="148.00" stroke="#64748b" stroke-width="1.2"/>
+<line x1="740.00" y1="142.00" x2="740.00" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="753.06" y1="142.00" x2="753.06" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="777.72" y1="142.00" x2="777.72" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="790.78" y1="142.00" x2="790.78" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="920.47" y1="142.00" x2="920.47" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="933.53" y1="142.00" x2="933.53" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="958.19" y1="142.00" x2="958.19" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="971.25" y1="142.00" x2="971.25" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="1119.22" y1="142.00" x2="1119.22" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="1132.28" y1="142.00" x2="1132.28" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="1156.94" y1="142.00" x2="1156.94" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<line x1="1170.00" y1="142.00" x2="1170.00" y2="154.00" stroke="#0f172a" stroke-width="0.8"/>
+<text x="740.00" y="172.00" font-family="Arial, sans-serif" font-size="11" fill="#475569" font-weight="400" text-anchor="start">7902.7 mm</text>
+<text x="1170.00" y="172.00" font-family="Arial, sans-serif" font-size="11" fill="#475569" font-weight="400" text-anchor="end">9384.7 mm</text>
+<text x="740.00" y="220.00" font-family="Arial, sans-serif" font-size="15" fill="#17202a" font-weight="700" text-anchor="start">Layers</text>
+<text x="740.00" y="246.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">scifi_layer1_T1_X1: z=7902.700</text>
+<text x="740.00" y="266.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">scifi_layer2_T1_U: z=7947.699</text>
+<text x="740.00" y="286.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">scifi_layer3_T1_V: z=8032.701</text>
+<text x="740.00" y="306.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">scifi_layer4_T1_X2: z=8077.700</text>
+<text x="740.00" y="326.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">scifi_layer5_T2_X1: z=8524.700</text>
+<text x="740.00" y="346.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">scifi_layer6_T2_U: z=8569.699</text>
+<text x="740.00" y="366.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">scifi_layer7_T2_V: z=8654.701</text>
+<text x="740.00" y="386.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">scifi_layer8_T2_X2: z=8699.700</text>
+<text x="740.00" y="406.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">scifi_layer9_T3_X1: z=9209.700</text>
+<text x="740.00" y="426.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">scifi_layer10_T3_U: z=9254.699</text>
+<text x="740.00" y="446.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">scifi_layer11_T3_V: z=9339.701</text>
+<text x="740.00" y="466.00" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="400" text-anchor="start">scifi_layer12_T3_X2: z=9384.700</text>
+</svg>

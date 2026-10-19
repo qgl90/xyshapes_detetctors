@@ -1,0 +1,20 @@
+AcceptanceModel from /Users/renato/xyshapes_detetctors/detector_setups/lhcb_xy_baseline/layout.csv (merged surfaces at the station mean z)
+  TV        50 stations ( 100 surfaces)  z = [  -287.50,    557.65] mm
+  RICH1      2 stations (   2 surfaces)  z = [   795.00,   2237.20] mm
+  UP         4 stations (  16 surfaces)  z = [  2317.50,   2652.50] mm
+  MP         5 stations ( 600 surfaces)  z = [  7665.50,   9132.50] mm
+  FT        12 stations (  12 surfaces)  z = [  7902.70,   9384.70] mm
+  RICH2      2 stations (   2 surfaces)  z = [  9487.50,  11839.20] mm
+  PicoCal    2 stations (   2 surfaces)  z = [ 12565.87,  12601.01] mm
+  MUON       4 stations (   4 surfaces)  z = [ 15270.00,  18870.00] mm
+
+   p [GeV/c]       1       2       3       5       7      10      15      20      30      50      75     100     150     200
+     TV >= 5   0.695   0.642   0.685   0.700   0.682   0.700   0.703   0.740   0.693   0.700   0.680   0.723   0.738   0.705
+      UP = 4   0.838   0.807   0.850   0.838   0.863   0.828   0.858   0.815   0.820   0.855   0.805   0.860   0.848   0.853
+     MP >= 3   0.000   0.048   0.048   0.072   0.048   0.075   0.052   0.068   0.077   0.070   0.045   0.050   0.058   0.045
+  SciFi >= 6   0.000   0.535   0.728   0.833   0.905   0.938   0.983   0.998   0.995   0.995   0.998   0.998   1.000   1.000
+   Muon >= 3   0.000   0.263   0.492   0.690   0.772   0.850   0.915   0.960   0.965   0.995   1.000   0.995   1.000   1.000
+     PicoCal   0.000   0.340   0.570   0.705   0.792   0.843   0.907   0.945   0.945   0.970   0.995   0.985   0.993   0.993
+
+tracks per momentum point: 400
+transport outcome: backward=49, completed=4880, escaped=671

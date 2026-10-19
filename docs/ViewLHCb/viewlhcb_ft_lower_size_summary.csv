@@ -1,0 +1,4 @@
+station,z_min_mm,z_max_mm,modules_before,modules_after,nominal_width_before_mm,nominal_width_after_mm,extracted_width_before_mm,lower_width_mm,x_removed_each_side_mm,width_ratio,layers_before,layers_after
+T1,7897.775,8082.625,10,8,5293.0,4234.4,5735.2,4234.4,750.4,0.738,80,80
+T2,8519.775,8704.625,10,8,5293.0,4234.4,5735.2,4234.4,750.4,0.738,80,80
+T3,9204.775,9389.625,12,10,6351.6,5293.0,6799.4,5293.0,753.2,0.778,100,88

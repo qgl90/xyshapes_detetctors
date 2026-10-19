@@ -1,0 +1,4 @@
+station,before_modules,after_modules,kept,removed,kept_X1,kept_U,kept_V,kept_X2,removed_X1,removed_U,removed_V,removed_X2
+T1,10,8,256,64,64,64,64,64,16,16,16,16
+T2,10,8,256,64,64,64,64,64,16,16,16,16
+T3,12,10,320,64,80,80,80,80,16,16,16,16

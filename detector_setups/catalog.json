@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "default_configuration": "lhcb_lower_up_y8x6_ft_8_8_10",
+  "default_configuration": "lhcb_lower_up_y8x6_ft_8_8_10_FT_withHole",
   "available_choices": {
     "detectors": [
       "TV",

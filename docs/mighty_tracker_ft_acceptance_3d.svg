@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="760" viewBox="0 0 1180 760">
+<rect width="100%" height="100%" fill="#f7f8fb" />
+<text x="34.000" y="38.000" fill="#17202a" font-size="22" font-family="Arial, sans-serif" font-weight="700">FT baseline acceptance surfaces in Z</text>
+<text x="34.000" y="62.000" fill="#4f5f73" font-size="13" font-family="Arial, sans-serif">T1/T2 use 10 modules, T3 uses 12 modules; each surface has a centred 260 x 260 mm hole</text>
+<line x1="234.700" y1="611.200" x2="467.200" y2="530.600" stroke="#59677a" stroke-width="3" />
+<text x="477.200" y="527.600" fill="#59677a" font-size="15" font-family="Arial, sans-serif" font-weight="700">z</text>
+<polygon points="319.102,576.532 700.198,576.532 700.198,263.044 319.102,263.044" fill="#6a9f58" fill-opacity="0.66" stroke="#1f2f46" stroke-width="2" />
+<polygon points="500.290,429.148 519.010,429.148 519.010,410.428 500.290,410.428" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="1.8" />
+<text x="319.102" y="244.324" fill="#17202a" font-size="13" font-family="Arial, sans-serif" font-weight="700">T1: FT_10Modules, z=7931.0 mm</text>
+<polygon points="421.402,541.068 802.498,541.068 802.498,227.580 421.402,227.580" fill="#6a9f58" fill-opacity="0.66" stroke="#1f2f46" stroke-width="2" />
+<polygon points="602.590,393.684 621.310,393.684 621.310,374.964 602.590,374.964" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="1.8" />
+<text x="421.402" y="208.860" fill="#17202a" font-size="13" font-family="Arial, sans-serif" font-weight="700">T2: FT_10Modules, z=8613.0 mm</text>
+<polygon points="486.042,505.448 943.358,505.448 943.358,191.960 486.042,191.960" fill="#5a9e63" fill-opacity="0.66" stroke="#1f2f46" stroke-width="2" />
+<polygon points="705.340,358.064 724.060,358.064 724.060,339.344 705.340,339.344" fill="#f7f8fb" stroke="#9b2d2d" stroke-width="1.8" />
+<text x="486.042" y="173.240" fill="#17202a" font-size="13" font-family="Arial, sans-serif" font-weight="700">T3: FT_12Modules, z=9298.0 mm</text>
+<rect x="828.000" y="96.000" width="270.000" height="84.000" fill="#ffffff" fill-opacity="0.92" stroke="#d9dee7" rx="6" />
+<rect x="846.000" y="116.000" width="16.000" height="16.000" fill="#4c82c9" fill-opacity="0.72" stroke="#1f2f46" />
+<text x="872.000" y="129.000" fill="#17202a" font-size="13" font-family="Arial, sans-serif">FT_10Modules</text>
+<rect x="846.000" y="146.000" width="16.000" height="16.000" fill="#5a9e63" fill-opacity="0.72" stroke="#1f2f46" />
+<text x="872.000" y="159.000" fill="#17202a" font-size="13" font-family="Arial, sans-serif">FT_12Modules</text>
+</svg>
