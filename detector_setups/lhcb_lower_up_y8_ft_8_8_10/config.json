@@ -1,0 +1,35 @@
+{
+  "ft": {
+    "stations": {
+      "T1": 8,
+      "T2": 8,
+      "T3": 10
+    }
+  },
+  "include": [
+    "TV",
+    "RICH1",
+    "UP",
+    "MP",
+    "FT",
+    "RICH2",
+    "PicoCal",
+    "MUON"
+  ],
+  "name": "lhcb_lower_up_y8_ft_8_8_10",
+  "source": "ViewLHCb lower ROOT/GDML extracted surfaces",
+  "tv": {
+    "grouping": "physical_module",
+    "surfaces": "coplanar_sensitive_silicon",
+    "z_placement": "sensor_centres",
+    "counting": "any_sensor_hit_per_module"
+  },
+  "up": {
+    "plane_mode": "all16",
+    "variant": "y8"
+  },
+  "shape_dirs": [
+    "../shared_shapes",
+    "../up_variants/y8"
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "source": "View_LHCb_run5/LHCb_lower-scenario-Sep2026.root",
+  "masks": "docs/TV/review/tv_sensor_masks.pickle",
+  "origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "field": "none",
+  "material": "none",
+  "azimuth_weighting": "uniform at each eta; midpoint quadrature",
+  "logical_counting": "any sensor hit per module, at actual sensor centre Z",
+  "layers": 50,
+  "reachable_layers": 29,
+  "eta_range": [
+    1.5,
+    5.5
+  ],
+  "n_eta": 401,
+  "n_phi": 2880,
+  "rays": 1154880,
+  "maximum_nTV": 11,
+  "integrated": {
+    "weighting": "uniform in eta and azimuth; trapezoidal eta integration",
+    "mean_nTV": 5.264993055555555,
+    "efficiency_ge3": 0.8488958333333333,
+    "efficiency_ge4": 0.7723919270833334
+  },
+  "timing_model": "50 ps / sqrt(nTV); average per track conditional on nTV >= 1",
+  "convergence": {
+    "max_mean_hit_difference": 0.003472222222223209,
+    "max_acceptance3_difference": 0.001041666666666663,
+    "max_acceptance4_difference": 0.0015625000000000222
+  },
+  "samples": [
+    {
+      "eta": 1.5,
+      "mean_nTV": 2.6979166666666665,
+      "acceptance_ge3": 0.6263888888888889,
+      "acceptance_ge4": 0.078125,
+      "mean_sigma_t_ps_ge1": 31.085901784107637
+    },
+    {
+      "eta": 2.0,
+      "mean_nTV": 4.488888888888889,
+      "acceptance_ge3": 1.0,
+      "acceptance_ge4": 0.9663194444444444,
+      "mean_sigma_t_ps_ge1": 23.834982852294665
+    },
+    {
+      "eta": 2.5,
+      "mean_nTV": 7.2243055555555555,
+      "acceptance_ge3": 1.0,
+      "acceptance_ge4": 1.0,
+      "mean_sigma_t_ps_ge1": 18.69468146716017
+    },
+    {
+      "eta": 3.0,
+      "mean_nTV": 7.66875,
+      "acceptance_ge3": 1.0,
+      "acceptance_ge4": 1.0,
+      "mean_sigma_t_ps_ge1": 18.088834730869998
+    },
+    {
+      "eta": 3.5,
+      "mean_nTV": 9.189583333333333,
+      "acceptance_ge3": 1.0,
+      "acceptance_ge4": 1.0,
+      "mean_sigma_t_ps_ge1": 16.527321752829025
+    },
+    {
+      "eta": 4.0,
+      "mean_nTV": 6.548263888888889,
+      "acceptance_ge3": 1.0,
+      "acceptance_ge4": 1.0,
+      "mean_sigma_t_ps_ge1": 19.676103810498226
+    },
+    {
+      "eta": 4.4,
+      "mean_nTV": 4.092361111111111,
+      "acceptance_ge3": 1.0,
+      "acceptance_ge4": 0.9989583333333333,
+      "mean_sigma_t_ps_ge1": 24.757508819393358
+    },
+    {
+      "eta": 4.5,
+      "mean_nTV": 4.020833333333333,
+      "acceptance_ge3": 1.0,
+      "acceptance_ge4": 0.9993055555555556,
+      "mean_sigma_t_ps_ge1": 24.94586707394751
+    },
+    {
+      "eta": 4.6,
+      "mean_nTV": 4.024305555555555,
+      "acceptance_ge3": 1.0,
+      "acceptance_ge4": 0.9986111111111111,
+      "mean_sigma_t_ps_ge1": 24.937555679579084
+    },
+    {
+      "eta": 4.800000000000001,
+      "mean_nTV": 3.5503472222222223,
+      "acceptance_ge3": 0.8590277777777777,
+      "acceptance_ge4": 0.7236111111111111,
+      "mean_sigma_t_ps_ge1": 27.456441449571937
+    },
+    {
+      "eta": 5.0,
+      "mean_nTV": 1.73125,
+      "acceptance_ge3": 0.38263888888888886,
+      "acceptance_ge4": 0.0,
+      "mean_sigma_t_ps_ge1": 34.83579366664894
+    },
+    {
+      "eta": 5.5,
+      "mean_nTV": 0.0,
+      "acceptance_ge3": 0.0,
+      "acceptance_ge4": 0.0,
+      "mean_sigma_t_ps_ge1": null
+    }
+  ]
+}

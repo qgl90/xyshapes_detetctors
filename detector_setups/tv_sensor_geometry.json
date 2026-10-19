@@ -1,0 +1,5008 @@
+{
+  "schema": "tv-sensitive-silicon-v1",
+  "units": "mm",
+  "source": "View_LHCb_run5/LHCb_lower-scenario-Sep2026.root",
+  "selection": "TV:SensorSilicon within lvTV",
+  "sensors": [
+    {
+      "module_id": 1,
+      "side": "left",
+      "z_mm": -275.496,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule01WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 1,
+      "side": "left",
+      "z_mm": -274.504,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule01WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 1,
+      "side": "left",
+      "z_mm": -274.504,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule01WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 1,
+      "side": "left",
+      "z_mm": -275.496,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule01WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 3,
+      "side": "left",
+      "z_mm": -250.496,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule03WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 3,
+      "side": "left",
+      "z_mm": -249.504,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule03WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 3,
+      "side": "left",
+      "z_mm": -249.504,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule03WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 3,
+      "side": "left",
+      "z_mm": -250.496,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule03WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 5,
+      "side": "left",
+      "z_mm": -225.496,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule05WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 5,
+      "side": "left",
+      "z_mm": -224.504,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule05WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 5,
+      "side": "left",
+      "z_mm": -224.504,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule05WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 5,
+      "side": "left",
+      "z_mm": -225.496,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule05WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 7,
+      "side": "left",
+      "z_mm": -200.496,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule07WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 7,
+      "side": "left",
+      "z_mm": -199.504,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule07WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 7,
+      "side": "left",
+      "z_mm": -199.504,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule07WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 7,
+      "side": "left",
+      "z_mm": -200.496,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule07WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 9,
+      "side": "left",
+      "z_mm": -155.496,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule09WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 9,
+      "side": "left",
+      "z_mm": -154.504,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule09WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 9,
+      "side": "left",
+      "z_mm": -154.504,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule09WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 9,
+      "side": "left",
+      "z_mm": -155.496,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule09WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 11,
+      "side": "left",
+      "z_mm": -115.496,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule11WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 11,
+      "side": "left",
+      "z_mm": -114.504,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule11WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 11,
+      "side": "left",
+      "z_mm": -114.504,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule11WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 11,
+      "side": "left",
+      "z_mm": -115.496,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule11WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 13,
+      "side": "left",
+      "z_mm": -82.746,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule13WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 13,
+      "side": "left",
+      "z_mm": -81.754,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule13WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 13,
+      "side": "left",
+      "z_mm": -81.754,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule13WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 13,
+      "side": "left",
+      "z_mm": -82.746,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule13WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 15,
+      "side": "left",
+      "z_mm": -61.14600000000001,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule15WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 15,
+      "side": "left",
+      "z_mm": -60.154,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule15WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 15,
+      "side": "left",
+      "z_mm": -60.154,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule15WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 15,
+      "side": "left",
+      "z_mm": -61.14600000000001,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule15WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 17,
+      "side": "left",
+      "z_mm": -37.946000000000005,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule17WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 17,
+      "side": "left",
+      "z_mm": -36.954,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule17WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 17,
+      "side": "left",
+      "z_mm": -36.954,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule17WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 17,
+      "side": "left",
+      "z_mm": -37.946000000000005,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule17WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 19,
+      "side": "left",
+      "z_mm": -14.746000000000002,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule19WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 19,
+      "side": "left",
+      "z_mm": -13.754,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule19WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 19,
+      "side": "left",
+      "z_mm": -13.754,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule19WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 19,
+      "side": "left",
+      "z_mm": -14.746000000000002,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule19WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 21,
+      "side": "left",
+      "z_mm": 8.453999999999997,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule21WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 21,
+      "side": "left",
+      "z_mm": 9.446,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule21WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 21,
+      "side": "left",
+      "z_mm": 9.446,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule21WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 21,
+      "side": "left",
+      "z_mm": 8.453999999999997,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule21WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 23,
+      "side": "left",
+      "z_mm": 31.653999999999996,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule23WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 23,
+      "side": "left",
+      "z_mm": 32.646,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule23WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 23,
+      "side": "left",
+      "z_mm": 32.646,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule23WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 23,
+      "side": "left",
+      "z_mm": 31.653999999999996,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule23WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 25,
+      "side": "left",
+      "z_mm": 54.854,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule25WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 25,
+      "side": "left",
+      "z_mm": 55.846000000000004,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule25WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 25,
+      "side": "left",
+      "z_mm": 55.846000000000004,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule25WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 25,
+      "side": "left",
+      "z_mm": 54.854,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule25WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 27,
+      "side": "left",
+      "z_mm": 78.15400000000001,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule27WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 27,
+      "side": "left",
+      "z_mm": 79.146,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule27WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 27,
+      "side": "left",
+      "z_mm": 79.146,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule27WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 27,
+      "side": "left",
+      "z_mm": 78.15400000000001,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule27WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 29,
+      "side": "left",
+      "z_mm": 101.354,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule29WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 29,
+      "side": "left",
+      "z_mm": 102.34599999999999,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule29WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 29,
+      "side": "left",
+      "z_mm": 102.34599999999999,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule29WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 29,
+      "side": "left",
+      "z_mm": 101.354,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule29WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 31,
+      "side": "left",
+      "z_mm": 124.554,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule31WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 31,
+      "side": "left",
+      "z_mm": 125.54599999999999,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule31WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 31,
+      "side": "left",
+      "z_mm": 125.54599999999999,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule31WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 31,
+      "side": "left",
+      "z_mm": 124.554,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule31WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 33,
+      "side": "left",
+      "z_mm": 147.754,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule33WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 33,
+      "side": "left",
+      "z_mm": 148.746,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule33WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 33,
+      "side": "left",
+      "z_mm": 148.746,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule33WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 33,
+      "side": "left",
+      "z_mm": 147.754,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule33WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 35,
+      "side": "left",
+      "z_mm": 170.95399999999998,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule35WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 35,
+      "side": "left",
+      "z_mm": 171.946,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule35WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 35,
+      "side": "left",
+      "z_mm": 171.946,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule35WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 35,
+      "side": "left",
+      "z_mm": 170.95399999999998,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule35WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 37,
+      "side": "left",
+      "z_mm": 194.154,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule37WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 37,
+      "side": "left",
+      "z_mm": 195.14600000000002,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule37WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 37,
+      "side": "left",
+      "z_mm": 195.14600000000002,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule37WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 37,
+      "side": "left",
+      "z_mm": 194.154,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule37WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 39,
+      "side": "left",
+      "z_mm": 223.054,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule39WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 39,
+      "side": "left",
+      "z_mm": 224.04600000000002,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule39WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 39,
+      "side": "left",
+      "z_mm": 224.04600000000002,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule39WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 39,
+      "side": "left",
+      "z_mm": 223.054,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule39WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 41,
+      "side": "left",
+      "z_mm": 253.35399999999998,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule41WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 41,
+      "side": "left",
+      "z_mm": 254.346,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule41WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 41,
+      "side": "left",
+      "z_mm": 254.346,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule41WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 41,
+      "side": "left",
+      "z_mm": 253.35399999999998,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule41WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 43,
+      "side": "left",
+      "z_mm": 452.154,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule43WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 43,
+      "side": "left",
+      "z_mm": 453.14599999999996,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule43WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 43,
+      "side": "left",
+      "z_mm": 453.14599999999996,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule43WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 43,
+      "side": "left",
+      "z_mm": 452.154,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule43WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 45,
+      "side": "left",
+      "z_mm": 487.154,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule45WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 45,
+      "side": "left",
+      "z_mm": 488.14599999999996,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule45WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 45,
+      "side": "left",
+      "z_mm": 488.14599999999996,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule45WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 45,
+      "side": "left",
+      "z_mm": 487.154,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule45WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 47,
+      "side": "left",
+      "z_mm": 522.154,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule47WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 47,
+      "side": "left",
+      "z_mm": 523.146,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule47WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 47,
+      "side": "left",
+      "z_mm": 523.146,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule47WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 47,
+      "side": "left",
+      "z_mm": 522.154,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule47WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 49,
+      "side": "left",
+      "z_mm": 557.154,
+      "points_xy": [
+        [
+          -18.4024539803799,
+          27.156435931469357
+        ],
+        [
+          8.983791654975086,
+          -0.2298097038856345
+        ],
+        [
+          18.034758454162894,
+          8.821157095302173
+        ],
+        [
+          -9.351487181192091,
+          36.207402730657165
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule49WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 49,
+      "side": "left",
+      "z_mm": 558.146,
+      "points_xy": [
+        [
+          -10.535891039679555,
+          36.967542520432715
+        ],
+        [
+          16.85035459567543,
+          9.581296885077721
+        ],
+        [
+          25.901321394863242,
+          18.632263684265528
+        ],
+        [
+          -1.4849242404917462,
+          46.01850931962052
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule49WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 49,
+      "side": "left",
+      "z_mm": 558.146,
+      "points_xy": [
+        [
+          -0.1131370849898471,
+          -8.867119036079306
+        ],
+        [
+          8.93782971419796,
+          -17.918085835267114
+        ],
+        [
+          36.32407534955295,
+          9.468159800087872
+        ],
+        [
+          27.273108550365144,
+          18.51912659927568
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule49WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 49,
+      "side": "left",
+      "z_mm": 557.154,
+      "points_xy": [
+        [
+          8.725697679841995,
+          -17.70595380091115
+        ],
+        [
+          17.7766644790298,
+          -26.75692060009896
+        ],
+        [
+          45.16291011438479,
+          0.6293250352560248
+        ],
+        [
+          36.11194331519699,
+          9.680291834443834
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionLeft/pvTVLeft/pvModule49WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 0,
+      "side": "right",
+      "z_mm": -287.996,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule00WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 0,
+      "side": "right",
+      "z_mm": -287.004,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule00WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 0,
+      "side": "right",
+      "z_mm": -287.004,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule00WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 0,
+      "side": "right",
+      "z_mm": -287.996,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule00WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 2,
+      "side": "right",
+      "z_mm": -262.996,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule02WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 2,
+      "side": "right",
+      "z_mm": -262.004,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule02WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 2,
+      "side": "right",
+      "z_mm": -262.004,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule02WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 2,
+      "side": "right",
+      "z_mm": -262.996,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule02WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 4,
+      "side": "right",
+      "z_mm": -237.996,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule04WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 4,
+      "side": "right",
+      "z_mm": -237.004,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule04WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 4,
+      "side": "right",
+      "z_mm": -237.004,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule04WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 4,
+      "side": "right",
+      "z_mm": -237.996,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule04WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 6,
+      "side": "right",
+      "z_mm": -212.996,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule06WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 6,
+      "side": "right",
+      "z_mm": -212.004,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule06WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 6,
+      "side": "right",
+      "z_mm": -212.004,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule06WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 6,
+      "side": "right",
+      "z_mm": -212.996,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule06WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 8,
+      "side": "right",
+      "z_mm": -167.996,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule08WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 8,
+      "side": "right",
+      "z_mm": -167.004,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule08WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 8,
+      "side": "right",
+      "z_mm": -167.004,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule08WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 8,
+      "side": "right",
+      "z_mm": -167.996,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule08WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 10,
+      "side": "right",
+      "z_mm": -127.996,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule10WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 10,
+      "side": "right",
+      "z_mm": -127.004,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule10WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 10,
+      "side": "right",
+      "z_mm": -127.004,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule10WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 10,
+      "side": "right",
+      "z_mm": -127.996,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule10WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 12,
+      "side": "right",
+      "z_mm": -95.246,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule12WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 12,
+      "side": "right",
+      "z_mm": -94.254,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule12WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 12,
+      "side": "right",
+      "z_mm": -94.254,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule12WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 12,
+      "side": "right",
+      "z_mm": -95.246,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule12WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 14,
+      "side": "right",
+      "z_mm": -73.646,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule14WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 14,
+      "side": "right",
+      "z_mm": -72.65400000000001,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule14WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 14,
+      "side": "right",
+      "z_mm": -72.65400000000001,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule14WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 14,
+      "side": "right",
+      "z_mm": -73.646,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule14WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 16,
+      "side": "right",
+      "z_mm": -50.446000000000005,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule16WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 16,
+      "side": "right",
+      "z_mm": -49.454,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule16WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 16,
+      "side": "right",
+      "z_mm": -49.454,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule16WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 16,
+      "side": "right",
+      "z_mm": -50.446000000000005,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule16WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 18,
+      "side": "right",
+      "z_mm": -27.246000000000002,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule18WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 18,
+      "side": "right",
+      "z_mm": -26.254,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule18WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 18,
+      "side": "right",
+      "z_mm": -26.254,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule18WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 18,
+      "side": "right",
+      "z_mm": -27.246000000000002,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule18WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 20,
+      "side": "right",
+      "z_mm": -4.046000000000003,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule20WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 20,
+      "side": "right",
+      "z_mm": -3.0539999999999994,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule20WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 20,
+      "side": "right",
+      "z_mm": -3.0539999999999994,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule20WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 20,
+      "side": "right",
+      "z_mm": -4.046000000000003,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule20WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 22,
+      "side": "right",
+      "z_mm": 19.153999999999996,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule22WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 22,
+      "side": "right",
+      "z_mm": 20.145999999999997,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule22WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 22,
+      "side": "right",
+      "z_mm": 20.145999999999997,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule22WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 22,
+      "side": "right",
+      "z_mm": 19.153999999999996,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule22WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 24,
+      "side": "right",
+      "z_mm": 42.354,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule24WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 24,
+      "side": "right",
+      "z_mm": 43.346000000000004,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule24WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 24,
+      "side": "right",
+      "z_mm": 43.346000000000004,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule24WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 24,
+      "side": "right",
+      "z_mm": 42.354,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule24WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 26,
+      "side": "right",
+      "z_mm": 65.65400000000001,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule26WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 26,
+      "side": "right",
+      "z_mm": 66.646,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule26WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 26,
+      "side": "right",
+      "z_mm": 66.646,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule26WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 26,
+      "side": "right",
+      "z_mm": 65.65400000000001,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule26WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 28,
+      "side": "right",
+      "z_mm": 88.854,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule28WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 28,
+      "side": "right",
+      "z_mm": 89.84599999999999,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule28WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 28,
+      "side": "right",
+      "z_mm": 89.84599999999999,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule28WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 28,
+      "side": "right",
+      "z_mm": 88.854,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule28WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 30,
+      "side": "right",
+      "z_mm": 112.054,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule30WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 30,
+      "side": "right",
+      "z_mm": 113.04599999999999,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule30WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 30,
+      "side": "right",
+      "z_mm": 113.04599999999999,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule30WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 30,
+      "side": "right",
+      "z_mm": 112.054,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule30WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 32,
+      "side": "right",
+      "z_mm": 135.254,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule32WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 32,
+      "side": "right",
+      "z_mm": 136.246,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule32WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 32,
+      "side": "right",
+      "z_mm": 136.246,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule32WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 32,
+      "side": "right",
+      "z_mm": 135.254,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule32WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 34,
+      "side": "right",
+      "z_mm": 158.45399999999998,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule34WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 34,
+      "side": "right",
+      "z_mm": 159.446,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule34WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 34,
+      "side": "right",
+      "z_mm": 159.446,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule34WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 34,
+      "side": "right",
+      "z_mm": 158.45399999999998,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule34WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 36,
+      "side": "right",
+      "z_mm": 181.654,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule36WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 36,
+      "side": "right",
+      "z_mm": 182.64600000000002,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule36WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 36,
+      "side": "right",
+      "z_mm": 182.64600000000002,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule36WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 36,
+      "side": "right",
+      "z_mm": 181.654,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule36WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 38,
+      "side": "right",
+      "z_mm": 210.554,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule38WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 38,
+      "side": "right",
+      "z_mm": 211.54600000000002,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule38WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 38,
+      "side": "right",
+      "z_mm": 211.54600000000002,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule38WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 38,
+      "side": "right",
+      "z_mm": 210.554,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule38WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 40,
+      "side": "right",
+      "z_mm": 240.85399999999998,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule40WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 40,
+      "side": "right",
+      "z_mm": 241.846,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule40WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 40,
+      "side": "right",
+      "z_mm": 241.846,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule40WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 40,
+      "side": "right",
+      "z_mm": 240.85399999999998,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule40WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 42,
+      "side": "right",
+      "z_mm": 439.654,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule42WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 42,
+      "side": "right",
+      "z_mm": 440.64599999999996,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule42WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 42,
+      "side": "right",
+      "z_mm": 440.64599999999996,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule42WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 42,
+      "side": "right",
+      "z_mm": 439.654,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule42WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 44,
+      "side": "right",
+      "z_mm": 474.654,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule44WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 44,
+      "side": "right",
+      "z_mm": 475.64599999999996,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule44WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 44,
+      "side": "right",
+      "z_mm": 475.64599999999996,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule44WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 44,
+      "side": "right",
+      "z_mm": 474.654,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule44WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 46,
+      "side": "right",
+      "z_mm": 509.654,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule46WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 46,
+      "side": "right",
+      "z_mm": 510.64599999999996,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule46WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 46,
+      "side": "right",
+      "z_mm": 510.64599999999996,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule46WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 46,
+      "side": "right",
+      "z_mm": 509.654,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule46WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    },
+    {
+      "module_id": 48,
+      "side": "right",
+      "z_mm": 544.654,
+      "points_xy": [
+        [
+          -18.034758454162894,
+          -8.82115709530218
+        ],
+        [
+          9.351487181192095,
+          -36.207402730657165
+        ],
+        [
+          18.402453980379903,
+          -27.156435931469357
+        ],
+        [
+          -8.983791654975086,
+          0.229809703885629
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule48WithSupport/pvModule/pvLadder_0/pvSensor/pvDet"
+    },
+    {
+      "module_id": 48,
+      "side": "right",
+      "z_mm": 545.646,
+      "points_xy": [
+        [
+          -25.90132139486323,
+          -18.63226368426553
+        ],
+        [
+          1.4849242404917566,
+          -46.01850931962051
+        ],
+        [
+          10.535891039679564,
+          -36.96754252043271
+        ],
+        [
+          -16.850354595675427,
+          -9.581296885077723
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule48WithSupport/pvModule/pvLadder_1/pvSensor/pvDet"
+    },
+    {
+      "module_id": 48,
+      "side": "right",
+      "z_mm": 545.646,
+      "points_xy": [
+        [
+          -36.32407534955295,
+          -9.468159800087877
+        ],
+        [
+          -27.27310855036514,
+          -18.519126599275683
+        ],
+        [
+          0.11313708498984515,
+          8.867119036079304
+        ],
+        [
+          -8.937829714197964,
+          17.91808583526711
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule48WithSupport/pvModule/pvLadder_2/pvSensor/pvDet"
+    },
+    {
+      "module_id": 48,
+      "side": "right",
+      "z_mm": 544.654,
+      "points_xy": [
+        [
+          -45.16291011438479,
+          -0.6293250352560317
+        ],
+        [
+          -36.11194331519699,
+          -9.680291834443839
+        ],
+        [
+          -8.725697679842,
+          17.705953800911153
+        ],
+        [
+          -17.776664479029808,
+          26.756920600098958
+        ]
+      ],
+      "material": "TV:SensorSilicon",
+      "path": "lvTV/pvTVMotionRight/pvTVRight/pvModule48WithSupport/pvModule/pvLadder_3/pvSensor/pvDet"
+    }
+  ]
+}

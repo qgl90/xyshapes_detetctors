@@ -14,12 +14,20 @@ dependencies = [
     "shapely>=2.0",
 ]
 
+[project.optional-dependencies]
+# Reading a ROOT field map needs uproot; a converted .npz map does not.
+field = ["uproot>=5"]
+app = ["pandas>=2.0", "streamlit>=1.36"]
+
 [project.scripts]
 xyshape-box = "xyshapes_detectors.create_geom_box:main"
 xyshape-velo = "xyshapes_detectors.create_geom_velo:main"
 xyshape-up = "xyshapes_detectors.create_geom_up:main"
 xyshape-ft = "xyshapes_detectors.create_geom_ft:main"
+xyshape-tv = "xyshapes_detectors.create_geom_tv:main"
+xyshape-muon = "xyshapes_detectors.create_geom_muon:main"
 xyshape-all = "xyshapes_detectors.create_geom:main"
+xyshape-field = "xyshapes_detectors.magnetic_field:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
